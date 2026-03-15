@@ -57,6 +57,35 @@ def _try_parse_date(value: str) -> date | None:
     return None
 
 
+def _format_date_readable(value: str) -> str:
+    parsed = _try_parse_date(value)
+    if parsed is None:
+        return _normalize_name(value)
+    return f"{parsed.strftime('%b')} {parsed.day}, {parsed.year}"
+
+
+def _normalize_time(value: str) -> str:
+    text = _normalize_name(value)
+    if not text:
+        return ""
+
+    formats = ("%I:%M %p", "%I %p", "%H:%M", "%H:%M:%S")
+    for fmt in formats:
+        try:
+            parsed = datetime.strptime(text.upper(), fmt)
+            return parsed.strftime("%I:%M %p").lstrip("0")
+        except ValueError:
+            continue
+    return text
+
+
+def _format_timestamp(value: datetime) -> str:
+    month = value.strftime("%b")
+    hour = value.strftime("%I").lstrip("0") or "0"
+    am_pm = value.strftime("%p")
+    return f"{month} {value.day}, {value.year} {hour}:{value.strftime('%M')} {am_pm} UTC"
+
+
 def _stable_sort(attractions: Iterable[Attraction]) -> List[Attraction]:
     return sorted(
         attractions,
@@ -347,15 +376,19 @@ def _dedupe_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
 
 
 def _format_offer(entry: OfferEntry) -> str:
-    time_range = ""
-    if entry.start_time and entry.end_time:
-        time_range = f"{entry.start_time} - {entry.end_time}"
-    elif entry.start_time:
-        time_range = entry.start_time
-    elif entry.end_time:
-        time_range = entry.end_time
+    date_display = _format_date_readable(entry.date_text)
+    start_display = _normalize_time(entry.start_time)
+    end_display = _normalize_time(entry.end_time)
 
-    parts = [part for part in (entry.date_text, entry.attraction_name, entry.offer_title, time_range, entry.venue_name) if part]
+    datetime_display = date_display
+    if start_display and end_display:
+        datetime_display = f"{date_display} {start_display} - {end_display}"
+    elif start_display:
+        datetime_display = f"{date_display} {start_display}"
+    elif end_display:
+        datetime_display = f"{date_display} {end_display}"
+
+    parts = [part for part in (datetime_display, entry.attraction_name, entry.offer_title, entry.venue_name) if part]
     return " | ".join(parts)
 
 
@@ -453,7 +486,7 @@ def build_message(
     current_names: Sequence[str] | None = None,
     offer_lines: Sequence[str] | None = None,
 ) -> str:
-    now_text = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now_text = _format_timestamp(datetime.now(timezone.utc))
     lines = [f"{title} ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
 
     if changes["added"] or include_empty_sections:
