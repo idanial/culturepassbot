@@ -1,0 +1,53 @@
+name: Culture Pass Monitor
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run Culture Pass monitor
+        env:
+          CULTUREPASS_URL: https://culturepassnyc.quipugroup.net/?NYPL
+          CULTUREPASS_USERNAME: ${{ secrets.CULTUREPASS_USERNAME }}
+          CULTUREPASS_PASSWORD: ${{ secrets.CULTUREPASS_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SNAPSHOT_PATH: data/attractions_snapshot.json
+          MONITOR_TIMEOUT_MS: "120000"
+        run: python scripts/monitor_culturepass.py
+
+      - name: Commit snapshot updates
+        run: |
+          if git diff --quiet -- data/attractions_snapshot.json; then
+            echo "No snapshot changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/attractions_snapshot.json
+          git commit -m "chore: update culture pass attractions snapshot"
+          git push
