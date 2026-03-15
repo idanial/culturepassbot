@@ -39,6 +39,42 @@ def _stable_sort(attractions: Iterable[Attraction]) -> List[Attraction]:
     )
 
 
+def _chunk_message(message: str, limit: int) -> List[str]:
+    lines = message.splitlines()
+    chunks: List[str] = []
+    current = ""
+
+    for line in lines:
+        candidate = line if not current else f"{current}\n{line}"
+        if len(candidate) <= limit:
+            current = candidate
+            continue
+
+        if current:
+            chunks.append(current)
+            current = ""
+
+        if len(line) <= limit:
+            current = line
+            continue
+
+        # Extremely long single line fallback.
+        start = 0
+        while start < len(line):
+            end = start + limit
+            chunk = line[start:end]
+            if len(chunk) == limit:
+                chunks.append(chunk)
+            else:
+                current = chunk
+            start = end
+
+    if current:
+        chunks.append(current)
+
+    return chunks if chunks else [""]
+
+
 def _to_payload(attractions: Sequence[Attraction]) -> Dict[str, List[Dict[str, str]]]:
     return {
         "attractions": [{"id": item.id, "name": item.name} for item in attractions],
@@ -202,6 +238,7 @@ def build_message(
     new_count: int,
     include_empty_sections: bool = False,
     title: str = "Culture Pass update detected",
+    current_names: Sequence[str] | None = None,
 ) -> str:
     now_text = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [f"{title} ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
@@ -230,23 +267,36 @@ def build_message(
         else:
             lines.append("- none")
 
+    if current_names is not None:
+        lines.append("")
+        lines.append(f"Current attractions ({len(current_names)}):")
+        if current_names:
+            lines.extend([f"- {name}" for name in current_names])
+        else:
+            lines.append("- none")
+
     return "\n".join(lines)
 
 
 def send_telegram(bot_token: str, chat_id: str, message: str) -> None:
-    if len(message) > TELEGRAM_TEXT_LIMIT:
-        message = message[: TELEGRAM_TEXT_LIMIT - 120].rstrip()
-        message += "\n\n[message truncated: too many changes to fit in one Telegram message]"
+    chunks = _chunk_message(message, TELEGRAM_TEXT_LIMIT - 24)
+    total = len(chunks)
 
-    response = requests.post(
-        TELEGRAM_SEND_URL.format(token=bot_token),
-        json={"chat_id": chat_id, "text": message},
-        timeout=30,
-    )
-    response.raise_for_status()
-    payload = response.json()
-    if not payload.get("ok"):
-        raise RuntimeError(f"Telegram API returned failure: {payload}")
+    for index, chunk in enumerate(chunks, start=1):
+        text = chunk
+        if total > 1:
+            prefix = f"[{index}/{total}]\n"
+            text = prefix + chunk
+
+        response = requests.post(
+            TELEGRAM_SEND_URL.format(token=bot_token),
+            json={"chat_id": chat_id, "text": text},
+            timeout=30,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        if not payload.get("ok"):
+            raise RuntimeError(f"Telegram API returned failure: {payload}")
 
 
 def env_flag(name: str, default: bool = False) -> bool:
@@ -271,6 +321,7 @@ def main() -> int:
     send_on_first_run = env_flag("SEND_ON_FIRST_RUN", False)
     force_notify = env_flag("FORCE_NOTIFY", False)
     include_empty_sections = env_flag("INCLUDE_EMPTY_SECTIONS", False)
+    include_current_list = env_flag("INCLUDE_CURRENT_LIST", False)
     no_snapshot_update = env_flag("NO_SNAPSHOT_UPDATE", False)
 
     username = env_required("CULTUREPASS_USERNAME")
@@ -310,12 +361,14 @@ def main() -> int:
         return 0
 
     title = "Culture Pass update detected" if changed else "Culture Pass format check (no changes)"
+    current_names = [item.name for item in new_snapshot] if include_current_list else None
     message = build_message(
         changes,
         old_count=len(old_snapshot),
         new_count=len(new_snapshot),
         include_empty_sections=include_empty_sections,
         title=title,
+        current_names=current_names,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:

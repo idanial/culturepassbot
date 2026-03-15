@@ -51,6 +51,7 @@ Manual format-check notification (uses real Culture Pass data and always sends):
 
 - File: `.github/workflows/culturepass-format-check.yml`
 - Trigger: `workflow_dispatch`
+- Includes full current attraction list in the Telegram output
 
 ## Local Run
 

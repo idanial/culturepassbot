@@ -35,5 +35,6 @@ jobs:
           MONITOR_TIMEOUT_MS: "120000"
           FORCE_NOTIFY: "true"
           INCLUDE_EMPTY_SECTIONS: "true"
+          INCLUDE_CURRENT_LIST: "true"
           NO_SNAPSHOT_UPDATE: "true"
         run: python scripts/monitor_culturepass.py
