@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
 from html import escape
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
@@ -567,15 +568,39 @@ def send_telegram(bot_token: str, chat_id: str, message: str) -> None:
             prefix = f"[{index}/{total}]\n"
             text = prefix + chunk
 
-        response = requests.post(
-            TELEGRAM_SEND_URL.format(token=bot_token),
-            json={"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
-            timeout=30,
-        )
-        response.raise_for_status()
-        payload = response.json()
-        if not payload.get("ok"):
-            raise RuntimeError(f"Telegram API returned failure: {payload}")
+        max_attempts = 4
+        for attempt in range(max_attempts):
+            response = requests.post(
+                TELEGRAM_SEND_URL.format(token=bot_token),
+                json={"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
+                timeout=30,
+            )
+
+            payload: Dict[str, Any]
+            try:
+                payload = response.json()
+            except ValueError:
+                payload = {}
+
+            if response.status_code == 429:
+                retry_after = 2
+                if isinstance(payload, dict):
+                    params = payload.get("parameters", {})
+                    if isinstance(params, dict):
+                        retry_after = int(params.get("retry_after", retry_after))
+                if attempt == max_attempts - 1:
+                    raise RuntimeError(f"Telegram rate limit persisted after retries: {payload}")
+                time.sleep(max(retry_after, 1))
+                continue
+
+            response.raise_for_status()
+            if not payload.get("ok"):
+                raise RuntimeError(f"Telegram API returned failure: {payload}")
+            break
+
+        # Reduce chance of 429 when message spans many chunks.
+        if index < total:
+            time.sleep(0.45)
 
 
 def env_flag(name: str, default: bool = False) -> bool:
