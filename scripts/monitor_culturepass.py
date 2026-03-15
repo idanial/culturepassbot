@@ -158,7 +158,6 @@ def _chunk_message(message: str, limit: int) -> List[str]:
 
 
 def _wait_for_authenticated_login(page: Any, timeout_ms: int) -> None:
-    page.wait_for_selector("#ePASSPatronNumber", timeout=timeout_ms)
     page.wait_for_function(
         """
         () => {
@@ -217,6 +216,7 @@ def fetch_attractions(
 
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+            page.wait_for_selector("#ePASSPatronNumber", state="visible", timeout=timeout_ms)
             page.fill("#ePASSPatronNumber", username)
             page.fill("#ePASSPatronPassword", password)
             page.click("#ePASSButtonLogin")
@@ -428,6 +428,7 @@ def fetch_upcoming_offers(
 
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+            page.wait_for_selector("#ePASSPatronNumber", state="visible", timeout=timeout_ms)
             page.fill("#ePASSPatronNumber", username)
             page.fill("#ePASSPatronPassword", password)
             page.click("#ePASSButtonLogin")

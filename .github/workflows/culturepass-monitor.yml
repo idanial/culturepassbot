@@ -41,6 +41,14 @@ jobs:
           SEND_ON_FIRST_RUN: "true"
         run: python scripts/monitor_culturepass.py
 
+      - name: Upload debug screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-debug-screenshots-${{ github.run_id }}
+          path: debug-*.png
+          if-no-files-found: ignore
+
       - name: Commit snapshot updates
         run: |
           if git diff --quiet -- data/attractions_snapshot.json; then
