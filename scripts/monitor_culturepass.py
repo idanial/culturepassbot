@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from html import escape
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -84,6 +85,10 @@ def _format_timestamp(value: datetime) -> str:
     hour = value.strftime("%I").lstrip("0") or "0"
     am_pm = value.strftime("%p")
     return f"{month} {value.day}, {value.year} {hour}:{value.strftime('%M')} {am_pm} UTC"
+
+
+def _html(text: str) -> str:
+    return escape(text, quote=False)
 
 
 def _stable_sort(attractions: Iterable[Attraction]) -> List[Attraction]:
@@ -487,45 +492,45 @@ def build_message(
     offer_lines: Sequence[str] | None = None,
 ) -> str:
     now_text = _format_timestamp(datetime.now(timezone.utc))
-    lines = [f"{title} ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
+    lines = [f"{_html(title)} ({_html(now_text)})", f"Total attractions: {new_count} (previously {old_count})"]
 
     if changes["added"] or include_empty_sections:
         lines.append("")
-        lines.append(f"Added ({len(changes['added'])}):")
+        lines.append(f"<b>Added ({len(changes['added'])}):</b>")
         if changes["added"]:
-            lines.extend([f"- {name}" for name in changes["added"]])
+            lines.extend([f"- {_html(name)}" for name in changes["added"]])
         else:
             lines.append("- none")
 
     if changes["removed"] or include_empty_sections:
         lines.append("")
-        lines.append(f"Removed ({len(changes['removed'])}):")
+        lines.append(f"<b>Removed ({len(changes['removed'])}):</b>")
         if changes["removed"]:
-            lines.extend([f"- {name}" for name in changes["removed"]])
+            lines.extend([f"- {_html(name)}" for name in changes["removed"]])
         else:
             lines.append("- none")
 
     if changes["renamed"] or include_empty_sections:
         lines.append("")
-        lines.append(f"Renamed ({len(changes['renamed'])}):")
+        lines.append(f"<b>Renamed ({len(changes['renamed'])}):</b>")
         if changes["renamed"]:
-            lines.extend([f"- {old_name} -> {new_name}" for old_name, new_name in changes["renamed"]])
+            lines.extend([f"- {_html(old_name)} -> {_html(new_name)}" for old_name, new_name in changes["renamed"]])
         else:
             lines.append("- none")
 
     if current_names is not None:
         lines.append("")
-        lines.append(f"Current attractions ({len(current_names)}):")
+        lines.append(f"<b>Current attractions ({len(current_names)}):</b>")
         if current_names:
-            lines.extend([f"- {name}" for name in current_names])
+            lines.extend([f"- {_html(name)}" for name in current_names])
         else:
             lines.append("- none")
 
     if offer_lines is not None:
         lines.append("")
-        lines.append(f"Upcoming offers ({len(offer_lines)}):")
+        lines.append(f"<b>Upcoming offers ({len(offer_lines)}):</b>")
         if offer_lines:
-            lines.extend([f"- {line}" for line in offer_lines])
+            lines.extend([f"- {_html(line)}" for line in offer_lines])
         else:
             lines.append("- none")
 
@@ -544,7 +549,7 @@ def send_telegram(bot_token: str, chat_id: str, message: str) -> None:
 
         response = requests.post(
             TELEGRAM_SEND_URL.format(token=bot_token),
-            json={"chat_id": chat_id, "text": text},
+            json={"chat_id": chat_id, "text": text, "parse_mode": "HTML"},
             timeout=30,
         )
         response.raise_for_status()
