@@ -1,0 +1,43 @@
+name: Telegram Test Notification
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Optional custom test message
+        required: false
+        default: ""
+
+jobs:
+  send-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram test notification
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_MESSAGE: ${{ github.event.inputs.message }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ]; then
+            echo "Missing required secret: TELEGRAM_BOT_TOKEN"
+            exit 1
+          fi
+
+          if [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Missing required secret: TELEGRAM_CHAT_ID"
+            exit 1
+          fi
+
+          if [ -z "$TEST_MESSAGE" ]; then
+            TEST_MESSAGE="Culture Pass monitor test notification ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+          fi
+
+          RESPONSE=$(curl -sS -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${TEST_MESSAGE}")
+
+          echo "$RESPONSE"
+          echo "$RESPONSE" | grep -q '"ok":true' || {
+            echo "Telegram API request failed."
+            exit 1
+          }

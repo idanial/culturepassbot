@@ -41,6 +41,12 @@ The workflow runs every 6 hours (UTC) and can also be run manually:
 - File: `.github/workflows/culturepass-monitor.yml`
 - Trigger: `schedule` + `workflow_dispatch`
 
+Manual Telegram test button:
+
+- File: `.github/workflows/telegram-test.yml`
+- Trigger: `workflow_dispatch`
+- Optional input: `message`
+
 ## Local Run
 
 ```bash
