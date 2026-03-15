@@ -1,0 +1,39 @@
+name: Culture Pass Format Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  format-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
+      - name: Send format-check Telegram notification
+        env:
+          CULTUREPASS_URL: https://culturepassnyc.quipugroup.net/?NYPL
+          CULTUREPASS_USERNAME: ${{ secrets.CULTUREPASS_USERNAME }}
+          CULTUREPASS_PASSWORD: ${{ secrets.CULTUREPASS_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SNAPSHOT_PATH: data/attractions_snapshot.json
+          MONITOR_TIMEOUT_MS: "120000"
+          FORCE_NOTIFY: "true"
+          INCLUDE_EMPTY_SECTIONS: "true"
+          NO_SNAPSHOT_UPDATE: "true"
+        run: python scripts/monitor_culturepass.py

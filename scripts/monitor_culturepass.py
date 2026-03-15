@@ -196,24 +196,39 @@ def diff_attractions(
     return {"added": added, "removed": removed, "renamed": renamed}
 
 
-def build_message(changes: Dict[str, List], old_count: int, new_count: int) -> str:
+def build_message(
+    changes: Dict[str, List],
+    old_count: int,
+    new_count: int,
+    include_empty_sections: bool = False,
+    title: str = "Culture Pass update detected",
+) -> str:
     now_text = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    lines = [f"Culture Pass update detected ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
+    lines = [f"{title} ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
 
-    if changes["added"]:
+    if changes["added"] or include_empty_sections:
         lines.append("")
         lines.append(f"Added ({len(changes['added'])}):")
-        lines.extend([f"- {name}" for name in changes["added"]])
+        if changes["added"]:
+            lines.extend([f"- {name}" for name in changes["added"]])
+        else:
+            lines.append("- none")
 
-    if changes["removed"]:
+    if changes["removed"] or include_empty_sections:
         lines.append("")
         lines.append(f"Removed ({len(changes['removed'])}):")
-        lines.extend([f"- {name}" for name in changes["removed"]])
+        if changes["removed"]:
+            lines.extend([f"- {name}" for name in changes["removed"]])
+        else:
+            lines.append("- none")
 
-    if changes["renamed"]:
+    if changes["renamed"] or include_empty_sections:
         lines.append("")
         lines.append(f"Renamed ({len(changes['renamed'])}):")
-        lines.extend([f"- {old_name} -> {new_name}" for old_name, new_name in changes["renamed"]])
+        if changes["renamed"]:
+            lines.extend([f"- {old_name} -> {new_name}" for old_name, new_name in changes["renamed"]])
+        else:
+            lines.append("- none")
 
     return "\n".join(lines)
 
@@ -234,6 +249,13 @@ def send_telegram(bot_token: str, chat_id: str, message: str) -> None:
         raise RuntimeError(f"Telegram API returned failure: {payload}")
 
 
+def env_flag(name: str, default: bool = False) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "y", "on"}
+
+
 def env_required(name: str) -> str:
     value = os.getenv(name, "").strip()
     if not value:
@@ -246,7 +268,10 @@ def main() -> int:
     snapshot_path = Path(os.getenv("SNAPSHOT_PATH", str(DEFAULT_SNAPSHOT_PATH)))
     timeout_ms = int(os.getenv("MONITOR_TIMEOUT_MS", str(DEFAULT_TIMEOUT_MS)))
     headless = os.getenv("HEADLESS", "true").strip().lower() != "false"
-    send_on_first_run = os.getenv("SEND_ON_FIRST_RUN", "false").strip().lower() == "true"
+    send_on_first_run = env_flag("SEND_ON_FIRST_RUN", False)
+    force_notify = env_flag("FORCE_NOTIFY", False)
+    include_empty_sections = env_flag("INCLUDE_EMPTY_SECTIONS", False)
+    no_snapshot_update = env_flag("NO_SNAPSHOT_UPDATE", False)
 
     username = env_required("CULTUREPASS_USERNAME")
     password = env_required("CULTUREPASS_PASSWORD")
@@ -265,24 +290,44 @@ def main() -> int:
     changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
 
     if not old_snapshot:
-        save_snapshot(snapshot_path, new_snapshot)
-        print(f"Initialized snapshot with {len(new_snapshot)} attractions.")
-        if send_on_first_run:
+        if not no_snapshot_update:
+            save_snapshot(snapshot_path, new_snapshot)
+            print(f"Initialized snapshot with {len(new_snapshot)} attractions.")
+        else:
+            print(
+                f"Snapshot initialization skipped (NO_SNAPSHOT_UPDATE=true). "
+                f"Current attractions: {len(new_snapshot)}."
+            )
+
+        if send_on_first_run or force_notify:
             message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
             send_telegram(bot_token, chat_id, message)
             print("Initialization message sent to Telegram.")
         return 0
 
-    if not changed:
+    if not changed and not force_notify:
         print(f"No listing changes detected ({len(new_snapshot)} attractions).")
         return 0
 
-    message = build_message(changes, old_count=len(old_snapshot), new_count=len(new_snapshot))
+    title = "Culture Pass update detected" if changed else "Culture Pass format check (no changes)"
+    message = build_message(
+        changes,
+        old_count=len(old_snapshot),
+        new_count=len(new_snapshot),
+        include_empty_sections=include_empty_sections,
+        title=title,
+    )
     send_telegram(bot_token, chat_id, message)
-    print("Change notification sent to Telegram.")
+    if changed:
+        print("Change notification sent to Telegram.")
+    else:
+        print("Format-check notification sent to Telegram.")
 
-    save_snapshot(snapshot_path, new_snapshot)
-    print("Snapshot updated.")
+    if not no_snapshot_update:
+        save_snapshot(snapshot_path, new_snapshot)
+        print("Snapshot updated.")
+    else:
+        print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")
     return 0
 
 

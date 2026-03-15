@@ -47,6 +47,11 @@ Manual Telegram test button:
 - Trigger: `workflow_dispatch`
 - Optional input: `message`
 
+Manual format-check notification (uses real Culture Pass data and always sends):
+
+- File: `.github/workflows/culturepass-format-check.yml`
+- Trigger: `workflow_dispatch`
+
 ## Local Run
 
 ```bash
