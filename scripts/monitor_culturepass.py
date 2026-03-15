@@ -113,6 +113,14 @@ def _stable_sort_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
     )
 
 
+def _iter_response_items(raw: Any) -> List[Dict[str, Any]]:
+    if isinstance(raw, list):
+        return [item for item in raw if isinstance(item, dict)]
+    if isinstance(raw, dict):
+        return [item for item in raw.values() if isinstance(item, dict)]
+    return []
+
+
 def _chunk_message(message: str, limit: int) -> List[str]:
     lines = message.splitlines()
     chunks: List[str] = []
@@ -147,6 +155,21 @@ def _chunk_message(message: str, limit: int) -> List[str]:
         chunks.append(current)
 
     return chunks if chunks else [""]
+
+
+def _wait_for_authenticated_login(page: Any, timeout_ms: int) -> None:
+    page.wait_for_selector("#ePASSPatronNumber", timeout=timeout_ms)
+    page.wait_for_function(
+        """
+        () => {
+          if (!window.ePASS) return false;
+          const pid = ePASS.patronID;
+          return !!pid && pid !== 0 && pid !== "0";
+        }
+        """,
+        timeout=timeout_ms,
+    )
+    page.wait_for_selector("#ePASSLogoutLink", state="visible", timeout=timeout_ms)
 
 
 def _to_payload(attractions: Sequence[Attraction]) -> Dict[str, List[Dict[str, str]]]:
@@ -194,13 +217,12 @@ def fetch_attractions(
 
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-            page.wait_for_selector("#ePASSPatronNumber", timeout=timeout_ms)
             page.fill("#ePASSPatronNumber", username)
             page.fill("#ePASSPatronPassword", password)
             page.click("#ePASSButtonLogin")
 
             page.wait_for_selector(
-                "#ePASSNav, #ePASSLoginErrorMsg",
+                "#ePASSLoginErrorMsg, #ePASSLogoutLink",
                 timeout=timeout_ms,
             )
             if page.is_visible("#ePASSLoginErrorMsg"):
@@ -208,6 +230,7 @@ def fetch_attractions(
                 if error_text:
                     raise RuntimeError(f"Culture Pass login failed: {error_text}")
                 raise RuntimeError("Culture Pass login failed with an unknown error.")
+            _wait_for_authenticated_login(page, timeout_ms)
 
             if page.locator("#ePASSAllAttractionsAnchor").count() > 0:
                 page.click("#ePASSAllAttractionsAnchor")
@@ -330,22 +353,14 @@ def _query_offers_for_date(page: Any, date_selected: str, timeout_ms: int) -> Di
 
 def _extract_offer_entries(response: Dict[str, Any], fallback_date: str = "") -> List[OfferEntry]:
     selected_date = _normalize_name(str(response.get("dateSelected", ""))) or fallback_date
-    attraction_list = response.get("attractionList", [])
-    if not isinstance(attraction_list, list):
-        return []
+    attraction_items = _iter_response_items(response.get("attractionList", []))
 
     entries: List[OfferEntry] = []
-    for attraction_info in attraction_list:
-        if not isinstance(attraction_info, dict):
-            continue
+    for attraction_info in attraction_items:
         attraction_name = _normalize_name(str(attraction_info.get("name", "")))
-        offers = attraction_info.get("offers", [])
-        if not isinstance(offers, list):
-            continue
+        offers = _iter_response_items(attraction_info.get("offers", []))
 
         for offer_info in offers:
-            if not isinstance(offer_info, dict):
-                continue
             offer_title = _normalize_name(str(offer_info.get("offerTitle", "")))
             if not offer_title:
                 continue
@@ -403,6 +418,7 @@ def fetch_upcoming_offers(
     password: str,
     timeout_ms: int,
     lookahead_days: int,
+    query_timeout_ms: int,
     headless: bool = True,
 ) -> List[OfferEntry]:
     with sync_playwright() as playwright:
@@ -412,13 +428,12 @@ def fetch_upcoming_offers(
 
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
-            page.wait_for_selector("#ePASSPatronNumber", timeout=timeout_ms)
             page.fill("#ePASSPatronNumber", username)
             page.fill("#ePASSPatronPassword", password)
             page.click("#ePASSButtonLogin")
 
             page.wait_for_selector(
-                "#ePASSNav, #ePASSLoginErrorMsg",
+                "#ePASSLoginErrorMsg, #ePASSLogoutLink",
                 timeout=timeout_ms,
             )
             if page.is_visible("#ePASSLoginErrorMsg"):
@@ -426,8 +441,9 @@ def fetch_upcoming_offers(
                 if error_text:
                     raise RuntimeError(f"Culture Pass login failed while fetching offers: {error_text}")
                 raise RuntimeError("Culture Pass login failed while fetching offers.")
+            _wait_for_authenticated_login(page, timeout_ms)
 
-            first_response = _query_offers_for_date(page, "firstAvailable", timeout_ms)
+            first_response = _query_offers_for_date(page, "firstAvailable", query_timeout_ms)
             offer_entries = _extract_offer_entries(first_response)
 
             first_date_text = _normalize_name(str(first_response.get("dateSelected", "")))
@@ -436,7 +452,10 @@ def fetch_upcoming_offers(
             if first_date is not None and lookahead_days > 0:
                 for offset in range(1, lookahead_days + 1):
                     date_text = (first_date + timedelta(days=offset)).strftime("%Y-%m-%d")
-                    response = _query_offers_for_date(page, date_text, timeout_ms)
+                    try:
+                        response = _query_offers_for_date(page, date_text, query_timeout_ms)
+                    except RuntimeError:
+                        continue
                     if _normalize_name(str(response.get("status", ""))) != "Passed":
                         continue
                     offer_entries.extend(_extract_offer_entries(response, fallback_date=date_text))
@@ -584,8 +603,13 @@ def main() -> int:
     include_offer_list = env_flag("INCLUDE_OFFER_LIST", False)
     no_snapshot_update = env_flag("NO_SNAPSHOT_UPDATE", False)
     offers_lookahead_days = int(os.getenv("OFFERS_LOOKAHEAD_DAYS", "30"))
+    offers_query_timeout_ms = int(os.getenv("OFFERS_QUERY_TIMEOUT_MS", "25000"))
     if offers_lookahead_days < 0:
         offers_lookahead_days = 0
+    if offers_query_timeout_ms < 5000:
+        offers_query_timeout_ms = 5000
+    if offers_query_timeout_ms > timeout_ms:
+        offers_query_timeout_ms = timeout_ms
 
     username = env_required("CULTUREPASS_USERNAME")
     password = env_required("CULTUREPASS_PASSWORD")
@@ -608,6 +632,7 @@ def main() -> int:
             password=password,
             timeout_ms=timeout_ms,
             lookahead_days=offers_lookahead_days,
+            query_timeout_ms=offers_query_timeout_ms,
             headless=headless,
         )
         offer_lines = [_format_offer(item) for item in offers]

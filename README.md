@@ -53,6 +53,7 @@ Manual format-check notification (uses real Culture Pass data and always sends):
 - Trigger: `workflow_dispatch`
 - Includes full current attraction list in the Telegram output
 - Includes a separate date-based `Upcoming offers` list (lookahead configurable via `OFFERS_LOOKAHEAD_DAYS`)
+- Offer query timeout is configurable via `OFFERS_QUERY_TIMEOUT_MS`
 
 ## Local Run
 

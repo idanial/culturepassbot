@@ -37,6 +37,7 @@ jobs:
           INCLUDE_EMPTY_SECTIONS: "true"
           INCLUDE_CURRENT_LIST: "true"
           INCLUDE_OFFER_LIST: "true"
-          OFFERS_LOOKAHEAD_DAYS: "120"
+          OFFERS_LOOKAHEAD_DAYS: "45"
+          OFFERS_QUERY_TIMEOUT_MS: "25000"
           NO_SNAPSHOT_UPDATE: "true"
         run: python scripts/monitor_culturepass.py
