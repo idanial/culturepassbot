@@ -36,5 +36,7 @@ jobs:
           FORCE_NOTIFY: "true"
           INCLUDE_EMPTY_SECTIONS: "true"
           INCLUDE_CURRENT_LIST: "true"
+          INCLUDE_OFFER_LIST: "true"
+          OFFERS_LOOKAHEAD_DAYS: "120"
           NO_SNAPSHOT_UPDATE: "true"
         run: python scripts/monitor_culturepass.py

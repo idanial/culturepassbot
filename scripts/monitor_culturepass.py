@@ -7,9 +7,9 @@ import json
 import os
 import sys
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Sequence, Tuple
 
 import requests
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
@@ -28,14 +28,54 @@ class Attraction:
     name: str
 
 
+@dataclass(frozen=True)
+class OfferEntry:
+    date_text: str
+    attraction_name: str
+    offer_title: str
+    start_time: str
+    end_time: str
+    venue_name: str
+    offer_id: str
+
+
 def _normalize_name(name: str) -> str:
     return " ".join(name.split()).strip()
+
+
+def _try_parse_date(value: str) -> date | None:
+    text = _normalize_name(value)
+    if not text:
+        return None
+
+    formats = ("%Y-%m-%d", "%m-%d-%Y", "%m/%d/%Y", "%B %d, %Y", "%b %d, %Y")
+    for fmt in formats:
+        try:
+            return datetime.strptime(text, fmt).date()
+        except ValueError:
+            continue
+    return None
 
 
 def _stable_sort(attractions: Iterable[Attraction]) -> List[Attraction]:
     return sorted(
         attractions,
         key=lambda item: (item.name.casefold(), item.id.casefold()),
+    )
+
+
+def _stable_sort_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
+    return sorted(
+        offers,
+        key=lambda item: (
+            _try_parse_date(item.date_text) or date.max,
+            item.date_text.casefold(),
+            item.attraction_name.casefold(),
+            item.offer_title.casefold(),
+            item.start_time.casefold(),
+            item.end_time.casefold(),
+            item.offer_id.casefold(),
+        ),
     )
 
 
@@ -204,6 +244,178 @@ def fetch_attractions(
             browser.close()
 
 
+def _query_offers_for_date(page: Any, date_selected: str, timeout_ms: int) -> Dict[str, Any]:
+    response = page.evaluate(
+        """
+        async ({ dateSelected, timeoutMs }) => {
+          return await new Promise((resolve, reject) => {
+            if (typeof ePASSAPIRequest !== "function" || !window.ePASS || !ePASS.apiURL) {
+              reject(new Error("ePASS API bridge is unavailable."));
+              return;
+            }
+
+            const ajaxData = {
+              dataType: "json",
+              method: "ePASS_Search",
+              functionFile: "Attractions",
+              searchType: "Offers",
+              dateSelected,
+              limits: "",
+              language: ePASS.language || "en"
+            };
+
+            let completed = false;
+            const timer = setTimeout(() => {
+              if (completed) return;
+              completed = true;
+              reject(new Error(`ePASS_Search timeout for dateSelected=${dateSelected}`));
+            }, timeoutMs);
+
+            try {
+              ePASSAPIRequest(ePASS.apiURL, ajaxData, (data) => {
+                if (completed) return;
+                completed = true;
+                clearTimeout(timer);
+                resolve(data || {});
+              });
+            } catch (error) {
+              if (completed) return;
+              completed = true;
+              clearTimeout(timer);
+              reject(error);
+            }
+          });
+        }
+        """,
+        {"dateSelected": date_selected, "timeoutMs": timeout_ms},
+    )
+    if not isinstance(response, dict):
+        raise RuntimeError(f"Unexpected offers response for {date_selected}: {response}")
+    return response
+
+
+def _extract_offer_entries(response: Dict[str, Any], fallback_date: str = "") -> List[OfferEntry]:
+    selected_date = _normalize_name(str(response.get("dateSelected", ""))) or fallback_date
+    attraction_list = response.get("attractionList", [])
+    if not isinstance(attraction_list, list):
+        return []
+
+    entries: List[OfferEntry] = []
+    for attraction_info in attraction_list:
+        if not isinstance(attraction_info, dict):
+            continue
+        attraction_name = _normalize_name(str(attraction_info.get("name", "")))
+        offers = attraction_info.get("offers", [])
+        if not isinstance(offers, list):
+            continue
+
+        for offer_info in offers:
+            if not isinstance(offer_info, dict):
+                continue
+            offer_title = _normalize_name(str(offer_info.get("offerTitle", "")))
+            if not offer_title:
+                continue
+
+            entries.append(
+                OfferEntry(
+                    date_text=selected_date,
+                    attraction_name=attraction_name,
+                    offer_title=offer_title,
+                    start_time=_normalize_name(str(offer_info.get("startTime", ""))),
+                    end_time=_normalize_name(str(offer_info.get("endTime", ""))),
+                    venue_name=_normalize_name(str(offer_info.get("venueName", ""))),
+                    offer_id=_normalize_name(str(offer_info.get("offerID", ""))),
+                )
+            )
+    return entries
+
+
+def _dedupe_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
+    unique: Dict[Tuple[str, str, str, str, str, str, str], OfferEntry] = {}
+    for entry in offers:
+        key = (
+            entry.date_text,
+            entry.attraction_name,
+            entry.offer_title,
+            entry.start_time,
+            entry.end_time,
+            entry.venue_name,
+            entry.offer_id,
+        )
+        unique[key] = entry
+    return _stable_sort_offers(unique.values())
+
+
+def _format_offer(entry: OfferEntry) -> str:
+    time_range = ""
+    if entry.start_time and entry.end_time:
+        time_range = f"{entry.start_time} - {entry.end_time}"
+    elif entry.start_time:
+        time_range = entry.start_time
+    elif entry.end_time:
+        time_range = entry.end_time
+
+    parts = [part for part in (entry.date_text, entry.attraction_name, entry.offer_title, time_range, entry.venue_name) if part]
+    return " | ".join(parts)
+
+
+def fetch_upcoming_offers(
+    url: str,
+    username: str,
+    password: str,
+    timeout_ms: int,
+    lookahead_days: int,
+    headless: bool = True,
+) -> List[OfferEntry]:
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=headless)
+        context = browser.new_context()
+        page = context.new_page()
+
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+            page.wait_for_selector("#ePASSPatronNumber", timeout=timeout_ms)
+            page.fill("#ePASSPatronNumber", username)
+            page.fill("#ePASSPatronPassword", password)
+            page.click("#ePASSButtonLogin")
+
+            page.wait_for_selector(
+                "#ePASSNav, #ePASSLoginErrorMsg",
+                timeout=timeout_ms,
+            )
+            if page.is_visible("#ePASSLoginErrorMsg"):
+                error_text = _normalize_name(page.locator("#ePASSLoginErrorMsg").inner_text())
+                if error_text:
+                    raise RuntimeError(f"Culture Pass login failed while fetching offers: {error_text}")
+                raise RuntimeError("Culture Pass login failed while fetching offers.")
+
+            first_response = _query_offers_for_date(page, "firstAvailable", timeout_ms)
+            offer_entries = _extract_offer_entries(first_response)
+
+            first_date_text = _normalize_name(str(first_response.get("dateSelected", "")))
+            first_date = _try_parse_date(first_date_text)
+
+            if first_date is not None and lookahead_days > 0:
+                for offset in range(1, lookahead_days + 1):
+                    date_text = (first_date + timedelta(days=offset)).strftime("%Y-%m-%d")
+                    response = _query_offers_for_date(page, date_text, timeout_ms)
+                    if _normalize_name(str(response.get("status", ""))) != "Passed":
+                        continue
+                    offer_entries.extend(_extract_offer_entries(response, fallback_date=date_text))
+
+            return _dedupe_offers(offer_entries)
+
+        except PlaywrightTimeoutError as exc:
+            screenshot_name = f"debug-offers-timeout-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}.png"
+            page.screenshot(path=screenshot_name, full_page=True)
+            raise RuntimeError(
+                f"Timed out while loading Culture Pass offers. Saved screenshot: {screenshot_name}"
+            ) from exc
+        finally:
+            context.close()
+            browser.close()
+
+
 def diff_attractions(
     old_items: Sequence[Attraction],
     new_items: Sequence[Attraction],
@@ -239,6 +451,7 @@ def build_message(
     include_empty_sections: bool = False,
     title: str = "Culture Pass update detected",
     current_names: Sequence[str] | None = None,
+    offer_lines: Sequence[str] | None = None,
 ) -> str:
     now_text = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     lines = [f"{title} ({now_text})", f"Total attractions: {new_count} (previously {old_count})"]
@@ -272,6 +485,14 @@ def build_message(
         lines.append(f"Current attractions ({len(current_names)}):")
         if current_names:
             lines.extend([f"- {name}" for name in current_names])
+        else:
+            lines.append("- none")
+
+    if offer_lines is not None:
+        lines.append("")
+        lines.append(f"Upcoming offers ({len(offer_lines)}):")
+        if offer_lines:
+            lines.extend([f"- {line}" for line in offer_lines])
         else:
             lines.append("- none")
 
@@ -322,7 +543,11 @@ def main() -> int:
     force_notify = env_flag("FORCE_NOTIFY", False)
     include_empty_sections = env_flag("INCLUDE_EMPTY_SECTIONS", False)
     include_current_list = env_flag("INCLUDE_CURRENT_LIST", False)
+    include_offer_list = env_flag("INCLUDE_OFFER_LIST", False)
     no_snapshot_update = env_flag("NO_SNAPSHOT_UPDATE", False)
+    offers_lookahead_days = int(os.getenv("OFFERS_LOOKAHEAD_DAYS", "30"))
+    if offers_lookahead_days < 0:
+        offers_lookahead_days = 0
 
     username = env_required("CULTUREPASS_USERNAME")
     password = env_required("CULTUREPASS_PASSWORD")
@@ -337,6 +562,18 @@ def main() -> int:
         timeout_ms=timeout_ms,
         headless=headless,
     )
+    offer_lines: List[str] | None = None
+    if include_offer_list:
+        offers = fetch_upcoming_offers(
+            url=url,
+            username=username,
+            password=password,
+            timeout_ms=timeout_ms,
+            lookahead_days=offers_lookahead_days,
+            headless=headless,
+        )
+        offer_lines = [_format_offer(item) for item in offers]
+
     changes = diff_attractions(old_snapshot, new_snapshot)
     changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
 
@@ -351,7 +588,18 @@ def main() -> int:
             )
 
         if send_on_first_run or force_notify:
-            message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
+            if force_notify and (include_current_list or include_offer_list or include_empty_sections):
+                message = build_message(
+                    changes=diff_attractions([], new_snapshot),
+                    old_count=0,
+                    new_count=len(new_snapshot),
+                    include_empty_sections=include_empty_sections,
+                    title="Culture Pass format check (initial snapshot)",
+                    current_names=[item.name for item in new_snapshot] if include_current_list else None,
+                    offer_lines=offer_lines,
+                )
+            else:
+                message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
             send_telegram(bot_token, chat_id, message)
             print("Initialization message sent to Telegram.")
         return 0
@@ -369,6 +617,7 @@ def main() -> int:
         include_empty_sections=include_empty_sections,
         title=title,
         current_names=current_names,
+        offer_lines=offer_lines,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
