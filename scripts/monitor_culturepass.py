@@ -5,9 +5,10 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
-from html import escape
+from html import escape, unescape
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -90,6 +91,25 @@ def _format_timestamp(value: datetime) -> str:
 
 def _html(text: str) -> str:
     return escape(text, quote=False)
+
+
+def _contains_explicit_event_date(text: str) -> bool:
+    value = _normalize_name(unescape(text))
+    if not value:
+        return False
+
+    numeric_date = re.search(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b", value)
+    if numeric_date:
+        return True
+
+    month_date = re.search(
+        r"\b(?:jan|january|feb|february|mar|march|apr|april|may|jun|june|"
+        r"jul|july|aug|august|sep|sept|september|oct|october|nov|november|"
+        r"dec|december)\s+\d{1,2},?\s+\d{2,4}\b",
+        value,
+        flags=re.IGNORECASE,
+    )
+    return month_date is not None
 
 
 def _stable_sort(attractions: Iterable[Attraction]) -> List[Attraction]:
@@ -362,8 +382,13 @@ def _extract_offer_entries(response: Dict[str, Any], fallback_date: str = "") ->
         offers = _iter_response_items(attraction_info.get("offers", []))
 
         for offer_info in offers:
-            offer_title = _normalize_name(str(offer_info.get("offerTitle", "")))
+            offer_title = _normalize_name(unescape(str(offer_info.get("offerTitle", ""))))
             if not offer_title:
+                continue
+            internal_offer_name = _normalize_name(unescape(str(offer_info.get("internalOfferName", ""))))
+
+            # Keep only event-style offers that explicitly include a date token.
+            if not (_contains_explicit_event_date(offer_title) or _contains_explicit_event_date(internal_offer_name)):
                 continue
 
             entries.append(
