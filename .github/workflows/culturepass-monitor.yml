@@ -38,6 +38,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SNAPSHOT_PATH: data/attractions_snapshot.json
           MONITOR_TIMEOUT_MS: "120000"
+          SEND_ON_FIRST_RUN: "true"
         run: python scripts/monitor_culturepass.py
 
       - name: Commit snapshot updates
