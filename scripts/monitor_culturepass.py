@@ -13,6 +13,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Sequence, Tuple
+from zoneinfo import ZoneInfo
 
 import requests
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
@@ -23,6 +24,7 @@ DEFAULT_SNAPSHOT_PATH = Path("data/attractions_snapshot.json")
 DEFAULT_TIMEOUT_MS = 90000
 TELEGRAM_SEND_URL = "https://api.telegram.org/bot{token}/sendMessage"
 TELEGRAM_TEXT_LIMIT = 4000
+LOCAL_TIMEZONE = ZoneInfo("America/New_York")
 
 
 @dataclass(frozen=True)
@@ -86,7 +88,8 @@ def _format_timestamp(value: datetime) -> str:
     month = value.strftime("%b")
     hour = value.strftime("%I").lstrip("0") or "0"
     am_pm = value.strftime("%p")
-    return f"{month} {value.day}, {value.year} {hour}:{value.strftime('%M')} {am_pm} UTC"
+    zone_label = value.tzname() or "ET"
+    return f"{month} {value.day}, {value.year} {hour}:{value.strftime('%M')} {am_pm} {zone_label}"
 
 
 def _html(text: str) -> str:
@@ -421,21 +424,45 @@ def _dedupe_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
     return _stable_sort_offers(unique.values())
 
 
-def _format_offer(entry: OfferEntry) -> str:
+def _format_grouped_offer_line(entry: OfferEntry) -> str:
     date_display = _format_date_readable(entry.date_text)
     start_display = _normalize_time(entry.start_time)
     end_display = _normalize_time(entry.end_time)
-
     datetime_display = date_display
     if start_display and end_display:
         datetime_display = f"{date_display} {start_display} - {end_display}"
     elif start_display:
         datetime_display = f"{date_display} {start_display}"
     elif end_display:
-        datetime_display = f"{date_display} {end_display}"
+        datetime_display = f"{date_display} - {end_display}"
 
-    parts = [part for part in (datetime_display, entry.attraction_name, entry.offer_title, entry.venue_name) if part]
-    return " | ".join(parts)
+    parts = [part for part in (datetime_display, entry.attraction_name) if part]
+    return " ".join(parts)
+
+
+def _group_offers_by_venue(offers: Sequence[OfferEntry]) -> List[Tuple[str, List[OfferEntry]]]:
+    grouped: Dict[str, List[OfferEntry]] = {}
+    for entry in offers:
+        venue_name = _normalize_name(entry.venue_name) or "Unknown venue"
+        grouped.setdefault(venue_name, []).append(entry)
+
+    grouped_items = sorted(grouped.items(), key=lambda item: item[0].casefold())
+    return [
+        (
+            venue_name,
+            sorted(
+                venue_entries,
+                key=lambda item: (
+                    _try_parse_date(item.date_text) or date.max,
+                    item.date_text.casefold(),
+                    _normalize_time(item.start_time),
+                    item.attraction_name.casefold(),
+                    item.offer_title.casefold(),
+                ),
+            ),
+        )
+        for venue_name, venue_entries in grouped_items
+    ]
 
 
 def fetch_upcoming_offers(
@@ -535,9 +562,9 @@ def build_message(
     include_empty_sections: bool = False,
     title: str = "Culture Pass update detected",
     current_names: Sequence[str] | None = None,
-    offer_lines: Sequence[str] | None = None,
+    offer_entries: Sequence[OfferEntry] | None = None,
 ) -> str:
-    now_text = _format_timestamp(datetime.now(timezone.utc))
+    now_text = _format_timestamp(datetime.now(LOCAL_TIMEZONE))
     lines = [f"{_html(title)} ({_html(now_text)})", f"Total attractions: {new_count} (previously {old_count})"]
 
     if changes["added"] or include_empty_sections:
@@ -572,11 +599,16 @@ def build_message(
         else:
             lines.append("- none")
 
-    if offer_lines is not None:
+    if offer_entries is not None:
         lines.append("")
-        lines.append(f"<b>Upcoming offers ({len(offer_lines)}):</b>")
-        if offer_lines:
-            lines.extend([f"- {_html(line)}" for line in offer_lines])
+        lines.append(f"<b>Upcoming offers ({len(offer_entries)}):</b>")
+        if offer_entries:
+            grouped_offers = _group_offers_by_venue(offer_entries)
+            for index, (venue_name, venue_offers) in enumerate(grouped_offers):
+                if index > 0:
+                    lines.append("")
+                lines.append(f"<b>{_html(venue_name)}</b>")
+                lines.extend([f"- {_html(_format_grouped_offer_line(entry))}" for entry in venue_offers])
         else:
             lines.append("- none")
 
@@ -675,9 +707,9 @@ def main() -> int:
         timeout_ms=timeout_ms,
         headless=headless,
     )
-    offer_lines: List[str] | None = None
+    offer_entries: List[OfferEntry] | None = None
     if include_offer_list:
-        offers = fetch_upcoming_offers(
+        offer_entries = fetch_upcoming_offers(
             url=url,
             username=username,
             password=password,
@@ -686,7 +718,6 @@ def main() -> int:
             query_timeout_ms=offers_query_timeout_ms,
             headless=headless,
         )
-        offer_lines = [_format_offer(item) for item in offers]
 
     changes = diff_attractions(old_snapshot, new_snapshot)
     changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
@@ -710,7 +741,7 @@ def main() -> int:
                     include_empty_sections=include_empty_sections,
                     title="Culture Pass format check (initial snapshot)",
                     current_names=[item.name for item in new_snapshot] if include_current_list else None,
-                    offer_lines=offer_lines,
+                    offer_entries=offer_entries,
                 )
             else:
                 message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
@@ -731,7 +762,7 @@ def main() -> int:
         include_empty_sections=include_empty_sections,
         title=title,
         current_names=current_names,
-        offer_lines=offer_lines,
+        offer_entries=offer_entries,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
