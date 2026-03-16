@@ -637,7 +637,7 @@ def build_message(
             for index, (venue_name, venue_offers) in enumerate(grouped_offers):
                 if index > 0:
                     lines.append("")
-                lines.append(f"<b>{_html(venue_name)}</b>")
+                lines.append(f"<b>{place_label(venue_name)}</b>")
                 lines.extend([f"- {_html(_format_grouped_offer_line(entry))}" for entry in venue_offers])
         else:
             lines.append("- none")
