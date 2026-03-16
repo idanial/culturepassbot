@@ -587,6 +587,7 @@ def build_message(
     current_names: Sequence[str] | None = None,
     offer_entries: Sequence[OfferEntry] | None = None,
     name_links: Dict[str, str] | None = None,
+    offer_venue_links: Dict[str, str] | None = None,
 ) -> str:
     def place_label(name: str) -> str:
         linked_url = ""
@@ -637,7 +638,12 @@ def build_message(
             for index, (venue_name, venue_offers) in enumerate(grouped_offers):
                 if index > 0:
                     lines.append("")
-                lines.append(f"<b>{place_label(venue_name)}</b>")
+                venue_url = ""
+                if offer_venue_links is not None:
+                    venue_url = offer_venue_links.get(venue_name.casefold(), "")
+                if not venue_url and name_links is not None:
+                    venue_url = name_links.get(venue_name.casefold(), "")
+                lines.append(f"<b>{_telegram_link(venue_name, venue_url)}</b>")
                 lines.extend([f"- {_html(_format_grouped_offer_line(entry))}" for entry in venue_offers])
         else:
             lines.append("- none")
@@ -653,6 +659,24 @@ def _build_name_link_map(*snapshots: Sequence[Attraction]) -> Dict[str, str]:
             value = _normalize_url(item.url)
             if value:
                 links[key] = value
+    return links
+
+
+def _build_offer_venue_link_map(
+    offer_entries: Sequence[OfferEntry] | None,
+    name_links: Dict[str, str],
+) -> Dict[str, str]:
+    if not offer_entries:
+        return {}
+
+    links: Dict[str, str] = {}
+    for entry in offer_entries:
+        venue_key = entry.venue_name.casefold()
+        if not venue_key or venue_key in links:
+            continue
+        attraction_url = name_links.get(entry.attraction_name.casefold(), "")
+        if attraction_url:
+            links[venue_key] = attraction_url
     return links
 
 
@@ -763,6 +787,7 @@ def main() -> int:
     changes = diff_attractions(old_snapshot, new_snapshot)
     changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
     name_links = _build_name_link_map(old_snapshot, new_snapshot)
+    offer_venue_links = _build_offer_venue_link_map(offer_entries, name_links)
 
     if not old_snapshot:
         if not no_snapshot_update:
@@ -785,6 +810,7 @@ def main() -> int:
                     current_names=[item.name for item in new_snapshot] if include_current_list else None,
                     offer_entries=offer_entries,
                     name_links=name_links,
+                    offer_venue_links=offer_venue_links,
                 )
             else:
                 message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
@@ -807,6 +833,7 @@ def main() -> int:
         current_names=current_names,
         offer_entries=offer_entries,
         name_links=name_links,
+        offer_venue_links=offer_venue_links,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
