@@ -31,6 +31,7 @@ LOCAL_TIMEZONE = ZoneInfo("America/New_York")
 class Attraction:
     id: str
     name: str
+    url: str = ""
 
 
 @dataclass(frozen=True)
@@ -94,6 +95,21 @@ def _format_timestamp(value: datetime) -> str:
 
 def _html(text: str) -> str:
     return escape(text, quote=False)
+
+
+def _normalize_url(value: str) -> str:
+    text = value.strip()
+    if text.startswith("http://") or text.startswith("https://"):
+        return text
+    return ""
+
+
+def _telegram_link(label: str, url: str) -> str:
+    safe_label = _html(label)
+    safe_url = _normalize_url(url)
+    if not safe_url:
+        return safe_label
+    return f'<a href="{escape(safe_url, quote=True)}">{safe_label}</a>'
 
 
 def _contains_explicit_event_date(text: str) -> bool:
@@ -197,7 +213,7 @@ def _wait_for_authenticated_login(page: Any, timeout_ms: int) -> None:
 
 def _to_payload(attractions: Sequence[Attraction]) -> Dict[str, List[Dict[str, str]]]:
     return {
-        "attractions": [{"id": item.id, "name": item.name} for item in attractions],
+        "attractions": [{"id": item.id, "name": item.name, "url": item.url} for item in attractions],
     }
 
 
@@ -211,9 +227,10 @@ def load_snapshot(snapshot_path: Path) -> List[Attraction]:
     for raw_item in raw_items:
         raw_id = str(raw_item.get("id", "")).strip()
         raw_name = _normalize_name(str(raw_item.get("name", "")))
+        raw_url = _normalize_url(str(raw_item.get("url", "")))
         if not raw_name:
             continue
-        snapshot.append(Attraction(id=raw_id, name=raw_name))
+        snapshot.append(Attraction(id=raw_id, name=raw_name, url=raw_url))
     return _stable_sort(snapshot)
 
 
@@ -279,7 +296,9 @@ def fetch_attractions(
                     if (!rawName) continue;
 
                     const rawId = normalize(row.id.replace('ePASSAttractionDiv', ''));
-                    mapped.push({ id: rawId, name: rawName });
+                    const anchorNode = nameNode.closest('a') || row.querySelector('a[href]');
+                    const rawUrl = anchorNode && anchorNode.href ? normalize(anchorNode.href) : "";
+                    mapped.push({ id: rawId, name: rawName, url: rawUrl });
                   }
 
                   if (mapped.length > 0) {
@@ -292,6 +311,10 @@ def fetch_attractions(
                     .map((node, index) => ({
                       id: `fallback-${index}`,
                       name: normalize(node.textContent),
+                      url: (() => {
+                        const anchorNode = node.closest('a') || node.parentElement?.querySelector('a[href]');
+                        return anchorNode && anchorNode.href ? normalize(anchorNode.href) : "";
+                      })(),
                     }))
                     .filter((item) => item.name.length > 0);
                 }
@@ -304,10 +327,11 @@ def fetch_attractions(
             for row in rows:
                 attraction_id = str(row.get("id", "")).strip()
                 name = _normalize_name(str(row.get("name", "")))
+                url_value = _normalize_url(str(row.get("url", "")))
                 if not name:
                     continue
                 key = (attraction_id, name.casefold())
-                unique[key] = Attraction(id=attraction_id, name=name)
+                unique[key] = Attraction(id=attraction_id, name=name, url=url_value)
 
             attractions = _stable_sort(unique.values())
             if not attractions:
@@ -436,8 +460,7 @@ def _format_grouped_offer_line(entry: OfferEntry) -> str:
     elif end_display:
         datetime_display = f"{date_display} - {end_display}"
 
-    parts = [part for part in (datetime_display, entry.attraction_name) if part]
-    return " ".join(parts)
+    return datetime_display
 
 
 def _group_offers_by_venue(offers: Sequence[OfferEntry]) -> List[Tuple[str, List[OfferEntry]]]:
@@ -563,7 +586,14 @@ def build_message(
     title: str = "Culture Pass update detected",
     current_names: Sequence[str] | None = None,
     offer_entries: Sequence[OfferEntry] | None = None,
+    name_links: Dict[str, str] | None = None,
 ) -> str:
+    def place_label(name: str) -> str:
+        linked_url = ""
+        if name_links is not None:
+            linked_url = name_links.get(name.casefold(), "")
+        return _telegram_link(name, linked_url)
+
     now_text = _format_timestamp(datetime.now(LOCAL_TIMEZONE))
     lines = [f"{_html(title)} ({_html(now_text)})", f"Total attractions: {new_count} (previously {old_count})"]
 
@@ -571,7 +601,7 @@ def build_message(
         lines.append("")
         lines.append(f"<b>Added ({len(changes['added'])}):</b>")
         if changes["added"]:
-            lines.extend([f"- {_html(name)}" for name in changes["added"]])
+            lines.extend([f"- {place_label(name)}" for name in changes["added"]])
         else:
             lines.append("- none")
 
@@ -579,7 +609,7 @@ def build_message(
         lines.append("")
         lines.append(f"<b>Removed ({len(changes['removed'])}):</b>")
         if changes["removed"]:
-            lines.extend([f"- {_html(name)}" for name in changes["removed"]])
+            lines.extend([f"- {place_label(name)}" for name in changes["removed"]])
         else:
             lines.append("- none")
 
@@ -587,7 +617,7 @@ def build_message(
         lines.append("")
         lines.append(f"<b>Renamed ({len(changes['renamed'])}):</b>")
         if changes["renamed"]:
-            lines.extend([f"- {_html(old_name)} -> {_html(new_name)}" for old_name, new_name in changes["renamed"]])
+            lines.extend([f"- {place_label(old_name)} -> {place_label(new_name)}" for old_name, new_name in changes["renamed"]])
         else:
             lines.append("- none")
 
@@ -595,7 +625,7 @@ def build_message(
         lines.append("")
         lines.append(f"<b>Current attractions ({len(current_names)}):</b>")
         if current_names:
-            lines.extend([f"- {_html(name)}" for name in current_names])
+            lines.extend([f"- {place_label(name)}" for name in current_names])
         else:
             lines.append("- none")
 
@@ -613,6 +643,17 @@ def build_message(
             lines.append("- none")
 
     return "\n".join(lines)
+
+
+def _build_name_link_map(*snapshots: Sequence[Attraction]) -> Dict[str, str]:
+    links: Dict[str, str] = {}
+    for snapshot in snapshots:
+        for item in snapshot:
+            key = item.name.casefold()
+            value = _normalize_url(item.url)
+            if value:
+                links[key] = value
+    return links
 
 
 def send_telegram(bot_token: str, chat_id: str, message: str) -> None:
@@ -721,6 +762,7 @@ def main() -> int:
 
     changes = diff_attractions(old_snapshot, new_snapshot)
     changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
+    name_links = _build_name_link_map(old_snapshot, new_snapshot)
 
     if not old_snapshot:
         if not no_snapshot_update:
@@ -742,6 +784,7 @@ def main() -> int:
                     title="Culture Pass format check (initial snapshot)",
                     current_names=[item.name for item in new_snapshot] if include_current_list else None,
                     offer_entries=offer_entries,
+                    name_links=name_links,
                 )
             else:
                 message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
@@ -763,6 +806,7 @@ def main() -> int:
         title=title,
         current_names=current_names,
         offer_entries=offer_entries,
+        name_links=name_links,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
