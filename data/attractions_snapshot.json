@@ -2,335 +2,413 @@
   "attractions": [
     {
       "id": "102",
-      "name": "AKC Museum of the Dog"
+      "name": "AKC Museum of the Dog",
+      "url": "https://museumofthedog.org/"
     },
     {
       "id": "61",
-      "name": "Alice Austen House"
+      "name": "Alice Austen House",
+      "url": "http://www.aliceausten.org/"
     },
     {
       "id": "42",
-      "name": "American Museum of Natural History"
+      "name": "American Museum of Natural History",
+      "url": "https://www.amnh.org/"
     },
     {
       "id": "50",
-      "name": "Asia Society Museum"
+      "name": "Asia Society Museum",
+      "url": "https://asiasociety.org/new-york"
     },
     {
       "id": "43",
-      "name": "Bard Graduate Center Gallery"
+      "name": "Bard Graduate Center Gallery",
+      "url": "https://www.bgc.bard.edu/"
     },
     {
       "id": "72",
-      "name": "Bartow-Pell Mansion Museum"
+      "name": "Bartow-Pell Mansion Museum",
+      "url": "http://www.bpmm.org/"
     },
     {
       "id": "122",
-      "name": "Bronx Children's Museum"
+      "name": "Bronx Children's Museum",
+      "url": "https://www.bronxchildrensmuseum.org/"
     },
     {
       "id": "77",
-      "name": "Bronx Museum of the Arts"
+      "name": "Bronx Museum of the Arts",
+      "url": "http://bronxmuseum.org/"
     },
     {
       "id": "1",
-      "name": "Brooklyn Botanic Garden"
+      "name": "Brooklyn Botanic Garden",
+      "url": "https://www.bbg.org/"
     },
     {
       "id": "2",
-      "name": "Brooklyn Children's Museum"
+      "name": "Brooklyn Children's Museum",
+      "url": "https://www.brooklynkids.org/"
     },
     {
       "id": "4",
-      "name": "Brooklyn Museum"
+      "name": "Brooklyn Museum",
+      "url": "https://www.brooklynmuseum.org/"
     },
     {
       "id": "94",
-      "name": "Brooklyn Music School"
+      "name": "Brooklyn Music School",
+      "url": "https://brooklynmusicschool.org/"
     },
     {
       "id": "133",
-      "name": "Center for Book Arts"
+      "name": "Center for Book Arts",
+      "url": "https://centerforbookarts.org/"
     },
     {
       "id": "127",
-      "name": "Center for Fiction"
+      "name": "Center for Fiction",
+      "url": "https://centerforfiction.org/"
     },
     {
       "id": "120",
-      "name": "Central Park Conservancy"
+      "name": "Central Park Conservancy",
+      "url": "https://centralparknyc.org/"
     },
     {
       "id": "13",
-      "name": "Children's Museum of Manhattan"
+      "name": "Children's Museum of Manhattan",
+      "url": "https://cmom.org/"
     },
     {
       "id": "45",
-      "name": "China Institute in America"
+      "name": "China Institute in America",
+      "url": "https://www.chinainstitute.org/"
     },
     {
       "id": "20",
-      "name": "Cooper Hewitt, Smithsonian Design Museum"
+      "name": "Cooper Hewitt, Smithsonian Design Museum",
+      "url": "https://www.cooperhewitt.org/"
     },
     {
       "id": "123",
-      "name": "Derfner Judaica Museum"
+      "name": "Derfner Judaica Museum",
+      "url": "https://www.derfner.org/"
     },
     {
       "id": "93",
-      "name": "Dessoff Choirs"
+      "name": "Dessoff Choirs",
+      "url": "http://www.dessoff.org/"
     },
     {
       "id": "79",
-      "name": "Dyckman Farmhouse Museum"
+      "name": "Dyckman Farmhouse Museum",
+      "url": "http://www.dyckmanfarmhouse.org/"
     },
     {
       "id": "128",
-      "name": "Edgar Allen Poe Cottage"
+      "name": "Edgar Allen Poe Cottage",
+      "url": "https://bronxhistoricalsociety.org/poe-cottage"
     },
     {
       "id": "91",
-      "name": "El Museo del Barrio"
+      "name": "El Museo del Barrio",
+      "url": "http://www.elmuseo.org/"
     },
     {
       "id": "126",
-      "name": "Film Forum"
+      "name": "Film Forum",
+      "url": "https://www.filmforum.org/"
     },
     {
       "id": "75",
-      "name": "Flushing Town Hall"
+      "name": "Flushing Town Hall",
+      "url": "http://www.flushingtownhall.org/"
     },
     {
       "id": "44",
-      "name": "Fraunces Tavern Museum"
+      "name": "Fraunces Tavern Museum",
+      "url": "http://www.frauncestavernmuseum.org/"
     },
     {
       "id": "31",
-      "name": "Historic Richmond Town"
+      "name": "Historic Richmond Town",
+      "url": "https://www.historicrichmondtown.org/"
     },
     {
       "id": "136",
-      "name": "Hostos Center for the Arts & Culture"
+      "name": "Hostos Center for the Arts & Culture",
+      "url": "https://www.hostos.cuny.edu/culturearts/"
     },
     {
       "id": "23",
-      "name": "International Center of Photography"
+      "name": "International Center of Photography",
+      "url": "https://www.icp.org/"
     },
     {
       "id": "81",
-      "name": "International Studio & Curatorial Program"
+      "name": "International Studio & Curatorial Program",
+      "url": "http://iscp-nyc.org/"
     },
     {
       "id": "6",
-      "name": "Intrepid Museum"
+      "name": "Intrepid Museum",
+      "url": "https://www.intrepidmuseum.org/"
     },
     {
       "id": "106",
-      "name": "Jackie Robinson Museum"
+      "name": "Jackie Robinson Museum",
+      "url": "https://www.jackierobinsonmuseum.org/"
     },
     {
       "id": "54",
-      "name": "Japan Society"
+      "name": "Japan Society",
+      "url": "https://www.japansociety.org/"
     },
     {
       "id": "96",
-      "name": "Kaufman Music Center"
+      "name": "Kaufman Music Center",
+      "url": "https://www.kaufmanmusiccenter.org/"
     },
     {
       "id": "70",
-      "name": "King Manor Museum"
+      "name": "King Manor Museum",
+      "url": "http://www.kingmanor.org/"
     },
     {
       "id": "121",
-      "name": "Leslie-Lohman Museum of Art"
+      "name": "Leslie-Lohman Museum of Art",
+      "url": "https://leslielohman.org/"
     },
     {
       "id": "39",
-      "name": "Lewis H. Latimer House Museum"
+      "name": "Lewis H. Latimer House Museum",
+      "url": "https://latimernow.org/"
     },
     {
       "id": "38",
-      "name": "MoMA PS1"
+      "name": "MoMA PS1",
+      "url": "http://momaps1.org/"
     },
     {
       "id": "71",
-      "name": "Museum at Eldridge Street"
+      "name": "Museum at Eldridge Street",
+      "url": "http://eldridgestreet.org/"
     },
     {
       "id": "46",
-      "name": "Museum of Arts and Design"
+      "name": "Museum of Arts and Design",
+      "url": "https://www.madmuseum.org/"
     },
     {
       "id": "109",
-      "name": "Museum of Bronx History"
+      "name": "Museum of Bronx History",
+      "url": "https://www.bronxhistoricalsociety.org/"
     },
     {
       "id": "12",
-      "name": "Museum of Chinese in America"
+      "name": "Museum of Chinese in America",
+      "url": "http://www.mocanyc.org/"
     },
     {
       "id": "134",
-      "name": "Museum of Contemporary African Diasporan Arts"
+      "name": "Museum of Contemporary African Diasporan Arts",
+      "url": "https://www.mocada.org/"
     },
     {
       "id": "17",
-      "name": "Museum of Jewish Heritage - A Living Memorial to the Holocaust"
+      "name": "Museum of Jewish Heritage - A Living Memorial to the Holocaust",
+      "url": "https://mjhnyc.org/"
     },
     {
       "id": "111",
-      "name": "Museum of Reclaimed Urban Space"
+      "name": "Museum of Reclaimed Urban Space",
+      "url": "http://www.morusnyc.org/"
     },
     {
       "id": "11",
-      "name": "Museum of the City of New York"
+      "name": "Museum of the City of New York",
+      "url": "http://www.mcny.org/"
     },
     {
       "id": "60",
-      "name": "Museum of the Moving Image"
+      "name": "Museum of the Moving Image",
+      "url": "http://www.movingimage.org/"
     },
     {
       "id": "65",
-      "name": "National Lighthouse Museum"
+      "name": "National Lighthouse Museum",
+      "url": "http://lighthousemuseum.org/"
     },
     {
       "id": "48",
-      "name": "New Museum"
+      "name": "New Museum",
+      "url": "https://www.newmuseum.org/"
     },
     {
       "id": "47",
-      "name": "New York Botanical Garden"
+      "name": "New York Botanical Garden",
+      "url": "https://www.nybg.org/"
     },
     {
       "id": "25",
-      "name": "New York Transit Museum"
+      "name": "New York Transit Museum",
+      "url": "http://www.nytransitmuseum.org/"
     },
     {
       "id": "92",
-      "name": "New York Youth Symphony"
+      "name": "New York Youth Symphony",
+      "url": "https://nyys.org/"
     },
     {
       "id": "57",
-      "name": "Peoples' Symphony Concerts"
+      "name": "Peoples' Symphony Concerts",
+      "url": "https://culturepassnyc.quipugroup.net/www.pscny.org"
     },
     {
       "id": "59",
-      "name": "Poster House"
+      "name": "Poster House",
+      "url": "http://www.posterhouse.org/"
     },
     {
       "id": "98",
-      "name": "Pregones/PRTT"
+      "name": "Pregones/PRTT",
+      "url": "https://pregonesprtt.org/"
     },
     {
       "id": "62",
-      "name": "Queens Botanical Garden"
+      "name": "Queens Botanical Garden",
+      "url": "http://www.queensbotanical.org/"
     },
     {
       "id": "36",
-      "name": "Queens Museum"
+      "name": "Queens Museum",
+      "url": "http://queensmuseum.org/"
     },
     {
       "id": "14",
-      "name": "SculptureCenter"
-    },
-    {
-      "id": "51",
-      "name": "Second Stage Theater"
+      "name": "SculptureCenter",
+      "url": "http://www.sculpture-center.org/"
     },
     {
       "id": "37",
-      "name": "Smithsonian National Museum of the American Indian"
+      "name": "Smithsonian National Museum of the American Indian",
+      "url": "http://americanindian.si.edu/"
     },
     {
       "id": "5",
-      "name": "Society of Illustrators"
+      "name": "Society of Illustrators",
+      "url": "http://www.societyillustrators.org/"
     },
     {
       "id": "33",
-      "name": "Solomon R. Guggenheim Museum"
+      "name": "Solomon R. Guggenheim Museum",
+      "url": "https://www.guggenheim.org/"
     },
     {
       "id": "90",
-      "name": "Staten Island Museum"
+      "name": "Staten Island Museum",
+      "url": "https://culturepassnyc.quipugroup.net/?NYPL"
     },
     {
       "id": "30",
-      "name": "Sugar Hill Children's Museum of Art & Storytelling"
+      "name": "Sugar Hill Children's Museum of Art & Storytelling",
+      "url": "http://www.sugarhillmuseum.org/"
     },
     {
       "id": "52",
-      "name": "Swiss Institute"
+      "name": "Swiss Institute",
+      "url": "https://www.swissinstitute.net/"
     },
     {
       "id": "117",
-      "name": "The Brant Foundation"
+      "name": "The Brant Foundation",
+      "url": "https://www.brantfoundation.org/"
     },
     {
       "id": "15",
-      "name": "The Drawing Center"
+      "name": "The Drawing Center",
+      "url": "http://www.drawingcenter.org/"
     },
     {
       "id": "26",
-      "name": "The Frick Collection"
+      "name": "The Frick Collection",
+      "url": "https://www.frick.org/"
     },
     {
       "id": "118",
-      "name": "The Jazz Gallery"
+      "name": "The Jazz Gallery",
+      "url": "https://jazzgallery.org/"
     },
     {
       "id": "27",
-      "name": "The Jewish Museum"
+      "name": "The Jewish Museum",
+      "url": "https://thejewishmuseum.org/"
     },
     {
       "id": "115",
-      "name": "The Met Cloisters"
+      "name": "The Met Cloisters",
+      "url": "https://www.metmuseum.org/cloisters"
     },
     {
       "id": "34",
-      "name": "The Metropolitan Museum of Art"
+      "name": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/"
     },
     {
       "id": "28",
-      "name": "The Morgan Library & Museum"
+      "name": "The Morgan Library & Museum",
+      "url": "https://www.themorgan.org/"
     },
     {
       "id": "10",
-      "name": "The Museum of Modern Art"
+      "name": "The Museum of Modern Art",
+      "url": "https://www.moma.org/"
     },
     {
       "id": "53",
-      "name": "The New York Historical"
+      "name": "The New York Historical",
+      "url": "https://www.nyhistory.org/"
     },
     {
       "id": "41",
-      "name": "The Noble Maritime Collection"
+      "name": "The Noble Maritime Collection",
+      "url": "http://www.noblemaritime.org/"
     },
     {
       "id": "8",
-      "name": "The Noguchi Museum"
+      "name": "The Noguchi Museum",
+      "url": "http://www.noguchi.org/"
     },
     {
       "id": "78",
-      "name": "Ukrainian Museum"
+      "name": "Ukrainian Museum",
+      "url": "http://www.theukrainianmuseum.org/"
     },
     {
       "id": "67",
-      "name": "Van Cortlandt House Museum"
+      "name": "Van Cortlandt House Museum",
+      "url": "http://www.vchm.org/"
     },
     {
       "id": "22",
-      "name": "Wave Hill"
+      "name": "Wave Hill",
+      "url": "https://www.wavehill.org/"
     },
     {
       "id": "16",
-      "name": "Whitney Museum of American Art"
+      "name": "Whitney Museum of American Art",
+      "url": "https://whitney.org/"
     },
     {
       "id": "104",
-      "name": "Wollman Rink"
+      "name": "Wollman Rink",
+      "url": "https://wollmanrinknyc.com/"
     },
     {
       "id": "69",
-      "name": "Wyckoff House Museum"
+      "name": "Wyckoff House Museum",
+      "url": "http://www.wyckoffmuseum.org/"
     }
   ]
 }
