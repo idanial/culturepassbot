@@ -161,6 +161,11 @@
       "url": "https://www.jackierobinsonmuseum.org/"
     },
     {
+      "id": "24",
+      "name": "Jacques Marchais Museum of Tibetan Art",
+      "url": "https://www.tibetanmuseum.org/"
+    },
+    {
       "id": "54",
       "name": "Japan Society",
       "url": "https://www.japansociety.org/"
@@ -379,6 +384,11 @@
       "id": "8",
       "name": "The Noguchi Museum",
       "url": "http://www.noguchi.org/"
+    },
+    {
+      "id": "108",
+      "name": "The Town Hall",
+      "url": "https://www.thetownhall.org/"
     },
     {
       "id": "78",
