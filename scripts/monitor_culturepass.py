@@ -607,7 +607,7 @@ def build_message(
         else:
             lines.append("- none")
 
-    if offer_entries is not None and (changes["added"] or include_empty_sections):
+    if not include_full_offer_list and offer_entries is not None and (changes["added"] or include_empty_sections):
         added_names = {name.casefold() for name in changes["added"]}
         added_offers = [entry for entry in offer_entries if entry.attraction_name.casefold() in added_names]
         lines.append("")
