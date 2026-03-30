@@ -588,6 +588,7 @@ def build_message(
     offer_entries: Sequence[OfferEntry] | None = None,
     name_links: Dict[str, str] | None = None,
     offer_venue_links: Dict[str, str] | None = None,
+    include_full_offer_list: bool = False,
 ) -> str:
     def place_label(name: str) -> str:
         linked_url = ""
@@ -603,6 +604,26 @@ def build_message(
         lines.append(f"<b>Added ({len(changes['added'])}):</b>")
         if changes["added"]:
             lines.extend([f"- {place_label(name)}" for name in changes["added"]])
+        else:
+            lines.append("- none")
+
+    if not include_full_offer_list and offer_entries is not None and (changes["added"] or include_empty_sections):
+        added_names = {name.casefold() for name in changes["added"]}
+        added_offers = [entry for entry in offer_entries if entry.attraction_name.casefold() in added_names]
+        lines.append("")
+        lines.append(f"<b>Upcoming offers for newly added places ({len(added_offers)}):</b>")
+        if added_offers:
+            grouped_added_offers = _group_offers_by_venue(added_offers)
+            for index, (venue_name, venue_offers) in enumerate(grouped_added_offers):
+                if index > 0:
+                    lines.append("")
+                venue_url = ""
+                if offer_venue_links is not None:
+                    venue_url = offer_venue_links.get(venue_name.casefold(), "")
+                if not venue_url and name_links is not None:
+                    venue_url = name_links.get(venue_name.casefold(), "")
+                lines.append(f"<b>{_telegram_link(venue_name, venue_url)}</b>")
+                lines.extend([f"- {_html(_format_grouped_offer_line(entry))}" for entry in venue_offers])
         else:
             lines.append("- none")
 
@@ -630,7 +651,7 @@ def build_message(
         else:
             lines.append("- none")
 
-    if offer_entries is not None:
+    if include_full_offer_list and offer_entries is not None:
         lines.append("")
         lines.append(f"<b>Upcoming offers ({len(offer_entries)}):</b>")
         if offer_entries:
@@ -772,8 +793,11 @@ def main() -> int:
         timeout_ms=timeout_ms,
         headless=headless,
     )
+    changes = diff_attractions(old_snapshot, new_snapshot)
+    changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
+    include_added_place_offers = bool(old_snapshot and changes["added"])
     offer_entries: List[OfferEntry] | None = None
-    if include_offer_list:
+    if include_offer_list or include_added_place_offers:
         offer_entries = fetch_upcoming_offers(
             url=url,
             username=username,
@@ -783,9 +807,6 @@ def main() -> int:
             query_timeout_ms=offers_query_timeout_ms,
             headless=headless,
         )
-
-    changes = diff_attractions(old_snapshot, new_snapshot)
-    changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
     name_links = _build_name_link_map(old_snapshot, new_snapshot)
     offer_venue_links = _build_offer_venue_link_map(offer_entries, name_links)
 
@@ -811,6 +832,7 @@ def main() -> int:
                     offer_entries=offer_entries,
                     name_links=name_links,
                     offer_venue_links=offer_venue_links,
+                    include_full_offer_list=include_offer_list,
                 )
             else:
                 message = f"Culture Pass monitor initialized with {len(new_snapshot)} attractions."
@@ -834,6 +856,7 @@ def main() -> int:
         offer_entries=offer_entries,
         name_links=name_links,
         offer_venue_links=offer_venue_links,
+        include_full_offer_list=include_offer_list,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
