@@ -21,6 +21,7 @@ from playwright.sync_api import sync_playwright
 
 DEFAULT_URL = "https://culturepassnyc.quipugroup.net/?NYPL"
 DEFAULT_SNAPSHOT_PATH = Path("data/attractions_snapshot.json")
+DEFAULT_OFFERS_SNAPSHOT_PATH = Path("data/offers_snapshot.json")
 DEFAULT_TIMEOUT_MS = 90000
 TELEGRAM_SEND_URL = "https://api.telegram.org/bot{token}/sendMessage"
 TELEGRAM_TEXT_LIMIT = 4000
@@ -217,6 +218,23 @@ def _to_payload(attractions: Sequence[Attraction]) -> Dict[str, List[Dict[str, s
     }
 
 
+def _offers_to_payload(offers: Sequence[OfferEntry]) -> Dict[str, List[Dict[str, str]]]:
+    return {
+        "offers": [
+            {
+                "date_text": item.date_text,
+                "attraction_name": item.attraction_name,
+                "offer_title": item.offer_title,
+                "start_time": item.start_time,
+                "end_time": item.end_time,
+                "venue_name": item.venue_name,
+                "offer_id": item.offer_id,
+            }
+            for item in offers
+        ],
+    }
+
+
 def load_snapshot(snapshot_path: Path) -> List[Attraction]:
     if not snapshot_path.exists():
         return []
@@ -234,6 +252,37 @@ def load_snapshot(snapshot_path: Path) -> List[Attraction]:
     return _stable_sort(snapshot)
 
 
+def load_offers_snapshot(snapshot_path: Path) -> List[OfferEntry]:
+    if not snapshot_path.exists():
+        return []
+
+    data = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    raw_items = data.get("offers", [])
+    snapshot: List[OfferEntry] = []
+    for raw_item in raw_items:
+        date_text = _normalize_name(str(raw_item.get("date_text", "")))
+        attraction_name = _normalize_name(str(raw_item.get("attraction_name", "")))
+        offer_title = _normalize_name(str(raw_item.get("offer_title", "")))
+        start_time = _normalize_name(str(raw_item.get("start_time", "")))
+        end_time = _normalize_name(str(raw_item.get("end_time", "")))
+        venue_name = _normalize_name(str(raw_item.get("venue_name", "")))
+        offer_id = _normalize_name(str(raw_item.get("offer_id", "")))
+        if not offer_title:
+            continue
+        snapshot.append(
+            OfferEntry(
+                date_text=date_text,
+                attraction_name=attraction_name,
+                offer_title=offer_title,
+                start_time=start_time,
+                end_time=end_time,
+                venue_name=venue_name,
+                offer_id=offer_id,
+            )
+        )
+    return _dedupe_offers(snapshot)
+
+
 def save_snapshot(snapshot_path: Path, attractions: Sequence[Attraction]) -> None:
     snapshot_path.parent.mkdir(parents=True, exist_ok=True)
     payload = _to_payload(attractions)
@@ -241,6 +290,43 @@ def save_snapshot(snapshot_path: Path, attractions: Sequence[Attraction]) -> Non
         json.dumps(payload, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+
+
+def save_offers_snapshot(snapshot_path: Path, offers: Sequence[OfferEntry]) -> None:
+    snapshot_path.parent.mkdir(parents=True, exist_ok=True)
+    payload = _offers_to_payload(_dedupe_offers(offers))
+    snapshot_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=True, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def count_added_offers(old_offers: Sequence[OfferEntry], new_offers: Sequence[OfferEntry]) -> int:
+    old_keys = {
+        (
+            entry.date_text,
+            entry.attraction_name,
+            entry.offer_title,
+            entry.start_time,
+            entry.end_time,
+            entry.venue_name,
+            entry.offer_id,
+        )
+        for entry in old_offers
+    }
+    new_keys = {
+        (
+            entry.date_text,
+            entry.attraction_name,
+            entry.offer_title,
+            entry.start_time,
+            entry.end_time,
+            entry.venue_name,
+            entry.offer_id,
+        )
+        for entry in new_offers
+    }
+    return len(new_keys - old_keys)
 
 
 def fetch_attractions(
@@ -763,6 +849,7 @@ def env_required(name: str) -> str:
 def main() -> int:
     url = os.getenv("CULTUREPASS_URL", DEFAULT_URL).strip() or DEFAULT_URL
     snapshot_path = Path(os.getenv("SNAPSHOT_PATH", str(DEFAULT_SNAPSHOT_PATH)))
+    offers_snapshot_path = Path(os.getenv("OFFERS_SNAPSHOT_PATH", str(DEFAULT_OFFERS_SNAPSHOT_PATH)))
     timeout_ms = int(os.getenv("MONITOR_TIMEOUT_MS", str(DEFAULT_TIMEOUT_MS)))
     headless = os.getenv("HEADLESS", "true").strip().lower() != "false"
     send_on_first_run = env_flag("SEND_ON_FIRST_RUN", False)
@@ -786,6 +873,7 @@ def main() -> int:
     chat_id = env_required("TELEGRAM_CHAT_ID")
 
     old_snapshot = load_snapshot(snapshot_path)
+    old_offers_snapshot = load_offers_snapshot(offers_snapshot_path) if include_offer_list else []
     new_snapshot = fetch_attractions(
         url=url,
         username=username,
@@ -794,7 +882,7 @@ def main() -> int:
         headless=headless,
     )
     changes = diff_attractions(old_snapshot, new_snapshot)
-    changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
+    listing_changed = bool(changes["added"] or changes["removed"] or changes["renamed"])
     include_added_place_offers = bool(old_snapshot and changes["added"])
     offer_entries: List[OfferEntry] | None = None
     if include_offer_list or include_added_place_offers:
@@ -807,12 +895,17 @@ def main() -> int:
             query_timeout_ms=offers_query_timeout_ms,
             headless=headless,
         )
+    added_offer_count = count_added_offers(old_offers_snapshot, offer_entries) if include_offer_list and offer_entries is not None else 0
+    offer_additions_detected = added_offer_count > 0
+    changed = listing_changed or offer_additions_detected
     name_links = _build_name_link_map(old_snapshot, new_snapshot)
     offer_venue_links = _build_offer_venue_link_map(offer_entries, name_links)
 
     if not old_snapshot:
         if not no_snapshot_update:
             save_snapshot(snapshot_path, new_snapshot)
+            if include_offer_list and offer_entries is not None:
+                save_offers_snapshot(offers_snapshot_path, offer_entries)
             print(f"Initialized snapshot with {len(new_snapshot)} attractions.")
         else:
             print(
@@ -841,10 +934,25 @@ def main() -> int:
         return 0
 
     if not changed and not force_notify:
-        print(f"No listing changes detected ({len(new_snapshot)} attractions).")
+        print(f"No listing changes or newly added offers detected ({len(new_snapshot)} attractions).")
+        if not no_snapshot_update:
+            save_snapshot(snapshot_path, new_snapshot)
+            if include_offer_list and offer_entries is not None:
+                save_offers_snapshot(offers_snapshot_path, offer_entries)
+            print("Snapshot updated.")
+        else:
+            print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")
         return 0
 
-    title = "Culture Pass update detected" if changed else "Culture Pass format check (no changes)"
+    if changed:
+        if listing_changed and offer_additions_detected:
+            title = f"Culture Pass update detected (listings + {added_offer_count} new offers)"
+        elif listing_changed:
+            title = "Culture Pass update detected (listings)"
+        else:
+            title = f"Culture Pass update detected ({added_offer_count} new offers)"
+    else:
+        title = "Culture Pass format check (no changes)"
     current_names = [item.name for item in new_snapshot] if include_current_list else None
     message = build_message(
         changes,
@@ -866,6 +974,8 @@ def main() -> int:
 
     if not no_snapshot_update:
         save_snapshot(snapshot_path, new_snapshot)
+        if include_offer_list and offer_entries is not None:
+            save_offers_snapshot(offers_snapshot_path, offer_entries)
         print("Snapshot updated.")
     else:
         print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")

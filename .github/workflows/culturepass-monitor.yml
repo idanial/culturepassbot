@@ -37,8 +37,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           SNAPSHOT_PATH: data/attractions_snapshot.json
+          OFFERS_SNAPSHOT_PATH: data/offers_snapshot.json
           MONITOR_TIMEOUT_MS: "120000"
           SEND_ON_FIRST_RUN: "true"
+          INCLUDE_OFFER_LIST: "true"
         run: python scripts/monitor_culturepass.py
 
       - name: Upload debug screenshots
@@ -51,12 +53,12 @@ jobs:
 
       - name: Commit snapshot updates
         run: |
-          if git diff --quiet -- data/attractions_snapshot.json; then
+          if git diff --quiet -- data/attractions_snapshot.json data/offers_snapshot.json; then
             echo "No snapshot changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/attractions_snapshot.json
-          git commit -m "chore: update culture pass attractions snapshot"
+          git add data/attractions_snapshot.json data/offers_snapshot.json
+          git commit -m "chore: update culture pass snapshots"
           git push
