@@ -302,31 +302,7 @@ def save_offers_snapshot(snapshot_path: Path, offers: Sequence[OfferEntry]) -> N
 
 
 def count_added_offers(old_offers: Sequence[OfferEntry], new_offers: Sequence[OfferEntry]) -> int:
-    old_keys = {
-        (
-            entry.date_text,
-            entry.attraction_name,
-            entry.offer_title,
-            entry.start_time,
-            entry.end_time,
-            entry.venue_name,
-            entry.offer_id,
-        )
-        for entry in old_offers
-    }
-    new_keys = {
-        (
-            entry.date_text,
-            entry.attraction_name,
-            entry.offer_title,
-            entry.start_time,
-            entry.end_time,
-            entry.venue_name,
-            entry.offer_id,
-        )
-        for entry in new_offers
-    }
-    return len(new_keys - old_keys)
+    return len(set(new_offers) - set(old_offers))
 
 
 def fetch_attractions(
@@ -901,6 +877,15 @@ def main() -> int:
     name_links = _build_name_link_map(old_snapshot, new_snapshot)
     offer_venue_links = _build_offer_venue_link_map(offer_entries, name_links)
 
+    def persist_snapshots() -> None:
+        if not no_snapshot_update:
+            save_snapshot(snapshot_path, new_snapshot)
+            if include_offer_list and offer_entries is not None:
+                save_offers_snapshot(offers_snapshot_path, offer_entries)
+            print("Snapshot updated.")
+        else:
+            print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")
+
     if not old_snapshot:
         if not no_snapshot_update:
             save_snapshot(snapshot_path, new_snapshot)
@@ -935,13 +920,7 @@ def main() -> int:
 
     if not changed and not force_notify:
         print(f"No listing changes or newly added offers detected ({len(new_snapshot)} attractions).")
-        if not no_snapshot_update:
-            save_snapshot(snapshot_path, new_snapshot)
-            if include_offer_list and offer_entries is not None:
-                save_offers_snapshot(offers_snapshot_path, offer_entries)
-            print("Snapshot updated.")
-        else:
-            print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")
+        persist_snapshots()
         return 0
 
     if changed:
@@ -972,13 +951,7 @@ def main() -> int:
     else:
         print("Format-check notification sent to Telegram.")
 
-    if not no_snapshot_update:
-        save_snapshot(snapshot_path, new_snapshot)
-        if include_offer_list and offer_entries is not None:
-            save_offers_snapshot(offers_snapshot_path, offer_entries)
-        print("Snapshot updated.")
-    else:
-        print("Snapshot update skipped (NO_SNAPSHOT_UPDATE=true).")
+    persist_snapshots()
     return 0
 
 
