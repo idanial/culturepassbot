@@ -1,0 +1,274 @@
+{
+  "offers": [
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "April 3, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5905",
+      "offer_title": "04/03/26 - Culture Pass - YOAH - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "April 4, 2026",
+      "end_time": "1:00 PM",
+      "offer_id": "5907",
+      "offer_title": "04/04/26 - Culture Pass - YOAH - 12:00 PM",
+      "start_time": "12:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "April 5, 2026",
+      "end_time": "1:00 PM",
+      "offer_id": "5909",
+      "offer_title": "04/05/26 - Culture Pass - YOAH - 12:00 PM",
+      "start_time": "12:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "April 5, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5911",
+      "offer_title": "04/05/26 - Culture Pass - YOAH - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "April 8, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "5872",
+      "offer_title": "04/08/26 - Culture Pass - April Monthly Jazz Jam Honoring Billie Holiday - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 8, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5944",
+      "offer_title": "04/08/26 - Culture Pass - Long Good Thursday (Screening) - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 8, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5876",
+      "offer_title": "04/08/26 - Culture Pass - Nathan Reising Quintet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 9, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5887",
+      "offer_title": "04/09/26 - Culture Pass - The Wedding March - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 9, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5946",
+      "offer_title": "04/09/26 - Culture Pass - Rachmaninoff's Piano Concerto (Concert) - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 9, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5878",
+      "offer_title": "04/09/26 - Culture Pass - Skylar Tang Quartet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "April 10, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5812",
+      "offer_title": "04/10/26 - Culture Pass - Poiesis Quartet & Amiri Harewood, piano - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "April 11, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "5885",
+      "offer_title": "04/11/26 - Culture Pass - GLOBAL MASHUP: Brooklyn World Wide Comes to Queens - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "April 14, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "5814",
+      "offer_title": "04/14/26 - Culture Pass - Miriam K. Smith, cello - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "April 15, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5850",
+      "offer_title": "04/15/26 - Culture Pass - The International Library presents Olga Ravn on The Wax Child - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 15, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5948",
+      "offer_title": "04/15/26 - Culture Pass - Sudden Outbursts of Emotions (Screening) - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 15, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5938",
+      "offer_title": "04/15/26 - Culture Pass - Amir ElSaffar New Quartet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 16, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5940",
+      "offer_title": "04/16/26 - Culture Pass - Shawn Lovato\u2019s Biotic - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Hostos Center for the Arts & Culture",
+      "date_text": "April 17, 2026",
+      "end_time": "11:45 AM",
+      "offer_id": "5917",
+      "offer_title": "04/17/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 10:30 AM",
+      "start_time": "10:30 AM",
+      "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "Hostos Center for the Arts & Culture",
+      "date_text": "April 19, 2026",
+      "end_time": "4:15 AM",
+      "offer_id": "5918",
+      "offer_title": "04/19/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 3:00 PM",
+      "start_time": "3:00 AM",
+      "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "April 22, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5851",
+      "offer_title": "04/22/26 - Culture Pass - Genre-Defying Authors Patrick Cottrell and Jordy Rosenberg in Conversation with Andrea Lawlor - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 23, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5942",
+      "offer_title": "04/23/26 - Culture Pass - Anthony Tidd: Quite Sane - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 24, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5930",
+      "offer_title": "04/24/26 - Culture Pass - The Wedding March - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "April 25, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5886",
+      "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
+      "start_time": "2:15 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 25, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5931",
+      "offer_title": "04/25/26 - Culture Pass - The Wedding March - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 26, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5932",
+      "offer_title": "04/26/26 - Culture Pass - The Wedding March - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "April 27, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5883",
+      "offer_title": "04/27/26 - Culture Pass - Bernstein's Wall",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "April 28, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5884",
+      "offer_title": "04/28/26 - Culture Pass - Bernstein's Wall",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "April 30, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5853",
+      "offer_title": "04/30/26 - Culture Pass - Presents Tom Perrotta on Ghost Town with Teddy Wayne - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 30, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5950",
+      "offer_title": "04/09/26 - Culture Pass - Rachmaninoff's Piano Concerto (Concert) - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "May 1, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5952",
+      "offer_title": "05/01/26 - Culture Pass - Jessie Montgomery & The Everything Band - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
+    }
+  ]
+}
