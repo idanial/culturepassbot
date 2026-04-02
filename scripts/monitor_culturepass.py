@@ -301,8 +301,8 @@ def save_offers_snapshot(snapshot_path: Path, offers: Sequence[OfferEntry]) -> N
     )
 
 
-def count_added_offers(old_offers: Sequence[OfferEntry], new_offers: Sequence[OfferEntry]) -> int:
-    return len(set(new_offers) - set(old_offers))
+def get_added_offers(old_offers: Sequence[OfferEntry], new_offers: Sequence[OfferEntry]) -> List[OfferEntry]:
+    return _stable_sort_offers(set(new_offers) - set(old_offers))
 
 
 def fetch_attractions(
@@ -513,16 +513,25 @@ def _dedupe_offers(offers: Iterable[OfferEntry]) -> List[OfferEntry]:
 def _format_grouped_offer_line(entry: OfferEntry) -> str:
     date_display = _format_date_readable(entry.date_text)
     start_display = _normalize_time(entry.start_time)
-    end_display = _normalize_time(entry.end_time)
     datetime_display = date_display
-    if start_display and end_display:
-        datetime_display = f"{date_display} {start_display} - {end_display}"
-    elif start_display:
+    if start_display:
         datetime_display = f"{date_display} {start_display}"
-    elif end_display:
-        datetime_display = f"{date_display} - {end_display}"
 
+    offer_name = _extract_offer_name(entry.offer_title)
+    if offer_name:
+        return f"{offer_name} ({datetime_display})"
     return datetime_display
+
+
+def _extract_offer_name(offer_title: str) -> str:
+    title = _normalize_name(unescape(offer_title))
+    if not title:
+        return ""
+
+    title = re.sub(r"^\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\s*-\s*", "", title, count=1)
+    title = re.sub(r"^Culture Pass\s*-\s*", "", title, count=1, flags=re.IGNORECASE)
+    title = re.sub(r"\s*-\s*\d{1,2}(?::\d{2})?\s*[AP]M\s*$", "", title, count=1, flags=re.IGNORECASE)
+    return _normalize_name(title)
 
 
 def _group_offers_by_venue(offers: Sequence[OfferEntry]) -> List[Tuple[str, List[OfferEntry]]]:
@@ -651,6 +660,7 @@ def build_message(
     name_links: Dict[str, str] | None = None,
     offer_venue_links: Dict[str, str] | None = None,
     include_full_offer_list: bool = False,
+    offer_section_title: str = "Upcoming offers",
 ) -> str:
     def place_label(name: str) -> str:
         linked_url = ""
@@ -715,7 +725,7 @@ def build_message(
 
     if include_full_offer_list and offer_entries is not None:
         lines.append("")
-        lines.append(f"<b>Upcoming offers ({len(offer_entries)}):</b>")
+        lines.append(f"<b>{_html(offer_section_title)} ({len(offer_entries)}):</b>")
         if offer_entries:
             grouped_offers = _group_offers_by_venue(offer_entries)
             for index, (venue_name, venue_offers) in enumerate(grouped_offers):
@@ -871,7 +881,12 @@ def main() -> int:
             query_timeout_ms=offers_query_timeout_ms,
             headless=headless,
         )
-    added_offer_count = count_added_offers(old_offers_snapshot, offer_entries) if include_offer_list and offer_entries is not None else 0
+    added_offer_entries = (
+        get_added_offers(old_offers_snapshot, offer_entries)
+        if include_offer_list and offer_entries is not None
+        else []
+    )
+    added_offer_count = len(added_offer_entries)
     offer_additions_detected = added_offer_count > 0
     changed = listing_changed or offer_additions_detected
     name_links = _build_name_link_map(old_snapshot, new_snapshot)
@@ -933,6 +948,11 @@ def main() -> int:
     else:
         title = "Culture Pass format check (no changes)"
     current_names = [item.name for item in new_snapshot] if include_current_list else None
+    message_offer_entries = offer_entries
+    offer_section_title = "Upcoming offers"
+    if include_offer_list and added_offer_entries:
+        message_offer_entries = added_offer_entries
+        offer_section_title = "New offers"
     message = build_message(
         changes,
         old_count=len(old_snapshot),
@@ -940,10 +960,11 @@ def main() -> int:
         include_empty_sections=include_empty_sections,
         title=title,
         current_names=current_names,
-        offer_entries=offer_entries,
+        offer_entries=message_offer_entries,
         name_links=name_links,
         offer_venue_links=offer_venue_links,
         include_full_offer_list=include_offer_list,
+        offer_section_title=offer_section_title,
     )
     send_telegram(bot_token, chat_id, message)
     if changed:
