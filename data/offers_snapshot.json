@@ -2,15 +2,6 @@
   "offers": [
     {
       "attraction_name": "New Victory Theater",
-      "date_text": "April 3, 2026",
-      "end_time": "6:00 PM",
-      "offer_id": "5905",
-      "offer_title": "04/03/26 - Culture Pass - YOAH - 5:00 PM",
-      "start_time": "5:00 PM",
-      "venue_name": "New Victory Theater"
-    },
-    {
-      "attraction_name": "New Victory Theater",
       "date_text": "April 4, 2026",
       "end_time": "1:00 PM",
       "offer_id": "5907",
@@ -161,15 +152,6 @@
       "offer_title": "04/19/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 3:00 PM",
       "start_time": "3:00 AM",
       "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "STREB Lab for Action Mechanics",
-      "date_text": "April 19, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "5897",
-      "offer_title": "04/19/26 - Culture Pass - INTO THIN AIR - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "STREB Lab for Action Mechanics"
     },
     {
       "attraction_name": "Center for Fiction",
