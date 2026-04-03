@@ -28,15 +28,6 @@
       "venue_name": "Flushing Town Hall"
     },
     {
-      "attraction_name": "Scandinavia House",
-      "date_text": "April 8, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5944",
-      "offer_title": "04/08/26 - Culture Pass - Long Good Thursday (Screening) - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Scandinavia House"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 9, 2026",
       "end_time": "10:15 PM",
@@ -155,15 +146,6 @@
     },
     {
       "attraction_name": "Film Forum",
-      "date_text": "April 27, 2026",
-      "end_time": "7:00 PM",
-      "offer_id": "5883",
-      "offer_title": "04/27/26 - Culture Pass - Bernstein's Wall",
-      "start_time": "7:00 PM",
-      "venue_name": "Film Forum"
-    },
-    {
-      "attraction_name": "Film Forum",
       "date_text": "April 28, 2026",
       "end_time": "7:00 PM",
       "offer_id": "5884",
@@ -179,15 +161,6 @@
       "offer_title": "04/30/26 - Culture Pass - Presents Tom Perrotta on Ghost Town with Teddy Wayne - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Scandinavia House",
-      "date_text": "April 30, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5949",
-      "offer_title": "04/09/26 - Culture Pass - Rachmaninoff's Piano Concerto (Concert) - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Scandinavia House"
     },
     {
       "attraction_name": "Kaufman Music Center",
