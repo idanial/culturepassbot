@@ -950,7 +950,7 @@ def main() -> int:
     current_names = [item.name for item in new_snapshot] if include_current_list else None
     message_offer_entries = offer_entries
     offer_section_title = "Upcoming offers"
-    if include_offer_list and added_offer_entries:
+    if include_offer_list and changed:
         message_offer_entries = added_offer_entries
         offer_section_title = "New offers"
     message = build_message(
