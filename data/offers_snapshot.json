@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "April 8, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5957",
+      "offer_title": "04/08/26 - Culture Pass - Bochinchando: April Fools Comedy - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "April 8, 2026",
       "end_time": "10:00 PM",
@@ -10,6 +19,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 8, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5876",
+      "offer_title": "04/08/26 - Culture Pass - Nathan Reising Quintet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "April 10, 2026",
       "end_time": "9:00 PM",
@@ -17,6 +35,15 @@
       "offer_title": "04/10/26 - Culture Pass - Poiesis Quartet & Amiri Harewood, piano - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "April 11, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5958",
+      "offer_title": "04/11/26 - Culture Pass - BRONX RISING! King Joseph Chatoyer, the Garifuna Resistance, and the US: A Musical Tribute - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -73,6 +100,15 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "April 17, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "5960",
+      "offer_title": "04/17/26 - Culture Pass - S\u014d Percussion Unplugged - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - LeFrak Concert Hall"
+    },
+    {
       "attraction_name": "Hostos Center for the Arts & Culture",
       "date_text": "April 19, 2026",
       "end_time": "4:15 AM",
@@ -100,6 +136,24 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Young Concert Artists",
+      "date_text": "April 23, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "5962",
+      "offer_title": "04/23/26 - Culture Pass (Dual) - James Baik, cello - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Merkin Hall at Kaufman Music Center"
+    },
+    {
+      "attraction_name": "Young Concert Artists",
+      "date_text": "April 23, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "5963",
+      "offer_title": "04/23/26 - Culture Pass (Single) - James Baik, cello - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Merkin Hall at Kaufman Music Center"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "April 25, 2026",
       "end_time": "4:00 PM",
@@ -107,6 +161,15 @@
       "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
       "start_time": "2:15 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "April 30, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5959",
+      "offer_title": "04/30/26 - Culture Pass - NUEVAS VOCES - Emerging Voices in Latin Jazz: Carlos Pav\u00e1n and duo Chu\u00f1o - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
     },
     {
       "attraction_name": "Center for Fiction",

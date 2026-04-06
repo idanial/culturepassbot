@@ -41,6 +41,11 @@
       "url": "http://bronxmuseum.org/"
     },
     {
+      "id": "73",
+      "name": "Bronx Music Heritage Center",
+      "url": "https://thisisbronxmusic.org/"
+    },
+    {
       "id": "1",
       "name": "Brooklyn Botanic Garden",
       "url": "https://www.bbg.org/"
@@ -179,6 +184,11 @@
       "id": "70",
       "name": "King Manor Museum",
       "url": "http://www.kingmanor.org/"
+    },
+    {
+      "id": "101",
+      "name": "Kupferberg Center for the Arts",
+      "url": "https://kupferbergcenter.org/"
     },
     {
       "id": "121",
@@ -321,11 +331,6 @@
       "url": "https://streb.org/"
     },
     {
-      "id": "30",
-      "name": "Sugar Hill Children's Museum of Art & Storytelling",
-      "url": "http://www.sugarhillmuseum.org/"
-    },
-    {
       "id": "52",
       "name": "Swiss Institute",
       "url": "https://www.swissinstitute.net/"
@@ -414,6 +419,11 @@
       "id": "69",
       "name": "Wyckoff House Museum",
       "url": "http://www.wyckoffmuseum.org/"
+    },
+    {
+      "id": "95",
+      "name": "Young Concert Artists",
+      "url": "http://www.yca.org/"
     }
   ]
 }
