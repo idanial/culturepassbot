@@ -19,6 +19,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 8, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5943",
+      "offer_title": "04/08/26 - Culture Pass - Long Good Thursday (Screening) - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 8, 2026",
       "end_time": "10:15 PM",
@@ -53,6 +62,15 @@
       "offer_title": "04/11/26 - Culture Pass - GLOBAL MASHUP: Brooklyn World Wide Comes to Queens - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 12, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5914",
+      "offer_title": "04/12/26 - Culture Pass - The Wedding March - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Kaufman Music Center",
@@ -152,6 +170,15 @@
       "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
       "start_time": "2:15 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "New York Youth Symphony",
+      "date_text": "April 27, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5809",
+      "offer_title": "04/27/26 - Culture Pass - Chamber Music Festival Day 2 - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Merkin Hall"
     },
     {
       "attraction_name": "Bronx Music Heritage Center",
