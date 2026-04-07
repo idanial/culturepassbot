@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Film Forum",
+      "date_text": "April 7, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5880",
+      "offer_title": "04/07/26 - Culture Pass - Living the Land",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "April 8, 2026",
       "end_time": "9:00 PM",
@@ -98,15 +107,6 @@
       "offer_title": "04/17/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 10:30 AM",
       "start_time": "10:30 AM",
       "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "Kupferberg Center for the Arts",
-      "date_text": "April 17, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "5960",
-      "offer_title": "04/17/26 - Culture Pass - S\u014d Percussion Unplugged - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Kupferberg Center for the Arts - LeFrak Concert Hall"
     },
     {
       "attraction_name": "Hostos Center for the Arts & Culture",
