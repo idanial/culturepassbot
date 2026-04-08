@@ -1,33 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "April 8, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5957",
-      "offer_title": "04/08/26 - Culture Pass - Bochinchando: April Fools Comedy - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "April 8, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "5872",
-      "offer_title": "04/08/26 - Culture Pass - April Monthly Jazz Jam Honoring Billie Holiday - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "April 8, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5876",
-      "offer_title": "04/08/26 - Culture Pass - Nathan Reising Quintet - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "April 10, 2026",
       "end_time": "9:00 PM",
@@ -152,6 +125,15 @@
       "offer_title": "04/23/26 - Culture Pass (Single) - James Baik, cello - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Merkin Hall at Kaufman Music Center"
+    },
+    {
+      "attraction_name": "STREB Lab for Action Mechanics",
+      "date_text": "April 24, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "5890",
+      "offer_title": "04/24/26 - Culture Pass - INTO THIN AIR - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "STREB Lab for Action Mechanics"
     },
     {
       "attraction_name": "Flushing Town Hall",
