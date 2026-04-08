@@ -73,15 +73,6 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
-      "attraction_name": "STREB Lab for Action Mechanics",
-      "date_text": "April 18, 2026",
-      "end_time": "6:00 PM",
-      "offer_id": "5893",
-      "offer_title": "04/18/26 - Culture Pass - INTO THIN AIR - 5:00 PM",
-      "start_time": "5:00 PM",
-      "venue_name": "STREB Lab for Action Mechanics"
-    },
-    {
       "attraction_name": "Hostos Center for the Arts & Culture",
       "date_text": "April 19, 2026",
       "end_time": "4:15 AM",
@@ -89,15 +80,6 @@
       "offer_title": "04/19/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 3:00 PM",
       "start_time": "3:00 AM",
       "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "New York Youth Symphony",
-      "date_text": "April 20, 2026",
-      "end_time": "8:00 PM",
-      "offer_id": "5806",
-      "offer_title": "04/20/26 - Culture Pass - Chamber Music Festival Day 1 - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Scandinavia House"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -137,12 +119,30 @@
     },
     {
       "attraction_name": "New York Youth Symphony",
+      "date_text": "April 26, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "5934",
+      "offer_title": "04/26/26 - Culture Pass - Dreaming Big - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "New York Youth Symphony",
       "date_text": "April 27, 2026",
       "end_time": "8:00 PM",
       "offer_id": "5809",
       "offer_title": "04/27/26 - Culture Pass - Chamber Music Festival Day 2 - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 29, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5967",
+      "offer_title": "04/29/26 - Culture Pass - Miranda Agnew & Katie Webster\u2019s Loomtone - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Bronx Music Heritage Center",
@@ -170,6 +170,42 @@
       "offer_title": "05/01/26 - Culture Pass - Jessie Montgomery & The Everything Band - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "STREB Lab for Action Mechanics",
+      "date_text": "May 2, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5895",
+      "offer_title": "05/02/26 - Culture Pass - INTO THIN AIR - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "STREB Lab for Action Mechanics"
+    },
+    {
+      "attraction_name": "STREB Lab for Action Mechanics",
+      "date_text": "May 3, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5899",
+      "offer_title": "05/03/26 - Culture Pass - INTO THIN AIR - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "STREB Lab for Action Mechanics"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "May 5, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5968",
+      "offer_title": "05/05/26 - Culture Pass - The International Library: Shakespeare In Translation with James Shapiro - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "May 6, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5969",
+      "offer_title": "05/06/26 - Culture Pass - Kyle McCarthy on Immersions with Leslie Jamison - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
