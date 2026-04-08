@@ -73,6 +73,15 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
+      "attraction_name": "STREB Lab for Action Mechanics",
+      "date_text": "April 18, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5893",
+      "offer_title": "04/18/26 - Culture Pass - INTO THIN AIR - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "STREB Lab for Action Mechanics"
+    },
+    {
       "attraction_name": "Hostos Center for the Arts & Culture",
       "date_text": "April 19, 2026",
       "end_time": "4:15 AM",
@@ -82,13 +91,13 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
-      "attraction_name": "STREB Lab for Action Mechanics",
-      "date_text": "April 19, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "5897",
-      "offer_title": "04/19/26 - Culture Pass - INTO THIN AIR - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "STREB Lab for Action Mechanics"
+      "attraction_name": "New York Youth Symphony",
+      "date_text": "April 20, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5806",
+      "offer_title": "04/20/26 - Culture Pass - Chamber Music Festival Day 1 - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -112,28 +121,10 @@
       "attraction_name": "Young Concert Artists",
       "date_text": "April 23, 2026",
       "end_time": "8:45 PM",
-      "offer_id": "5962",
-      "offer_title": "04/23/26 - Culture Pass (Dual) - James Baik, cello - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Merkin Hall at Kaufman Music Center"
-    },
-    {
-      "attraction_name": "Young Concert Artists",
-      "date_text": "April 23, 2026",
-      "end_time": "8:45 PM",
       "offer_id": "5963",
       "offer_title": "04/23/26 - Culture Pass (Single) - James Baik, cello - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Merkin Hall at Kaufman Music Center"
-    },
-    {
-      "attraction_name": "STREB Lab for Action Mechanics",
-      "date_text": "April 24, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "5890",
-      "offer_title": "04/24/26 - Culture Pass - INTO THIN AIR - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "STREB Lab for Action Mechanics"
     },
     {
       "attraction_name": "Flushing Town Hall",
