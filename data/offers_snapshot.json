@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "April 11, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5958",
-      "offer_title": "04/11/26 - Culture Pass - BRONX RISING! King Joseph Chatoyer, the Garifuna Resistance, and the US: A Musical Tribute - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "April 11, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "5885",
-      "offer_title": "04/11/26 - Culture Pass - GLOBAL MASHUP: Brooklyn World Wide Comes to Queens - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "April 14, 2026",
       "end_time": "3:30 PM",
@@ -71,6 +53,15 @@
       "offer_title": "04/19/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 3:00 PM",
       "start_time": "3:00 AM",
       "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "Museum at Eldridge Street",
+      "date_text": "April 19, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "5849",
+      "offer_title": "04/19/26 - Culture Pass - Midwood x Nakshatra Concert: Klezmer Meets Indian Classical! - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Museum at Eldridge Street"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -170,6 +161,15 @@
       "offer_title": "05/06/26 - Culture Pass - Kyle McCarthy on Immersions with Leslie Jamison - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "New York Youth Symphony",
+      "date_text": "May 11, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5965",
+      "offer_title": "05/11/26 - Culture Pass - NYYS Jazz featuring Miguel Zenon - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "BRIC"
     }
   ]
 }
