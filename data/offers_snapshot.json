@@ -161,6 +161,15 @@
       "offer_title": "05/11/26 - Culture Pass - NYYS Jazz featuring Miguel Zenon - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "BRIC"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "May 12, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5954",
+      "offer_title": "05/12/26 - Culture Pass - Jonathan Biss, piano - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
