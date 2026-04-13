@@ -20,6 +20,15 @@
     },
     {
       "attraction_name": "The Jazz Gallery",
+      "date_text": "April 15, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5938",
+      "offer_title": "04/15/26 - Culture Pass - Amir ElSaffar New Quartet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
       "date_text": "April 16, 2026",
       "end_time": "10:15 PM",
       "offer_id": "5940",
@@ -35,6 +44,24 @@
       "offer_title": "04/17/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 10:30 AM",
       "start_time": "10:30 AM",
       "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 17, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5974",
+      "offer_title": "04/17/26 - Culture Pass - Kazemde George - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 18, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5975",
+      "offer_title": "04/18/26 - Culture Pass - Shayna Steele: The Wilshire Project - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Hostos Center for the Arts & Culture",
@@ -65,10 +92,28 @@
     },
     {
       "attraction_name": "The Jazz Gallery",
+      "date_text": "April 22, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5978",
+      "offer_title": "04/22/26 - Culture Pass - Tohinho Horta with Special Guests - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
       "date_text": "April 23, 2026",
       "end_time": "10:15 PM",
       "offer_id": "5942",
       "offer_title": "04/23/26 - Culture Pass - Anthony Tidd: Quite Sane - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 24, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5980",
+      "offer_title": "04/24/26 - Culture Pass - 2025 TJG George Wein Fellowship: Fay Victor presents Faith, The Gift - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
     },
@@ -80,6 +125,15 @@
       "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
       "start_time": "2:15 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 25, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5982",
+      "offer_title": "04/25/26 - Culture Pass - 2025 TJG George Wein Fellowship: Fay Victor presents Faith, The Gift - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "New York Youth Symphony",
@@ -98,6 +152,15 @@
       "offer_title": "04/27/26 - Culture Pass - Chamber Music Festival Day 2 - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "April 28, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5983",
+      "offer_title": "04/28/26 - Culture Pass - Special Film Screening: \u201cBern\u201d - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "The Jazz Gallery",
