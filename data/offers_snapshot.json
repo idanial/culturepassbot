@@ -170,6 +170,15 @@
       "offer_title": "05/12/26 - Culture Pass - Jonathan Biss, piano - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "May 13, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5970",
+      "offer_title": "05/13/26 - Culture Pass - Emma Copley Eisenberg on Fat Swim with Tembe Denton-Hurst - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
