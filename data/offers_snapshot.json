@@ -64,6 +64,15 @@
       "venue_name": "Museum at Eldridge Street"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 19, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5928",
+      "offer_title": "04/19/26 - Culture Pass - The Wedding March - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "April 22, 2026",
       "end_time": "8:15 PM",
@@ -124,15 +133,6 @@
       "offer_id": "5934",
       "offer_title": "04/26/26 - Culture Pass - Dreaming Big - 3:00 PM",
       "start_time": "3:00 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
-      "attraction_name": "New York Youth Symphony",
-      "date_text": "April 27, 2026",
-      "end_time": "8:00 PM",
-      "offer_id": "5809",
-      "offer_title": "04/27/26 - Culture Pass - Chamber Music Festival Day 2 - 7:00 PM",
-      "start_time": "7:00 PM",
       "venue_name": "Merkin Hall"
     },
     {
