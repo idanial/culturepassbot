@@ -10,15 +10,6 @@
       "venue_name": "Merkin Hall"
     },
     {
-      "attraction_name": "Center for Fiction",
-      "date_text": "April 15, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "5850",
-      "offer_title": "04/15/26 - Culture Pass - The International Library presents Olga Ravn on The Wax Child - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 15, 2026",
       "end_time": "10:15 PM",
@@ -197,6 +188,15 @@
       "offer_title": "05/01/26 - Culture Pass - Jessie Montgomery & The Everything Band - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "STREB Lab for Action Mechanics",
+      "date_text": "May 3, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5899",
+      "offer_title": "05/03/26 - Culture Pass - INTO THIN AIR - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "STREB Lab for Action Mechanics"
     },
     {
       "attraction_name": "Center for Fiction",
