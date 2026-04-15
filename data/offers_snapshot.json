@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Scandinavia House",
+      "date_text": "April 15, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "5947",
+      "offer_title": "04/15/26 - Culture Pass - Sudden Outbursts of Emotions (Screening) - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 15, 2026",
       "end_time": "10:15 PM",
