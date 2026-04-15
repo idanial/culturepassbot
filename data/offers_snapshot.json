@@ -28,6 +28,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "April 18, 2026",
+      "end_time": "9:45 PM",
+      "offer_id": "5987",
+      "offer_title": "04/18/26 - Culture Pass - Richard Goode, piano - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 18, 2026",
       "end_time": "10:15 PM",
@@ -53,6 +62,15 @@
       "offer_title": "04/19/26 - Culture Pass - Midwood x Nakshatra Concert: Klezmer Meets Indian Classical! - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Museum at Eldridge Street"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "April 19, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5989",
+      "offer_title": "04/19/26 - Culture Pass - Dover Quartet - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "The Town Hall"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -100,6 +118,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "April 25, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "5991",
+      "offer_title": "04/25/26 - Culture Pass - Jerusalem Quartet - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 25, 2026",
       "end_time": "10:15 PM",
@@ -115,6 +142,15 @@
       "offer_id": "5934",
       "offer_title": "04/26/26 - Culture Pass - Dreaming Big - 3:00 PM",
       "start_time": "3:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "New York Youth Symphony",
+      "date_text": "April 27, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5809",
+      "offer_title": "04/27/26 - Culture Pass - Chamber Music Festival Day 2 - 7:00 PM",
+      "start_time": "7:00 PM",
       "venue_name": "Merkin Hall"
     },
     {
@@ -161,6 +197,51 @@
       "offer_title": "05/01/26 - Culture Pass - Jessie Montgomery & The Everything Band - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "May 2, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5995",
+      "offer_title": "05/02/26 - Culture Pass (Dual) - Open Rehearsal with Randall Goosby, violin & Zhu Wang, piano - 4:30 PM",
+      "start_time": "4:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "May 2, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5992",
+      "offer_title": "05/02/26 - Culture Pass (Single) - Open Rehearsal with Randall Goosby, violin & Zhu Wang, piano - 4:30 PM",
+      "start_time": "4:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "May 2, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "5994",
+      "offer_title": "05/02/26 - Culture Pass - Randall Goosby, violin & Zhu Wang, piano - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "May 2, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5996",
+      "offer_title": "05/02/26 - Group Pass - Open Rehearsal with Randall Goosby, violin & Zhu Wang, piano - 4:30 PM",
+      "start_time": "4:30 PM",
+      "venue_name": "The Town Hall"
+    },
+    {
+      "attraction_name": "Queens Theatre",
+      "date_text": "May 2, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "5986",
+      "offer_title": "05/02/26 - Culture Pass - Cinco de Mayo Celebration - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Queens Theatre"
     },
     {
       "attraction_name": "Center for Fiction",
