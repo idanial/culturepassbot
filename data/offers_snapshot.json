@@ -28,15 +28,6 @@
       "venue_name": "The Town Hall"
     },
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "April 18, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5975",
-      "offer_title": "04/18/26 - Culture Pass - Shayna Steele: The Wilshire Project - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Hostos Center for the Arts & Culture",
       "date_text": "April 19, 2026",
       "end_time": "4:15 AM",
@@ -251,6 +242,33 @@
       "offer_title": "05/06/26 - Culture Pass - Kyle McCarthy on Immersions with Leslie Jamison - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Bronx Opera Company",
+      "date_text": "May 7, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "5997",
+      "offer_title": "05/07/26 - Culture Pass - Ariadne auf Naxos - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Bronx Opera Company"
+    },
+    {
+      "attraction_name": "Bronx Opera Company",
+      "date_text": "May 9, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "5998",
+      "offer_title": "05/09/26 - Culture Pass - Ariadne auf Naxos - 2:30 PM",
+      "start_time": "2:30 PM",
+      "venue_name": "Bronx Opera Company"
+    },
+    {
+      "attraction_name": "Bronx Opera Company",
+      "date_text": "May 10, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "5999",
+      "offer_title": "05/10/26 - Culture Pass - Ariadne auf Naxos - 2:30 PM",
+      "start_time": "2:30 PM",
+      "venue_name": "Bronx Opera Company"
     },
     {
       "attraction_name": "New York Youth Symphony",
