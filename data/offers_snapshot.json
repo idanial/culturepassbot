@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Hostos Center for the Arts & Culture",
-      "date_text": "April 17, 2026",
-      "end_time": "11:45 AM",
-      "offer_id": "5917",
-      "offer_title": "04/17/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 10:30 AM",
-      "start_time": "10:30 AM",
-      "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "April 17, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5974",
-      "offer_title": "04/17/26 - Culture Pass - Kazemde George - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "April 18, 2026",
       "end_time": "9:45 PM",
