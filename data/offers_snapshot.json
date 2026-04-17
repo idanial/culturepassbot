@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Dessoff Choirs",
+      "date_text": "April 18, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "5810",
+      "offer_title": "04/18/26 - Culture Pass - Bach\u2019s Mass in B Minor - 4:00 PM",
+      "start_time": "4:00 PM",
+      "venue_name": "Mother AME Zion Church"
+    },
+    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "April 18, 2026",
       "end_time": "9:45 PM",
