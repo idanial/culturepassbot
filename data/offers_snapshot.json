@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Dessoff Choirs",
-      "date_text": "April 18, 2026",
-      "end_time": "6:00 PM",
-      "offer_id": "5810",
-      "offer_title": "04/18/26 - Culture Pass - Bach\u2019s Mass in B Minor - 4:00 PM",
-      "start_time": "4:00 PM",
-      "venue_name": "Mother AME Zion Church"
-    },
-    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "April 18, 2026",
       "end_time": "9:45 PM",
@@ -17,6 +8,15 @@
       "offer_title": "04/18/26 - Culture Pass - Richard Goode, piano - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "The Town Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 18, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5927",
+      "offer_title": "04/18/26 - Culture Pass - The Wedding March - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Hostos Center for the Arts & Culture",
@@ -80,6 +80,15 @@
       "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
       "start_time": "2:15 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "April 25, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "5973",
+      "offer_title": "04/25/26 - Culture Pass - Darlene Love: Love Songs - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "Peoples' Symphony Concerts",
