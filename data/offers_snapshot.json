@@ -10,6 +10,15 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
+      "attraction_name": "Museum at Eldridge Street",
+      "date_text": "April 19, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "5849",
+      "offer_title": "04/19/26 - Culture Pass - Midwood x Nakshatra Concert: Klezmer Meets Indian Classical! - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Museum at Eldridge Street"
+    },
+    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "April 19, 2026",
       "end_time": "4:00 PM",
@@ -44,15 +53,6 @@
       "offer_title": "04/23/26 - Culture Pass - Anthony Tidd: Quite Sane - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Young Concert Artists",
-      "date_text": "April 23, 2026",
-      "end_time": "8:45 PM",
-      "offer_id": "5962",
-      "offer_title": "04/23/26 - Culture Pass (Dual) - James Baik, cello - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Merkin Hall at Kaufman Music Center"
     },
     {
       "attraction_name": "The Jazz Gallery",
