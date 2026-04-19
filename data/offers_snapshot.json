@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Hostos Center for the Arts & Culture",
-      "date_text": "April 19, 2026",
-      "end_time": "4:15 AM",
-      "offer_id": "5918",
-      "offer_title": "04/19/26 - Culture Pass - Calpulli Mexican Dance Company's \"Monarcas\" - 3:00 PM",
-      "start_time": "3:00 AM",
-      "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "April 19, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "5989",
-      "offer_title": "04/19/26 - Culture Pass - Dover Quartet - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "The Town Hall"
-    },
-    {
       "attraction_name": "Center for Fiction",
       "date_text": "April 22, 2026",
       "end_time": "8:15 PM",
@@ -251,6 +233,15 @@
       "offer_title": "05/13/26 - Culture Pass - Emma Copley Eisenberg on Fat Swim with Tembe Denton-Hurst - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "May 19, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "5956",
+      "offer_title": "05/19/26 - Culture Pass - Zhu Wang, piano - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
