@@ -242,6 +242,15 @@
       "offer_title": "05/19/26 - Culture Pass - Zhu Wang, piano - 2:00 PM",
       "start_time": "2:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "May 20, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "5971",
+      "offer_title": "05/20/26 - Culture Pass - Story/Teller Arts: Annie Baker on Infinite Life - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
