@@ -55,6 +55,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Hostos Center for the Arts & Culture",
+      "date_text": "April 25, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6001",
+      "offer_title": "04/25/26 - Culture Pass - Charangazo! - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
       "attraction_name": "Kupferberg Center for the Arts",
       "date_text": "April 25, 2026",
       "end_time": "9:30 PM",
@@ -80,6 +89,15 @@
       "offer_title": "04/25/26 - Culture Pass - 2025 TJG George Wein Fellowship: Fay Victor presents Faith, The Gift - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 26, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "5932",
+      "offer_title": "04/26/26 - Culture Pass - The Wedding March - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "The Jazz Gallery",
@@ -161,15 +179,6 @@
       "offer_title": "05/02/26 - Group Pass - Open Rehearsal with Randall Goosby, violin & Zhu Wang, piano - 4:30 PM",
       "start_time": "4:30 PM",
       "venue_name": "The Town Hall"
-    },
-    {
-      "attraction_name": "Queens Theatre",
-      "date_text": "May 2, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5986",
-      "offer_title": "05/02/26 - Culture Pass - Cinco de Mayo Celebration - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Queens Theatre"
     },
     {
       "attraction_name": "Center for Fiction",
