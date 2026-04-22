@@ -19,15 +19,6 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
-      "attraction_name": "STREB Lab for Action Mechanics",
-      "date_text": "April 24, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "5890",
-      "offer_title": "04/24/26 - Culture Pass - INTO THIN AIR - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "STREB Lab for Action Mechanics"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 24, 2026",
       "end_time": "10:15 PM",
@@ -89,6 +80,15 @@
       "offer_title": "04/26/26 - Culture Pass - The Wedding March - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "April 28, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5884",
+      "offer_title": "04/28/26 - Culture Pass - Bernstein's Wall",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "The Jazz Gallery",
