@@ -136,6 +136,15 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "May 2, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6009",
+      "offer_title": "05/02/26 - Culture Pass - Louis Armstrong House Orchestra - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
+    },
+    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "May 2, 2026",
       "end_time": "6:00 PM",
@@ -179,6 +188,15 @@
       "offer_title": "05/02/26 - Culture Pass - The Wedding March - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "May 3, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "6010",
+      "offer_title": "05/03/26 - Culture Pass - Viva El Cinco De Mayo - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "Pregones/PRTT",
@@ -260,6 +278,15 @@
       "offer_title": "05/13/26 - Culture Pass - Emma Copley Eisenberg on Fat Swim with Tembe Denton-Hurst - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "May 15, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6011",
+      "offer_title": "05/15/26 - Culture Pass - Migguel Anggelo's ICONS: Latin Rhythms - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "Kaufman Music Center",
