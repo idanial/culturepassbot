@@ -64,15 +64,6 @@
       "venue_name": "The Jazz Gallery"
     },
     {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "April 26, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "5932",
-      "offer_title": "04/26/26 - Culture Pass - The Wedding March - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 28, 2026",
       "end_time": "8:15 PM",
@@ -116,6 +107,15 @@
       "offer_title": "04/30/26 - Culture Pass - The Wedding March - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Ice Theatre of New York",
+      "date_text": "May 1, 2026",
+      "end_time": "8:00 PM",
+      "offer_id": "5935",
+      "offer_title": "05/01/26 - Culture Pass - 2026 Home Season Performance - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Ice Theatre of New York"
     },
     {
       "attraction_name": "Kaufman Music Center",
