@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "April 24, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5980",
-      "offer_title": "04/24/26 - Culture Pass - 2025 TJG George Wein Fellowship: Fay Victor presents Faith, The Gift - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "April 25, 2026",
       "end_time": "4:00 PM",
@@ -26,15 +17,6 @@
       "offer_title": "04/25/26 - Culture Pass - Charangazo! - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "Kupferberg Center for the Arts",
-      "date_text": "April 25, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "5973",
-      "offer_title": "04/25/26 - Culture Pass - Darlene Love: Love Songs - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "Peoples' Symphony Concerts",
@@ -107,15 +89,6 @@
       "offer_title": "04/30/26 - Culture Pass - The Wedding March - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Ice Theatre of New York",
-      "date_text": "May 1, 2026",
-      "end_time": "8:00 PM",
-      "offer_id": "5935",
-      "offer_title": "05/01/26 - Culture Pass - 2026 Home Season Performance - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Ice Theatre of New York"
     },
     {
       "attraction_name": "Kaufman Music Center",
