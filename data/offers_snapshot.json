@@ -1,40 +1,13 @@
 {
   "offers": [
     {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "April 25, 2026",
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "April 26, 2026",
       "end_time": "4:00 PM",
-      "offer_id": "5886",
-      "offer_title": "04/25/26 - Culture Pass - Holi Dance & Music Celebration: Festival of Colors - 2:15 PM",
-      "start_time": "2:15 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Hostos Center for the Arts & Culture",
-      "date_text": "April 25, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6001",
-      "offer_title": "04/25/26 - Culture Pass - Charangazo! - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Hostos Center for the Arts & Culture"
-    },
-    {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "April 25, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "5991",
-      "offer_title": "04/25/26 - Culture Pass - Jerusalem Quartet - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "The Town Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "April 25, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5982",
-      "offer_title": "04/25/26 - Culture Pass - 2025 TJG George Wein Fellowship: Fay Victor presents Faith, The Gift - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
+      "offer_id": "5932",
+      "offer_title": "04/26/26 - Culture Pass - The Wedding March - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "The Jazz Gallery",
