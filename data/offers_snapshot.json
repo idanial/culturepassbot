@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Film Forum",
-      "date_text": "April 28, 2026",
-      "end_time": "7:00 PM",
-      "offer_id": "5884",
-      "offer_title": "04/28/26 - Culture Pass - Bernstein's Wall",
-      "start_time": "7:00 PM",
-      "venue_name": "Film Forum"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 29, 2026",
       "end_time": "10:15 PM",
@@ -109,15 +100,6 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
-      "attraction_name": "Queens Theatre",
-      "date_text": "May 2, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5986",
-      "offer_title": "05/02/26 - Culture Pass - Cinco de Mayo Celebration - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Queens Theatre"
-    },
-    {
       "attraction_name": "Kupferberg Center for the Arts",
       "date_text": "May 3, 2026",
       "end_time": "5:00 PM",
@@ -179,15 +161,6 @@
       "offer_title": "05/10/26 - Culture Pass - Ariadne auf Naxos - 2:30 PM",
       "start_time": "2:30 PM",
       "venue_name": "Bronx Opera Company"
-    },
-    {
-      "attraction_name": "New York Youth Symphony",
-      "date_text": "May 11, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5965",
-      "offer_title": "05/11/26 - Culture Pass - NYYS Jazz featuring Miguel Zenon - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "BRIC"
     },
     {
       "attraction_name": "Kaufman Music Center",
