@@ -1,6 +1,24 @@
 {
   "offers": [
     {
+      "attraction_name": "Film Forum",
+      "date_text": "April 27, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5883",
+      "offer_title": "04/27/26 - Culture Pass - Bernstein's Wall",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "April 28, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "5884",
+      "offer_title": "04/28/26 - Culture Pass - Bernstein's Wall",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "April 29, 2026",
       "end_time": "10:15 PM",
@@ -107,15 +125,6 @@
       "offer_title": "05/03/26 - Culture Pass - Viva El Cinco De Mayo - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "May 3, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "6005",
-      "offer_title": "05/03/26 - Culture Pass - The Wedding March - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Center for Fiction",
