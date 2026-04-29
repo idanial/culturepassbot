@@ -73,15 +73,6 @@
       "venue_name": "High School of Fashion Industries"
     },
     {
-      "attraction_name": "Queens Theatre",
-      "date_text": "May 2, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "5986",
-      "offer_title": "05/02/26 - Culture Pass - Cinco de Mayo Celebration - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Queens Theatre"
-    },
-    {
       "attraction_name": "Kings Theatre",
       "date_text": "May 3, 2026",
       "end_time": "9:30 PM",
@@ -116,6 +107,15 @@
       "offer_title": "05/06/26 - Culture Pass - Kyle McCarthy on Immersions with Leslie Jamison - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 6, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6014",
+      "offer_title": "05/06/26 - Culture Pass - Ginita y La Orquesta Esa - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Bronx Opera Company",
@@ -163,6 +163,24 @@
       "venue_name": "Center for Fiction"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 13, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6016",
+      "offer_title": "05/13/26 - Culture Pass - Trap Music Orchestra - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 14, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6018",
+      "offer_title": "05/14/26 - Culture Pass - Roy Hargrove Big Band Monthly Residency - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Kupferberg Center for the Arts",
       "date_text": "May 15, 2026",
       "end_time": "10:00 PM",
@@ -188,6 +206,15 @@
       "offer_title": "05/20/26 - Culture Pass - Story/Teller Arts: Annie Baker on Infinite Life - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 21, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6020",
+      "offer_title": "05/21/26 - Culture Pass - Michael Hilgendorf\u2019s Unseen, Unheard - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Hostos Center for the Arts & Culture",
