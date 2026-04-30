@@ -10,6 +10,42 @@
       "venue_name": "Merkin Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 1, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6036",
+      "offer_title": "05/01/26 - Culture Pass - Jen Shyu presents Fertile Land, Fertile Body - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "May 2, 2026",
+      "end_time": "4:15 PM",
+      "offer_id": "6033",
+      "offer_title": "05/02/26 - Culture Pass - Portraiture at the Heart - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "May 2, 2026",
+      "end_time": "6:45 PM",
+      "offer_id": "6034",
+      "offer_title": "05/02/26 - Culture Pass - The Life of Brian (Maguire) - 5:30 PM",
+      "start_time": "5:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Kings Theatre",
+      "date_text": "May 2, 2026",
+      "end_time": "10:30 PM",
+      "offer_id": "6035",
+      "offer_title": "05/02/26 - Culture Pass - Shyne - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "Kings Theatre"
+    },
+    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "May 2, 2026",
       "end_time": "6:00 PM",
@@ -44,6 +80,15 @@
       "offer_title": "05/02/26 - Group Pass - Open Rehearsal with Randall Goosby, violin & Zhu Wang, piano - 4:30 PM",
       "start_time": "4:30 PM",
       "venue_name": "High School of Fashion Industries"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 2, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6037",
+      "offer_title": "05/02/26 - Culture Pass - Jen Shyu presents Fertile Land, Fertile Body - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Kings Theatre",
@@ -179,15 +224,6 @@
       "offer_title": "05/20/26 - Culture Pass - Story/Teller Arts: Annie Baker on Infinite Life - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 21, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6020",
-      "offer_title": "05/21/26 - Culture Pass - Michael Hilgendorf\u2019s Unseen, Unheard - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Hostos Center for the Arts & Culture",
