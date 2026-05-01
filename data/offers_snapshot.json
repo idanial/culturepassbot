@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "May 1, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5952",
-      "offer_title": "05/01/26 - Culture Pass - Jessie Montgomery & The Everything Band - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 1, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6036",
-      "offer_title": "05/01/26 - Culture Pass - Jen Shyu presents Fertile Land, Fertile Body - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Irish Arts Center",
       "date_text": "May 2, 2026",
       "end_time": "4:15 PM",
@@ -98,15 +80,6 @@
       "offer_title": "05/03/26 - Culture Pass - UB40 featuring Ali Campbell - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Kings Theatre"
-    },
-    {
-      "attraction_name": "Kupferberg Center for the Arts",
-      "date_text": "May 3, 2026",
-      "end_time": "5:00 PM",
-      "offer_id": "6010",
-      "offer_title": "05/03/26 - Culture Pass - Viva El Cinco De Mayo - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "Center for Fiction",
