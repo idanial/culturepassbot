@@ -73,15 +73,6 @@
       "venue_name": "The Jazz Gallery"
     },
     {
-      "attraction_name": "Kings Theatre",
-      "date_text": "May 3, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6012",
-      "offer_title": "05/03/26 - Culture Pass - UB40 featuring Ali Campbell - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Kings Theatre"
-    },
-    {
       "attraction_name": "Center for Fiction",
       "date_text": "May 5, 2026",
       "end_time": "8:15 PM",
@@ -107,15 +98,6 @@
       "offer_title": "05/06/26 - Culture Pass - Ginita y La Orquesta Esa - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Bronx Opera Company",
-      "date_text": "May 7, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "5997",
-      "offer_title": "05/07/26 - Culture Pass - Ariadne auf Naxos - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Bronx Opera Company"
     },
     {
       "attraction_name": "Bronx Opera Company",
