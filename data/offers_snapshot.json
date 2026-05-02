@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Kings Theatre",
+      "date_text": "May 3, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6012",
+      "offer_title": "05/03/26 - Culture Pass - UB40 featuring Ali Campbell - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kings Theatre"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "May 5, 2026",
       "end_time": "8:15 PM",
