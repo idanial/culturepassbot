@@ -28,6 +28,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "May 8, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6039",
+      "offer_title": "05/08/26 - Culture Pass - NY Jazz Legends: The Over 80s - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "Bronx Opera Company",
       "date_text": "May 9, 2026",
       "end_time": "5:00 PM",
@@ -64,6 +73,15 @@
       "venue_name": "Center for Fiction"
     },
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "May 13, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6040",
+      "offer_title": "05/13/26 - Culture Pass - May Monthly Jazz Jam Honoring Frank Sinatra - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "May 13, 2026",
       "end_time": "10:15 PM",
@@ -89,6 +107,15 @@
       "offer_title": "05/15/26 - Culture Pass - Migguel Anggelo's ICONS: Latin Rhythms - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "May 17, 2026",
+      "end_time": "3:45 PM",
+      "offer_id": "6041",
+      "offer_title": "05/17/26 - Culture Pass - Tuvergen Band: Mongolian Folk - 2:15 PM",
+      "start_time": "2:15 PM",
+      "venue_name": "Flushing Town Hall"
     },
     {
       "attraction_name": "Kaufman Music Center",
