@@ -28,6 +28,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Bronx Opera Company",
+      "date_text": "May 7, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "5997",
+      "offer_title": "05/07/26 - Culture Pass - Ariadne auf Naxos - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Bronx Opera Company"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "May 8, 2026",
       "end_time": "9:30 PM",
@@ -152,6 +161,15 @@
       "offer_title": "05/23/26 - Culture Pass - Roy Brown & Zoraida Santiago: \u201cDe la Tierra en que nac\u00ed\u201d - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "June 2, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6044",
+      "offer_title": "06/02/26 - Culture Pass - Notes on Writing: Process and Craft with Ramona Ausubel and Emily Rapp Black - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
