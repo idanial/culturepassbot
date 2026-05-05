@@ -2,15 +2,6 @@
   "offers": [
     {
       "attraction_name": "Center for Fiction",
-      "date_text": "May 5, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "5968",
-      "offer_title": "05/05/26 - Culture Pass - The International Library: Shakespeare In Translation with James Shapiro - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Center for Fiction",
       "date_text": "May 6, 2026",
       "end_time": "8:15 PM",
       "offer_id": "5969",
@@ -150,6 +141,24 @@
       "end_time": "10:15 PM",
       "offer_id": "6020",
       "offer_title": "05/21/26 - Culture Pass - Michael Hilgendorf\u2019s Unseen, Unheard - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 27, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6022",
+      "offer_title": "05/27/26 - Culture Pass - Tal Yahalom - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 28, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6024",
+      "offer_title": "05/28/26 - Culture Pass - Caroline Davis: Portals - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
     },
