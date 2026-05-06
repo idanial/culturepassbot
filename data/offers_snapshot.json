@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Center for Fiction",
-      "date_text": "May 6, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "5969",
-      "offer_title": "05/06/26 - Culture Pass - Kyle McCarthy on Immersions with Leslie Jamison - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 6, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6014",
-      "offer_title": "05/06/26 - Culture Pass - Ginita y La Orquesta Esa - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Bronx Opera Company",
       "date_text": "May 7, 2026",
       "end_time": "10:00 PM",
@@ -26,15 +8,6 @@
       "offer_title": "05/07/26 - Culture Pass - Ariadne auf Naxos - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Bronx Opera Company"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 7, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6052",
-      "offer_title": "05/07/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -197,6 +170,24 @@
       "offer_title": "06/02/26 - Culture Pass - Notes on Writing: Process and Craft with Ramona Ausubel and Emily Rapp Black - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "June 5, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6028",
+      "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Conrad Tao - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "June 5, 2026",
+      "end_time": "7:30 PM",
+      "offer_id": "6026",
+      "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Jenny Lin - 6:00 PM",
+      "start_time": "6:00 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
