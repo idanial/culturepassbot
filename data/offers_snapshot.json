@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Opera Company",
-      "date_text": "May 7, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "5997",
-      "offer_title": "05/07/26 - Culture Pass - Ariadne auf Naxos - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Bronx Opera Company"
-    },
-    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "May 8, 2026",
       "end_time": "9:30 PM",
@@ -168,6 +159,24 @@
       "end_time": "7:30 PM",
       "offer_id": "6026",
       "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Jenny Lin - 6:00 PM",
+      "start_time": "6:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "June 6, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6031",
+      "offer_title": "06/06/26 - Culture Pass - 100 Years of American Piano Music: Anthony de Mare - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "June 6, 2026",
+      "end_time": "7:30 PM",
+      "offer_id": "6032",
+      "offer_title": "06/06/26 - Culture Pass - 100 Years of American Piano Music: Mikael Darmanie - 6:00 PM",
       "start_time": "6:00 PM",
       "venue_name": "Merkin Hall"
     }
