@@ -67,7 +67,7 @@
       "attraction_name": "Bed-Stuy Art House",
       "date_text": "May 15, 2026",
       "end_time": "9:00 PM",
-      "offer_id": "6058",
+      "offer_id": "6057",
       "offer_title": "05/15/26 - Culture Pass - Happy Birthday Malcolm & Lorraine! - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Billie Holiday Theatre"
@@ -179,6 +179,24 @@
       "offer_title": "06/06/26 - Culture Pass - 100 Years of American Piano Music: Mikael Darmanie - 6:00 PM",
       "start_time": "6:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "June 10, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6045",
+      "offer_title": "06/10/26 - Culture Pass - Imaginative Firsts: On Writing Debut Sci-Fi and Fantasy - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "June 10, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6042",
+      "offer_title": "06/10/26 - Culture Pass - June Monthly Jazz Jam Honoring Bessie Smith - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
     }
   ]
 }
