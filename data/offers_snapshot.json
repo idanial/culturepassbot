@@ -67,7 +67,7 @@
       "attraction_name": "Bed-Stuy Art House",
       "date_text": "May 15, 2026",
       "end_time": "5:00 PM",
-      "offer_id": "6055",
+      "offer_id": "6056",
       "offer_title": "05/15/26 - Culture Pass - Happy Birthday Malcolm & Lorraine! - 4:00 PM",
       "start_time": "4:00 PM",
       "venue_name": "Billie Holiday Theatre"
@@ -89,6 +89,24 @@
       "offer_title": "05/15/26 - Culture Pass - Migguel Anggelo's ICONS: Latin Rhythms - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 15, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6060",
+      "offer_title": "05/15/26 - Culture Pass - Tony Malaby - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 16, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6061",
+      "offer_title": "05/16/26 - Culture Pass - Kokayi Presents \u201cAn Eponymous Joint\u201d Album Release Show - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Flushing Town Hall",
