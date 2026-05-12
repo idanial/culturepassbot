@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 12, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6050",
-      "offer_title": "05/12/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
-    },
-    {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "May 12, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "5954",
-      "offer_title": "05/12/26 - Culture Pass - Jonathan Biss, piano - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "May 13, 2026",
       "end_time": "9:00 PM",
@@ -215,6 +197,15 @@
       "offer_title": "06/10/26 - Culture Pass - June Monthly Jazz Jam Honoring Bessie Smith - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "June 11, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6046",
+      "offer_title": "06/11/26 - Culture Pass - Amitav Ghosh on Ghost-Eye with Ravi Agrawal - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
