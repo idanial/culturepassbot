@@ -1,42 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "May 13, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6059",
-      "offer_title": "05/13/26 - Culture Pass - Bochinchando: UPTOWN SOLO - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Center for Fiction",
-      "date_text": "May 13, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "5970",
-      "offer_title": "05/13/26 - Culture Pass - Emma Copley Eisenberg on Fat Swim with Tembe Denton-Hurst - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "May 13, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6040",
-      "offer_title": "05/13/26 - Culture Pass - May Monthly Jazz Jam Honoring Frank Sinatra - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 13, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6016",
-      "offer_title": "05/13/26 - Culture Pass - Trap Music Orchestra - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "May 14, 2026",
       "end_time": "10:15 PM",
@@ -49,7 +13,7 @@
       "attraction_name": "Bed-Stuy Art House",
       "date_text": "May 15, 2026",
       "end_time": "5:00 PM",
-      "offer_id": "6056",
+      "offer_id": "6055",
       "offer_title": "05/15/26 - Culture Pass - Happy Birthday Malcolm & Lorraine! - 4:00 PM",
       "start_time": "4:00 PM",
       "venue_name": "Billie Holiday Theatre"
@@ -58,7 +22,7 @@
       "attraction_name": "Bed-Stuy Art House",
       "date_text": "May 15, 2026",
       "end_time": "9:00 PM",
-      "offer_id": "6057",
+      "offer_id": "6058",
       "offer_title": "05/15/26 - Culture Pass - Happy Birthday Malcolm & Lorraine! - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Billie Holiday Theatre"
