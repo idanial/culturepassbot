@@ -19,15 +19,6 @@
       "venue_name": "Billie Holiday Theatre"
     },
     {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 15, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6051",
-      "offer_title": "05/15/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "May 15, 2026",
       "end_time": "10:15 PM",
@@ -53,6 +44,24 @@
       "offer_title": "05/17/26 - Culture Pass - Tuvergen Band: Mongolian Folk - 2:15 PM",
       "start_time": "2:15 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "May 18, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6066",
+      "offer_title": "05/18/26 - Culture Pass - Agatha's Almanac",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "May 19, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6067",
+      "offer_title": "05/19/26 - Culture Pass - Agatha's Almanac",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "Kaufman Music Center",
@@ -89,6 +98,24 @@
       "offer_title": "05/23/26 - Culture Pass - Bronx Rising! The Lyricism of Bachata - A Symposium - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "May 25, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6068",
+      "offer_title": "05/25/26 - Culture Pass - Manas",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "May 26, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6069",
+      "offer_title": "05/26/26 - Culture Pass - Manas",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "The Jazz Gallery",
