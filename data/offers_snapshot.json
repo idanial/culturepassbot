@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 14, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6018",
-      "offer_title": "05/14/26 - Culture Pass - Roy Hargrove Big Band Monthly Residency - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Bed-Stuy Art House",
       "date_text": "May 15, 2026",
       "end_time": "5:00 PM",
@@ -26,15 +17,6 @@
       "offer_title": "05/15/26 - Culture Pass - Happy Birthday Malcolm & Lorraine! - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Billie Holiday Theatre"
-    },
-    {
-      "attraction_name": "Kupferberg Center for the Arts",
-      "date_text": "May 15, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6011",
-      "offer_title": "05/15/26 - Culture Pass - Migguel Anggelo's ICONS: Latin Rhythms - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Kupferberg Center for the Arts - Colden Auditorium"
     },
     {
       "attraction_name": "The Jazz Gallery",
@@ -197,6 +179,15 @@
       "offer_title": "06/11/26 - Culture Pass - Amitav Ghosh on Ghost-Eye with Ravi Agrawal - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Museum of Chinese in America",
+      "date_text": "June 13, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "6038",
+      "offer_title": "06/13/26 - Culture Pass - Dragon Boat Family Festival - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Museum of Chinese in America"
     }
   ]
 }
