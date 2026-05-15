@@ -37,6 +37,15 @@
       "venue_name": "Merkin Hall"
     },
     {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 20, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6071",
+      "offer_title": "05/20/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Classic Stage Company"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "May 21, 2026",
       "end_time": "9:00 PM",
@@ -44,6 +53,15 @@
       "offer_title": "05/21/26 - Culture Pass - The Word on 163rd - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 21, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6073",
+      "offer_title": "05/21/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "The Jazz Gallery",
@@ -55,6 +73,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 22, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6075",
+      "offer_title": "05/22/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Classic Stage Company"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "May 23, 2026",
       "end_time": "9:00 PM",
@@ -62,6 +89,24 @@
       "offer_title": "05/23/26 - Culture Pass - Bronx Rising! The Lyricism of Bachata - A Symposium - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 23, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6077",
+      "offer_title": "05/23/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Classic Stage Company"
+    },
+    {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 24, 2026",
+      "end_time": "4:15 PM",
+      "offer_id": "6079",
+      "offer_title": "05/24/26 - Culture Pass - Thornton Wilder's The Emporium - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "Film Forum",
