@@ -19,15 +19,6 @@
       "venue_name": "Merkin Hall"
     },
     {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 20, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6071",
-      "offer_title": "05/20/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
-    },
-    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "May 21, 2026",
       "end_time": "9:00 PM",
@@ -136,6 +127,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Film Forum",
+      "date_text": "June 1, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6080",
+      "offer_title": "06/01/26 - Culture Pass - Forastera",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "June 2, 2026",
       "end_time": "8:15 PM",
@@ -143,6 +143,15 @@
       "offer_title": "06/02/26 - Culture Pass - Notes on Writing: Process and Craft with Ramona Ausubel and Emily Rapp Black - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "June 2, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6081",
+      "offer_title": "06/02/26 - Culture Pass - Forastera",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "Kaufman Music Center",
