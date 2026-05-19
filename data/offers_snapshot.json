@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Film Forum",
-      "date_text": "May 19, 2026",
-      "end_time": "7:00 PM",
-      "offer_id": "6067",
-      "offer_title": "05/19/26 - Culture Pass - Agatha's Almanac",
-      "start_time": "7:00 PM",
-      "venue_name": "Film Forum"
-    },
-    {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "May 19, 2026",
-      "end_time": "3:30 PM",
-      "offer_id": "5956",
-      "offer_title": "05/19/26 - Culture Pass - Zhu Wang, piano - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
       "attraction_name": "Classic Stage Company",
       "date_text": "May 20, 2026",
       "end_time": "9:15 PM",
@@ -35,15 +17,6 @@
       "offer_title": "05/21/26 - Culture Pass - The Word on 163rd - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 21, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6073",
-      "offer_title": "05/21/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "The Jazz Gallery",
@@ -71,24 +44,6 @@
       "offer_title": "05/23/26 - Culture Pass - Bronx Rising! The Lyricism of Bachata - A Symposium - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 23, 2026",
-      "end_time": "9:15 PM",
-      "offer_id": "6077",
-      "offer_title": "05/23/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Classic Stage Company"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "May 24, 2026",
-      "end_time": "4:15 PM",
-      "offer_id": "6079",
-      "offer_title": "05/24/26 - Culture Pass - Thornton Wilder's The Emporium - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "Film Forum",
@@ -235,11 +190,38 @@
       "venue_name": "Museum of Chinese in America"
     },
     {
+      "attraction_name": "Film Forum",
+      "date_text": "June 15, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6082",
+      "offer_title": "06/15/26 - Culture Pass - Promised Sky",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "June 16, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6083",
+      "offer_title": "06/16/26 - Culture Pass - Promised Sky",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "June 17, 2026",
       "end_time": "8:15 PM",
       "offer_id": "6047",
       "offer_title": "06/17/26 - Culture Pass - ALL PRIDE, NO PREJUDICE! A Literary LGBTQ+ Celebration - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "June 18, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6048",
+      "offer_title": "06/18/26 - Culture Pass - Indigenous Narratives of the Past, Present, and Future - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
     }
