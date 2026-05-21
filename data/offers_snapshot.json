@@ -91,6 +91,15 @@
       "venue_name": "Film Forum"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 3, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6091",
+      "offer_title": "06/03/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "June 4, 2026",
       "end_time": "8:30 PM",
@@ -98,6 +107,15 @@
       "offer_title": "06/04/26 - Culture Pass - Torched! In Concert - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Pregones Theater"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 5, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6092",
+      "offer_title": "06/05/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "Kaufman Music Center",
@@ -127,6 +145,24 @@
       "venue_name": "Pregones Theater"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 6, 2026",
+      "end_time": "3:15 PM",
+      "offer_id": "6094",
+      "offer_title": "06/06/26 - Culture Pass - North Star - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 6, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6093",
+      "offer_title": "06/06/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "June 6, 2026",
       "end_time": "9:30 PM",
@@ -152,6 +188,15 @@
       "offer_title": "06/06/26 - Culture Pass - Torched! In Concert - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Pregones Theater"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 7, 2026",
+      "end_time": "6:15 PM",
+      "offer_id": "6095",
+      "offer_title": "06/07/26 - Culture Pass - North Star - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "Center for Fiction",
