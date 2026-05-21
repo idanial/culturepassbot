@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "May 21, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6062",
-      "offer_title": "05/21/26 - Culture Pass - The Word on 163rd - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "May 21, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6020",
-      "offer_title": "05/21/26 - Culture Pass - Michael Hilgendorf\u2019s Unseen, Unheard - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Classic Stage Company",
       "date_text": "May 22, 2026",
       "end_time": "9:15 PM",
@@ -62,15 +44,6 @@
       "offer_title": "05/27/26 - Culture Pass - Tal Yahalom - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "May 28, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6064",
-      "offer_title": "05/28/26 - Culture Pass - Nuevas Voces: The Afro-Peruvian Ensemble - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
     },
     {
       "attraction_name": "Pregones/PRTT",
