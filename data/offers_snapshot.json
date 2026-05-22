@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 22, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6096",
+      "offer_title": "05/22/26 - Culture Pass - Wayne Tucker and the Bad Mothas: A Tribute to Miles Davis - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "May 23, 2026",
       "end_time": "9:00 PM",
@@ -8,6 +17,15 @@
       "offer_title": "05/23/26 - Culture Pass - Bronx Rising! The Lyricism of Bachata - A Symposium - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "May 23, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6097",
+      "offer_title": "05/23/26 - Culture Pass - National Tap Day Celebration - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Film Forum",
