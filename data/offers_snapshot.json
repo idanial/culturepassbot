@@ -1,6 +1,24 @@
 {
   "offers": [
     {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 30, 2026",
+      "end_time": "4:15 PM",
+      "offer_id": "6100",
+      "offer_title": "05/30/26 - Culture Pass - Thornton Wilder's The Emporium - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Classic Stage Company"
+    },
+    {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 30, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6101",
+      "offer_title": "05/30/26 - Culture Pass - Thornton Wilder's The Emporium - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Classic Stage Company"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "May 30, 2026",
       "end_time": "8:30 PM",
@@ -8,6 +26,15 @@
       "offer_title": "05/30/26 - Culture Pass - Torched! In Concert - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Pregones Theater"
+    },
+    {
+      "attraction_name": "Classic Stage Company",
+      "date_text": "May 31, 2026",
+      "end_time": "4:15 PM",
+      "offer_id": "6102",
+      "offer_title": "05/31/26 - Culture Pass - Thornton Wilder's The Emporium (with Talkback) - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "Film Forum",
@@ -161,15 +188,6 @@
       "offer_title": "06/11/26 - Culture Pass - Amitav Ghosh on Ghost-Eye with Ravi Agrawal - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Museum of Chinese in America",
-      "date_text": "June 13, 2026",
-      "end_time": "5:00 PM",
-      "offer_id": "6038",
-      "offer_title": "06/13/26 - Culture Pass - Dragon Boat Family Festival - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Museum of Chinese in America"
     },
     {
       "attraction_name": "Film Forum",
