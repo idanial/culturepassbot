@@ -2,15 +2,6 @@
   "offers": [
     {
       "attraction_name": "Classic Stage Company",
-      "date_text": "May 31, 2026",
-      "end_time": "4:15 PM",
-      "offer_id": "6102",
-      "offer_title": "05/31/26 - Culture Pass - Thornton Wilder's The Emporium (with Talkback) - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Classic Stage Company"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
       "date_text": "June 2, 2026",
       "end_time": "9:15 PM",
       "offer_id": "6104",
@@ -267,6 +258,15 @@
       "end_time": "7:00 PM",
       "offer_id": "6084",
       "offer_title": "06/29/26 - Culture Pass - Romer\u00eda",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "June 30, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6085",
+      "offer_title": "06/30/26 - Culture Pass - Romer\u00eda",
       "start_time": "7:00 PM",
       "venue_name": "Film Forum"
     }
