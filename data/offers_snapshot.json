@@ -19,15 +19,6 @@
       "venue_name": "Classic Stage Company"
     },
     {
-      "attraction_name": "Irish Arts Center",
-      "date_text": "June 5, 2026",
-      "end_time": "8:45 PM",
-      "offer_id": "6092",
-      "offer_title": "06/05/26 - Culture Pass - North Star - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "June 5, 2026",
       "end_time": "9:30 PM",
@@ -154,6 +145,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 10, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6117",
+      "offer_title": "06/10/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "June 11, 2026",
       "end_time": "8:15 PM",
@@ -161,6 +161,51 @@
       "offer_title": "06/11/26 - Culture Pass - Amitav Ghosh on Ghost-Eye with Ravi Agrawal - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 11, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6118",
+      "offer_title": "06/11/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 12, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6119",
+      "offer_title": "06/12/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 13, 2026",
+      "end_time": "3:15 PM",
+      "offer_id": "6121",
+      "offer_title": "06/13/26 - Culture Pass - North Star - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 13, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6120",
+      "offer_title": "06/13/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 14, 2026",
+      "end_time": "6:15 PM",
+      "offer_id": "6122",
+      "offer_title": "06/14/26 - Culture Pass - North Star - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "Film Forum",
