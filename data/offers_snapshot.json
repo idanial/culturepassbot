@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "New Victory Theater",
+      "date_text": "June 4, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "6123",
+      "offer_title": "06/04/26 - Culture Pass - Jim Henson's Fraggle Rock: Back to the Rock LIVE - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "June 4, 2026",
       "end_time": "8:30 PM",
@@ -35,6 +44,24 @@
       "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Jenny Lin - 6:00 PM",
       "start_time": "6:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "June 5, 2026",
+      "end_time": "1:30 PM",
+      "offer_id": "6124",
+      "offer_title": "06/05/26 - Culture Pass - Jim Henson's Fraggle Rock: Back to the Rock LIVE - 12:00 PM",
+      "start_time": "12:00 PM",
+      "venue_name": "New Victory Theater"
+    },
+    {
+      "attraction_name": "New Victory Theater",
+      "date_text": "June 5, 2026",
+      "end_time": "6:30 PM",
+      "offer_id": "6125",
+      "offer_title": "06/05/26 - Culture Pass - Jim Henson's Fraggle Rock: Back to the Rock LIVE - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "New Victory Theater"
     },
     {
       "attraction_name": "Pregones/PRTT",
