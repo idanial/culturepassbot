@@ -246,6 +246,11 @@
       "url": "http://www.nytransitmuseum.org/"
     },
     {
+      "id": "130",
+      "name": "Playwrights Horizons",
+      "url": "https://www.playwrightshorizons.org/"
+    },
+    {
       "id": "59",
       "name": "Poster House",
       "url": "http://www.posterhouse.org/"
@@ -304,6 +309,11 @@
       "id": "26",
       "name": "The Frick Collection",
       "url": "https://www.frick.org/"
+    },
+    {
+      "id": "118",
+      "name": "The Jazz Gallery",
+      "url": "https://jazzgallery.org/"
     },
     {
       "id": "27",
