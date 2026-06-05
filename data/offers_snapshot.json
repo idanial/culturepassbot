@@ -1,60 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "June 5, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6028",
-      "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Conrad Tao - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "June 5, 2026",
-      "end_time": "7:30 PM",
-      "offer_id": "6026",
-      "offer_title": "06/05/26 - Culture Pass - 100 Years of American Piano Music: Jenny Lin - 6:00 PM",
-      "start_time": "6:00 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
-      "attraction_name": "New Victory Theater",
-      "date_text": "June 5, 2026",
-      "end_time": "1:30 PM",
-      "offer_id": "6124",
-      "offer_title": "06/05/26 - Culture Pass - Jim Henson's Fraggle Rock: Back to the Rock LIVE - 12:00 PM",
-      "start_time": "12:00 PM",
-      "venue_name": "New Victory Theater"
-    },
-    {
-      "attraction_name": "New Victory Theater",
-      "date_text": "June 5, 2026",
-      "end_time": "6:30 PM",
-      "offer_id": "6125",
-      "offer_title": "06/05/26 - Culture Pass - Jim Henson's Fraggle Rock: Back to the Rock LIVE - 5:00 PM",
-      "start_time": "5:00 PM",
-      "venue_name": "New Victory Theater"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "June 5, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6089",
-      "offer_title": "06/05/26 - Culture Pass - Torched! In Concert - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Pregones Theater"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "June 5, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6133",
-      "offer_title": "06/05/26 - Culture Pass - Matthew Stevens - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Classic Stage Company",
       "date_text": "June 6, 2026",
       "end_time": "4:15 PM",
@@ -134,15 +80,6 @@
       "offer_title": "06/06/26 - Culture Pass - Jonathan Paik - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Classic Stage Company",
-      "date_text": "June 7, 2026",
-      "end_time": "4:15 PM",
-      "offer_id": "6116",
-      "offer_title": "06/07/26 - Culture Pass - Thornton Wilder's The Emporium - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Classic Stage Company"
     },
     {
       "attraction_name": "Irish Arts Center",
