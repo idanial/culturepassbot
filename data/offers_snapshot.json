@@ -2,42 +2,6 @@
   "offers": [
     {
       "attraction_name": "Center for Fiction",
-      "date_text": "June 10, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "6045",
-      "offer_title": "06/10/26 - Culture Pass - Imaginative Firsts: On Writing Debut Sci-Fi and Fantasy - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "June 10, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6042",
-      "offer_title": "06/10/26 - Culture Pass - June Monthly Jazz Jam Honoring Bessie Smith - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
-      "date_text": "June 10, 2026",
-      "end_time": "8:45 PM",
-      "offer_id": "6117",
-      "offer_title": "06/10/26 - Culture Pass - North Star - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "June 10, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6136",
-      "offer_title": "06/10/26 - Culture Pass - The Adam Lamoureux Quartet - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Center for Fiction",
       "date_text": "June 11, 2026",
       "end_time": "8:15 PM",
       "offer_id": "6046",
@@ -84,15 +48,6 @@
     {
       "attraction_name": "Irish Arts Center",
       "date_text": "June 13, 2026",
-      "end_time": "3:15 PM",
-      "offer_id": "6121",
-      "offer_title": "06/13/26 - Culture Pass - North Star - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
-      "date_text": "June 13, 2026",
       "end_time": "8:45 PM",
       "offer_id": "6120",
       "offer_title": "06/13/26 - Culture Pass - North Star - 7:30 PM",
@@ -116,15 +71,6 @@
       "offer_title": "06/13/26 - Culture Pass - Jerome - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Playwrights Horizons"
-    },
-    {
-      "attraction_name": "Film Forum",
-      "date_text": "June 15, 2026",
-      "end_time": "7:00 PM",
-      "offer_id": "6082",
-      "offer_title": "06/15/26 - Culture Pass - Promised Sky",
-      "start_time": "7:00 PM",
-      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "Film Forum",
