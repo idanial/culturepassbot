@@ -46,6 +46,15 @@
       "venue_name": "Irish Arts Center"
     },
     {
+      "attraction_name": "Playwrights Horizons",
+      "date_text": "June 12, 2026",
+      "end_time": "9:45 PM",
+      "offer_id": "6147",
+      "offer_title": "06/12/26 - Culture Pass - Jerome - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Playwrights Horizons"
+    },
+    {
       "attraction_name": "Irish Arts Center",
       "date_text": "June 13, 2026",
       "end_time": "3:15 PM",
@@ -91,13 +100,13 @@
       "venue_name": "Irish Arts Center"
     },
     {
-      "attraction_name": "Film Forum",
-      "date_text": "June 16, 2026",
-      "end_time": "7:00 PM",
-      "offer_id": "6083",
-      "offer_title": "06/16/26 - Culture Pass - Promised Sky",
-      "start_time": "7:00 PM",
-      "venue_name": "Film Forum"
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "June 17, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6140",
+      "offer_title": "06/17/26 - Culture Pass - Anthony Tidd\u2019s Mono Stereo - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -109,6 +118,15 @@
       "venue_name": "Center for Fiction"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "June 18, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6142",
+      "offer_title": "06/18/26 - Culture Pass - Guillermo Klein Quintet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "June 19, 2026",
       "end_time": "9:00 PM",
@@ -116,6 +134,24 @@
       "offer_title": "06/19/26 - Culture Pass - Juneteenth Storytelling Celebration with April Armstrong - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "June 24, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6144",
+      "offer_title": "06/24/26 - Culture Pass - Timothy Angulo - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "June 25, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6146",
+      "offer_title": "06/25/26 - Culture Pass - Ethan Iverson - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Center for Fiction",
