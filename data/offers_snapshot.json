@@ -2,33 +2,6 @@
   "offers": [
     {
       "attraction_name": "Irish Arts Center",
-      "date_text": "June 13, 2026",
-      "end_time": "3:15 PM",
-      "offer_id": "6121",
-      "offer_title": "06/13/26 - Culture Pass - North Star - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
-      "date_text": "June 13, 2026",
-      "end_time": "8:45 PM",
-      "offer_id": "6120",
-      "offer_title": "06/13/26 - Culture Pass - North Star - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "Playwrights Horizons",
-      "date_text": "June 13, 2026",
-      "end_time": "9:45 PM",
-      "offer_id": "6132",
-      "offer_title": "06/13/26 - Culture Pass - Jerome - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Playwrights Horizons"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
       "date_text": "June 14, 2026",
       "end_time": "6:15 PM",
       "offer_id": "6122",
