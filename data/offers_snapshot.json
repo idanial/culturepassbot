@@ -1,6 +1,24 @@
 {
   "offers": [
     {
+      "attraction_name": "Playwrights Horizons",
+      "date_text": "June 16, 2026",
+      "end_time": "4:45 PM",
+      "offer_id": "6150",
+      "offer_title": "06/16/26 - Culture Pass - Jerome - 2:30 PM",
+      "start_time": "2:30 PM",
+      "venue_name": "Playwrights Horizons"
+    },
+    {
+      "attraction_name": "Playwrights Horizons",
+      "date_text": "June 16, 2026",
+      "end_time": "9:45 PM",
+      "offer_id": "6151",
+      "offer_title": "06/16/26 - Culture Pass - Jerome - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Playwrights Horizons"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "June 17, 2026",
       "end_time": "10:15 PM",
@@ -17,6 +35,15 @@
       "offer_title": "06/18/26 - Culture Pass - Indigenous Narratives of the Past, Present, and Future - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 18, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6152",
+      "offer_title": "06/18/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "The Jazz Gallery",
@@ -37,6 +64,42 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 19, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6153",
+      "offer_title": "06/19/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 20, 2026",
+      "end_time": "3:15 PM",
+      "offer_id": "6155",
+      "offer_title": "06/20/26 - Culture Pass - North Star - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 20, 2026",
+      "end_time": "8:45 PM",
+      "offer_id": "6154",
+      "offer_title": "06/20/26 - Culture Pass - North Star - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "June 21, 2026",
+      "end_time": "6:15 PM",
+      "offer_id": "6156",
+      "offer_title": "06/21/26 - Culture Pass - North Star - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "June 24, 2026",
       "end_time": "10:15 PM",
@@ -55,6 +118,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "July 9, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6157",
+      "offer_title": "07/09/26 - Culture Pass - Nuevas Voces: Emerging Voices in Latin Jazz: Gabriela Anders & Los Dukes - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "July 9, 2026",
       "end_time": "8:15 PM",
@@ -62,6 +134,15 @@
       "offer_title": "07/09/26 - Culture Pass - De'Shawn Charles Winslow on The Fervent Whites with Samantha Hunt - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "July 15, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6158",
+      "offer_title": "07/15/26 - Culture Pass - Bochinchando: Uptown Solo - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
     }
   ]
 }
