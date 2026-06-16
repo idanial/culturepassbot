@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Playwrights Horizons",
-      "date_text": "June 16, 2026",
-      "end_time": "4:45 PM",
-      "offer_id": "6150",
-      "offer_title": "06/16/26 - Culture Pass - Jerome - 2:30 PM",
-      "start_time": "2:30 PM",
-      "venue_name": "Playwrights Horizons"
-    },
-    {
-      "attraction_name": "Playwrights Horizons",
-      "date_text": "June 16, 2026",
-      "end_time": "9:45 PM",
-      "offer_id": "6151",
-      "offer_title": "06/16/26 - Culture Pass - Jerome - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Playwrights Horizons"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "June 17, 2026",
       "end_time": "10:15 PM",
@@ -26,15 +8,6 @@
       "offer_title": "06/17/26 - Culture Pass - Anthony Tidd\u2019s Mono Stereo - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "Center for Fiction",
-      "date_text": "June 18, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "6048",
-      "offer_title": "06/18/26 - Culture Pass - Indigenous Narratives of the Past, Present, and Future - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
     },
     {
       "attraction_name": "Irish Arts Center",
@@ -141,6 +114,15 @@
       "end_time": "9:00 PM",
       "offer_id": "6158",
       "offer_title": "07/15/26 - Culture Pass - Bochinchando: Uptown Solo - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "July 16, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6159",
+      "offer_title": "07/16/26 - Culture Pass - The WORD on 163rd - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
     }
