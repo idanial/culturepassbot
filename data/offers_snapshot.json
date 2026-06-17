@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "June 17, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6140",
-      "offer_title": "06/17/26 - Culture Pass - Anthony Tidd\u2019s Mono Stereo - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Center for Fiction",
       "date_text": "June 18, 2026",
       "end_time": "8:15 PM",
@@ -133,6 +124,15 @@
       "offer_id": "6159",
       "offer_title": "07/16/26 - Culture Pass - The WORD on 163rd - 7:00 PM",
       "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "July 17, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6160",
+      "offer_title": "07/17/26 - Culture Pass - Bronx Rising!: Kuba Festival: Rumba from Kinshasa to the Bronx - 6:00 PM",
+      "start_time": "6:00 PM",
       "venue_name": "Bronx Music Hall"
     }
   ]
