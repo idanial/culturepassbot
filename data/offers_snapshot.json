@@ -2,24 +2,6 @@
   "offers": [
     {
       "attraction_name": "Irish Arts Center",
-      "date_text": "June 20, 2026",
-      "end_time": "3:15 PM",
-      "offer_id": "6155",
-      "offer_title": "06/20/26 - Culture Pass - North Star - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
-      "date_text": "June 20, 2026",
-      "end_time": "8:45 PM",
-      "offer_id": "6154",
-      "offer_title": "06/20/26 - Culture Pass - North Star - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Irish Arts Center"
-    },
-    {
-      "attraction_name": "Irish Arts Center",
       "date_text": "June 21, 2026",
       "end_time": "6:15 PM",
       "offer_id": "6156",
