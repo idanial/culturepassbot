@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Film Forum",
+      "date_text": "August 11, 2026",
+      "end_time": "7:00 PM",
+      "offer_id": "6207",
+      "offer_title": "08/11/26 - Culture Pass - Late Fame",
+      "start_time": "7:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "August 11, 2026",
       "end_time": "10:15 PM",
@@ -8,6 +17,15 @@
       "offer_title": "08/11/26 - Culture Pass - Cosmo Lieberman - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "August 13, 2026",
+      "end_time": "6:30 PM",
+      "offer_id": "6247",
+      "offer_title": "08/13/26 \u2013 Culture Pass \u2013 Red Flag of the Future \u2013 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "Teatro SEA",
