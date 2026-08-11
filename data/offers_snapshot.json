@@ -3,15 +3,6 @@
     {
       "attraction_name": "Teatro SEA",
       "date_text": "August 13, 2026",
-      "end_time": "6:30 PM",
-      "offer_id": "6247",
-      "offer_title": "08/13/26 \u2013 Culture Pass \u2013 Red Flag of the Future \u2013 5:00 PM",
-      "start_time": "5:00 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 13, 2026",
       "end_time": "4:30 PM",
       "offer_id": "6244",
       "offer_title": "08/13/26 \u2013 Culture Pass \u2013 T\u00edteres en el Caribe Hispano \u2013 3:00 PM",
@@ -26,6 +17,15 @@
       "offer_title": "08/13/26 - Culture Pass - Sylvie Courvoisier and Alden Hellmuth - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "August 14, 2026",
+      "end_time": "2:45 PM",
+      "offer_id": "6257",
+      "offer_title": "08/14/26 \u2013 Culture Pass \u2013 Historia de Burros \u2013 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "Teatro SEA",
