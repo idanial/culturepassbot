@@ -1,51 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "August 15, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6256",
-      "offer_title": "08/15/26 - Culture Pass - Spirits from Both Sides - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 15, 2026",
-      "end_time": "12:30 PM",
-      "offer_id": "6251",
-      "offer_title": "08/15/26 \u2013 Culture Pass \u2013 Famous Lake Park - We have a tiger \u2013 12:00 PM",
-      "start_time": "12:00 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 15, 2026",
-      "end_time": "4:15 PM",
-      "offer_id": "6254",
-      "offer_title": "08/15/26 \u2013 Culture Pass \u2013 Handmade Puppet Dreams \u2013 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 15, 2026",
-      "end_time": "12:45 PM",
-      "offer_id": "6258",
-      "offer_title": "08/15/26 \u2013 Culture Pass \u2013 Historia de Burros \u2013 12:00 PM",
-      "start_time": "12:00 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 15, 2026",
-      "end_time": "1:45 PM",
-      "offer_id": "6253",
-      "offer_title": "08/15/26 \u2013 Culture Pass \u2013 Retablo de sol y luna \u2013 1:00 PM",
-      "start_time": "1:00 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
       "attraction_name": "Teatro SEA",
       "date_text": "August 16, 2026",
       "end_time": "3:00 PM",
