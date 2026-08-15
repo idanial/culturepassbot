@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "August 15, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6256",
+      "offer_title": "08/15/26 - Culture Pass - Spirits from Both Sides - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "Teatro SEA",
       "date_text": "August 15, 2026",
       "end_time": "12:30 PM",
@@ -79,15 +88,6 @@
       "offer_id": "6264",
       "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Ricitos y los tres ositos \u2013 2:30 PM",
       "start_time": "2:30 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "1:15 PM",
-      "offer_id": "6261",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 The Galapagos Animal Convention \u2013 12:30 PM",
-      "start_time": "12:30 PM",
       "venue_name": "Teatro SEA"
     },
     {
