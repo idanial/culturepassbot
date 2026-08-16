@@ -1,60 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "3:00 PM",
-      "offer_id": "6252",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Famous Lake Park - We have a tiger \u2013 2:30 PM",
-      "start_time": "2:30 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "4:45 PM",
-      "offer_id": "6255",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Handmade Puppet Dreams \u2013 3:30 PM",
-      "start_time": "3:30 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "11:45 AM",
-      "offer_id": "6259",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Historia de Burros \u2013 11:00 AM",
-      "start_time": "11:00 AM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "2:00 PM",
-      "offer_id": "6248",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Red Flag of the Future \u2013 12:30 PM",
-      "start_time": "12:30 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "3:15 PM",
-      "offer_id": "6264",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 Ricitos y los tres ositos \u2013 2:30 PM",
-      "start_time": "2:30 PM",
-      "venue_name": "Teatro SEA"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "August 16, 2026",
-      "end_time": "12:15 PM",
-      "offer_id": "6250",
-      "offer_title": "08/16/26 \u2013 Culture Pass \u2013 UNTANGLING \u2013 11:30 AM",
-      "start_time": "11:30 AM",
-      "venue_name": "Teatro SEA"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "August 19, 2026",
       "end_time": "10:15 PM",
