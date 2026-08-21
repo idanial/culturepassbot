@@ -1,13 +1,3 @@
 {
-  "offers": [
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "August 21, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6243",
-      "offer_title": "08/21/26 - Culture Pass - Mike Moreno - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    }
-  ]
+  "offers": []
 }
