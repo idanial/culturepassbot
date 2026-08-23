@@ -1,13 +1,3 @@
 {
-  "offers": [
-    {
-      "attraction_name": "Brooklyn Music School",
-      "date_text": "September 13, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6267",
-      "offer_title": "09/13/26 - Culture Pass - PRISM Quartet and Craig Taborn: Three Animal Riddles - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Brooklyn Music School Playhouse"
-    }
-  ]
+  "offers": []
 }
