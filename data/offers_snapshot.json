@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "September 9, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6288",
+      "offer_title": "09/09/26 - Culture Pass - Monthly Jazz Jam: Celebrating Latin Jazz Music and Musicians - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 9, 2026",
       "end_time": "10:15 PM",
@@ -37,6 +46,24 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "September 19, 2026",
+      "end_time": "12:00 PM",
+      "offer_id": "6289",
+      "offer_title": "09/19/26 - Culture Pass - Galapagos Puppet Theater Presents: The Blazing Fire Mountain and Its Princess - 11:00 AM",
+      "start_time": "11:00 AM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "September 19, 2026",
+      "end_time": "3:00 PM",
+      "offer_id": "6290",
+      "offer_title": "09/19/26 - Culture Pass - Galapagos Puppet Theater Presents: The Blazing Fire Mountain and Its Princess - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 23, 2026",
       "end_time": "10:15 PM",
@@ -44,6 +71,15 @@
       "offer_title": "09/23/26 - Culture Pass - Tyrone Allen II and Travelers - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "September 24, 2026",
+      "end_time": "10:30 PM",
+      "offer_id": "6291",
+      "offer_title": "09/24/26 - Culture Pass - Pahua Live In Concert - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Flushing Town Hall"
     },
     {
       "attraction_name": "The Jazz Gallery",
