@@ -89,6 +89,24 @@
       "offer_title": "09/24/26 - Culture Pass - VEN Trio - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Museum of Chinese in America",
+      "date_text": "September 26, 2026",
+      "end_time": "5:00 PM",
+      "offer_id": "6266",
+      "offer_title": "09/26/26 - Culture Pass - Mid-Autumn Family Festival Afternoon Session - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Museum of Chinese in America"
+    },
+    {
+      "attraction_name": "Museum of Chinese in America",
+      "date_text": "September 26, 2026",
+      "end_time": "1:00 PM",
+      "offer_id": "6265",
+      "offer_title": "09/26/26 - Culture Pass - Mid-Autumn Family Festival Morning Session - 10:00 AM",
+      "start_time": "10:00 AM",
+      "venue_name": "Museum of Chinese in America"
     }
   ]
 }
