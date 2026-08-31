@@ -89,6 +89,15 @@
       "offer_title": "09/26/26 - Culture Pass - Mid-Autumn Family Festival Morning Session - 10:00 AM",
       "start_time": "10:00 AM",
       "venue_name": "Museum of Chinese in America"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "September 30, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6287",
+      "offer_title": "09/30/26 - Culture Pass - Jacques Schwarz-Bart RESISTANCE - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     }
   ]
 }
