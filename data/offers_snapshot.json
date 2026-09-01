@@ -1,6 +1,24 @@
 {
   "offers": [
     {
+      "attraction_name": "Film Forum",
+      "date_text": "September 7, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6294",
+      "offer_title": "09/07/26 - Culture Pass - Barbara Forever",
+      "start_time": "12:45 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "September 8, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6295",
+      "offer_title": "09/08/26 - Culture Pass - Barbara Forever",
+      "start_time": "12:45 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "September 9, 2026",
       "end_time": "10:00 PM",
@@ -55,6 +73,24 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Film Forum",
+      "date_text": "September 21, 2026",
+      "end_time": "10:45 PM",
+      "offer_id": "6296",
+      "offer_title": "09/21/26 - Culture Pass - You Had To Be There",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "September 22, 2026",
+      "end_time": "10:45 PM",
+      "offer_id": "6297",
+      "offer_title": "09/22/26 - Culture Pass - You Had To Be There",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 23, 2026",
       "end_time": "10:15 PM",
@@ -89,6 +125,24 @@
       "offer_title": "09/26/26 - Culture Pass - Mid-Autumn Family Festival Morning Session - 10:00 AM",
       "start_time": "10:00 AM",
       "venue_name": "Museum of Chinese in America"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "September 28, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6298",
+      "offer_title": "09/28/26 - Culture Pass - The Scout",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "September 29, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6299",
+      "offer_title": "09/29/26 - Culture Pass - The Scout",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "The Jazz Gallery",
