@@ -111,11 +111,6 @@
       "url": "http://www.elmuseo.org/"
     },
     {
-      "id": "126",
-      "name": "Film Forum",
-      "url": "https://www.filmforum.org/"
-    },
-    {
       "id": "75",
       "name": "Flushing Town Hall",
       "url": "http://www.flushingtownhall.org/"
@@ -154,6 +149,11 @@
       "id": "24",
       "name": "Jacques Marchais Museum of Tibetan Art",
       "url": "https://www.tibetanmuseum.org/"
+    },
+    {
+      "id": "54",
+      "name": "Japan Society",
+      "url": "https://www.japansociety.org/"
     },
     {
       "id": "96",
