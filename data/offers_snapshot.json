@@ -143,6 +143,15 @@
       "offer_title": "09/30/26 - Culture Pass - Jacques Schwarz-Bart RESISTANCE - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "October 3, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6292",
+      "offer_title": "10/03/26 - Culture Pass - GLOBAL MASHUP: Greece Meets Garifuna - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
     }
   ]
 }
