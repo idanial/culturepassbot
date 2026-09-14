@@ -125,6 +125,24 @@
       "offer_title": "10/07/26 - Culture Pass - Imbolo Mbue on Every Story Is a Love Story - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "October 14, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6270",
+      "offer_title": "10/14/26 - Culture Pass - Mathias \u00c9nard on Perfecting the Shot with Nicole Krauss - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "October 14, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6293",
+      "offer_title": "10/14/26 - Culture Pass - Monthly Jazz Jam: Celebrating Thelonious Monk and the Bebop Pioneers - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
     }
   ]
 }
