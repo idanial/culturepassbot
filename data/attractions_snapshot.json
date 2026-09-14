@@ -86,6 +86,11 @@
       "url": "https://www.cooperhewitt.org/"
     },
     {
+      "id": "100",
+      "name": "CreArtBox",
+      "url": "https://creartbox.nyc/"
+    },
+    {
       "id": "123",
       "name": "Derfner Judaica Museum",
       "url": "https://www.derfner.org/"
@@ -169,6 +174,11 @@
       "id": "70",
       "name": "King Manor Museum",
       "url": "http://www.kingmanor.org/"
+    },
+    {
+      "id": "68",
+      "name": "Kings Theatre",
+      "url": "http://www.kingstheatre.com/"
     },
     {
       "id": "121",

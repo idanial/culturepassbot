@@ -38,15 +38,6 @@
     },
     {
       "attraction_name": "Film Forum",
-      "date_text": "September 21, 2026",
-      "end_time": "10:45 PM",
-      "offer_id": "6296",
-      "offer_title": "09/21/26 - Culture Pass - You Had To Be There",
-      "start_time": "12:15 PM",
-      "venue_name": "Film Forum"
-    },
-    {
-      "attraction_name": "Film Forum",
       "date_text": "September 22, 2026",
       "end_time": "10:45 PM",
       "offer_id": "6297",
@@ -80,6 +71,15 @@
       "offer_title": "09/24/26 - Culture Pass - VEN Trio - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Kings Theatre",
+      "date_text": "September 26, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6304",
+      "offer_title": "09/26/26 - Culture Pass - Outlander In Concert - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Kings Theatre"
     },
     {
       "attraction_name": "Film Forum",
