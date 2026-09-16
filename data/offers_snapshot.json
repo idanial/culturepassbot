@@ -2,15 +2,6 @@
   "offers": [
     {
       "attraction_name": "The Jazz Gallery",
-      "date_text": "September 16, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6279",
-      "offer_title": "09/16/26 - Culture Pass - Festival of New Trumpet Music - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
       "date_text": "September 17, 2026",
       "end_time": "10:15 PM",
       "offer_id": "6281",
@@ -152,6 +143,15 @@
       "offer_title": "10/14/26 - Culture Pass - Monthly Jazz Jam: Celebrating Thelonious Monk and the Bebop Pioneers - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "October 16, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6215",
+      "offer_title": "10/16/26 - Culture Pass - The Anthology or Art Song by Black Composers - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
