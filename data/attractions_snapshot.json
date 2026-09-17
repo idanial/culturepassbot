@@ -131,6 +131,11 @@
       "url": "https://www.historicrichmondtown.org/"
     },
     {
+      "id": "132",
+      "name": "Ice Theatre of New York",
+      "url": "https://icetheatre.org/"
+    },
+    {
       "id": "23",
       "name": "International Center of Photography",
       "url": "https://www.icp.org/"
@@ -259,6 +264,11 @@
       "id": "25",
       "name": "New York Transit Museum",
       "url": "http://www.nytransitmuseum.org/"
+    },
+    {
+      "id": "57",
+      "name": "Peoples' Symphony Concerts",
+      "url": "https://culturepassnyc.quipugroup.net/www.pscny.org"
     },
     {
       "id": "59",
