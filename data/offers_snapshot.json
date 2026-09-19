@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "September 19, 2026",
-      "end_time": "12:00 PM",
-      "offer_id": "6289",
-      "offer_title": "09/19/26 - Culture Pass - Galapagos Puppet Theater Presents: The Blazing Fire Mountain and Its Princess - 11:00 AM",
-      "start_time": "11:00 AM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Film Forum",
-      "date_text": "September 21, 2026",
-      "end_time": "10:45 PM",
-      "offer_id": "6296",
-      "offer_title": "09/21/26 - Culture Pass - You Had To Be There",
-      "start_time": "12:15 PM",
-      "venue_name": "Film Forum"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 23, 2026",
       "end_time": "10:15 PM",
