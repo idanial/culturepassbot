@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Film Forum",
+      "date_text": "September 22, 2026",
+      "end_time": "10:45 PM",
+      "offer_id": "6297",
+      "offer_title": "09/22/26 - Culture Pass - You Had To Be There",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 23, 2026",
       "end_time": "10:15 PM",
@@ -44,6 +53,15 @@
       "offer_title": "09/29/26 - Culture Pass - The Scout",
       "start_time": "12:15 PM",
       "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "September 30, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6286",
+      "offer_title": "09/30/26 - Culture Pass - Jacques Schwarz-Bart RESISTANCE - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Flushing Town Hall",
