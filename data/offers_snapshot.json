@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Film Forum",
-      "date_text": "September 22, 2026",
-      "end_time": "10:45 PM",
-      "offer_id": "6297",
-      "offer_title": "09/22/26 - Culture Pass - You Had To Be There",
-      "start_time": "12:15 PM",
-      "venue_name": "Film Forum"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 23, 2026",
       "end_time": "10:15 PM",
@@ -53,15 +44,6 @@
       "offer_title": "09/29/26 - Culture Pass - The Scout",
       "start_time": "12:15 PM",
       "venue_name": "Film Forum"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "September 30, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6286",
-      "offer_title": "09/30/26 - Culture Pass - Jacques Schwarz-Bart RESISTANCE - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -116,6 +98,24 @@
       "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "High School of Fashion Industries"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "October 22, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6271",
+      "offer_title": "10/22/26 - Culture Pass - Andrew Miller on The Land in Winter with Susan Choi - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "October 22, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6219",
+      "offer_title": "10/22/26 - Culture Pass - Evren Ozel, piano & Joshua Brown, violin - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
