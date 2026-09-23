@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "September 23, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6283",
-      "offer_title": "09/23/26 - Culture Pass - Tyrone Allen II and Travelers - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "September 24, 2026",
       "end_time": "10:30 PM",
@@ -107,6 +98,15 @@
       "offer_title": "10/22/26 - Culture Pass - Evren Ozel, piano & Joshua Brown, violin - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "October 23, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6272",
+      "offer_title": "10/23/26 - Culture Pass -Tana\u00efs on Stellar Smoke with Kiese Laymon - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
     }
   ]
 }
