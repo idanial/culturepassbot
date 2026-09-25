@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Kings Theatre",
+      "date_text": "September 26, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6304",
+      "offer_title": "09/26/26 - Culture Pass - Outlander In Concert - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Kings Theatre"
+    },
+    {
       "attraction_name": "Film Forum",
       "date_text": "September 28, 2026",
       "end_time": "10:00 PM",
@@ -28,6 +37,24 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 7, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6311",
+      "offer_title": "10/07/26 - Culture Pass - The Trap Music Orchestra - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 8, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6313",
+      "offer_title": "10/08/26 - Culture Pass - Pi Records 25th Anniversary Celebration - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 14, 2026",
       "end_time": "8:15 PM",
@@ -44,6 +71,24 @@
       "offer_title": "10/14/26 - Culture Pass - Monthly Jazz Jam: Celebrating Thelonious Monk and the Bebop Pioneers - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 14, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6315",
+      "offer_title": "10/14/26 - Culture Pass - Joey Curreri Quintet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 15, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6317",
+      "offer_title": "10/15/26 - Culture Pass - The Angelica Sanchez Nonet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Kaufman Music Center",
