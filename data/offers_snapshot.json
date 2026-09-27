@@ -125,6 +125,24 @@
       "offer_title": "10/23/26 - Culture Pass -Tana\u00efs on Stellar Smoke with Kiese Laymon - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Center for Fiction",
+      "date_text": "October 27, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6273",
+      "offer_title": "10/27/26 - Culture Pass - Daphne Palasi Andreades on Lucid Dreams with Jessica Hagedorn - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Center for Fiction"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "October 27, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6221",
+      "offer_title": "10/27/26 - Culture Pass - Lembit Beecher & Karen Ouzounian: Mayrig - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
