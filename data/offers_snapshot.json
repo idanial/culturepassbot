@@ -10,6 +10,15 @@
       "venue_name": "Film Forum"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "September 30, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6287",
+      "offer_title": "09/30/26 - Culture Pass - Jacques Schwarz-Bart RESISTANCE - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "October 3, 2026",
       "end_time": "10:00 PM",
@@ -37,6 +46,24 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "October 9, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6320",
+      "offer_title": "10/09/26 - Culture Pass - Nuevas Voces: Afro-Jobim with Nanny Assis - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "October 10, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6321",
+      "offer_title": "10/10/26 - Culture Pass - Bronx Rising: Bronx Blues Part 3, Casablanca Blues - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 14, 2026",
       "end_time": "8:15 PM",
@@ -62,6 +89,15 @@
       "offer_title": "10/14/26 - Culture Pass - Joey Curreri Quintet - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Bronx Music Heritage Center",
+      "date_text": "October 15, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6322",
+      "offer_title": "10/15/26 - Culture Pass - The Word on 163rd Open Mic - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Bronx Music Hall"
     },
     {
       "attraction_name": "The Jazz Gallery",
