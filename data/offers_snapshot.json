@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Film Forum",
-      "date_text": "September 29, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6299",
-      "offer_title": "09/29/26 - Culture Pass - The Scout",
-      "start_time": "12:15 PM",
-      "venue_name": "Film Forum"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 30, 2026",
       "end_time": "10:15 PM",
@@ -170,6 +161,15 @@
       "offer_title": "10/27/26 - Culture Pass - Lembit Beecher & Karen Ouzounian: Mayrig - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 29, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6319",
+      "offer_title": "10/29/26 - Culture Pass - Myra Melford\u2019s Splash - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     }
   ]
 }
