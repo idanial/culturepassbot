@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "September 30, 2026",
+      "end_time": "8:15 PM",
+      "offer_id": "6323",
+      "offer_title": "09/30/26 - Culture Pass - T. J. English in Conversation - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "September 30, 2026",
       "end_time": "10:15 PM",
