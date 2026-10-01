@@ -188,6 +188,15 @@
       "offer_title": "10/29/26 - Culture Pass - Myra Melford\u2019s Splash - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 31, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6308",
+      "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Washington Irving High School"
     }
   ]
 }
