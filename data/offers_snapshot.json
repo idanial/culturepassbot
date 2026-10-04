@@ -170,6 +170,15 @@
       "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Washington Irving High School"
+    },
+    {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "November 3, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "6223",
+      "offer_title": "11/03/26 - Culture Pass - Jonathan Leibovitz, clarinet - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Merkin Hall"
     }
   ]
 }
