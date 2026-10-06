@@ -266,6 +266,11 @@
       "url": "http://www.nytransitmuseum.org/"
     },
     {
+      "id": "92",
+      "name": "New York Youth Symphony",
+      "url": "https://nyys.org/"
+    },
+    {
       "id": "57",
       "name": "Peoples' Symphony Concerts",
       "url": "https://culturepassnyc.quipugroup.net/www.pscny.org"
@@ -274,6 +279,11 @@
       "id": "59",
       "name": "Poster House",
       "url": "http://www.posterhouse.org/"
+    },
+    {
+      "id": "98",
+      "name": "Pregones/PRTT",
+      "url": "https://pregonesprtt.org/"
     },
     {
       "id": "62",

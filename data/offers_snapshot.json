@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Center for Fiction",
-      "date_text": "October 7, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "6268",
-      "offer_title": "10/07/26 - Culture Pass - Imbolo Mbue on Every Story Is a Love Story - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 7, 2026",
       "end_time": "10:15 PM",
@@ -91,6 +82,15 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 15, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6331",
+      "offer_title": "10/15/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 15, 2026",
       "end_time": "10:15 PM",
@@ -100,6 +100,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 16, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6332",
+      "offer_title": "10/16/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "October 17, 2026",
       "end_time": "9:30 PM",
@@ -107,6 +116,33 @@
       "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "High School of Fashion Industries"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 17, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6334",
+      "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 18, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6335",
+      "offer_title": "10/18/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 21, 2026",
+      "end_time": "12:30 PM",
+      "offer_id": "6336",
+      "offer_title": "10/21/26 - Culture Pass - Leave a Message After...THE BEEP - 11:00 AM",
+      "start_time": "11:00 AM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -136,6 +172,15 @@
       "venue_name": "Center for Fiction"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 23, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6337",
+      "offer_title": "10/23/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "October 24, 2026",
       "end_time": "9:00 PM",
@@ -143,6 +188,24 @@
       "offer_title": "General Info Venues/Locations Images Offers 10/24/26 - Culture Pass - Rock the Bronx: Rock, Funk & Punk - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 24, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6338",
+      "offer_title": "10/24/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 25, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6340",
+      "offer_title": "10/25/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Center for Fiction",
