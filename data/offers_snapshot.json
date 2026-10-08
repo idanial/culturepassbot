@@ -19,6 +19,15 @@
       "venue_name": "Bronx Music Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 10, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6342",
+      "offer_title": "10/10/26 - Culture Pass - Pi Recordings 25th Anniversary Celebration - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 14, 2026",
       "end_time": "8:15 PM",
@@ -64,15 +73,6 @@
       "venue_name": "Hostos Center for the Arts & Culture"
     },
     {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 15, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6331",
-      "offer_title": "10/15/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 15, 2026",
       "end_time": "10:15 PM",
@@ -96,15 +96,6 @@
       "end_time": "4:30 PM",
       "offer_id": "6334",
       "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 18, 2026",
-      "end_time": "4:30 PM",
-      "offer_id": "6335",
-      "offer_title": "10/18/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
     },
