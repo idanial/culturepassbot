@@ -19,6 +19,24 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Film Forum",
+      "date_text": "October 12, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6343",
+      "offer_title": "10/12/26 - Culture Pass - MY UNDESIRABLE FRIENDS: PART II \u2013 EXILE",
+      "start_time": "1:00 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "October 13, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6344",
+      "offer_title": "10/13/26 - Culture Pass - MY UNDESIRABLE FRIENDS: PART II \u2013 EXILE",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 14, 2026",
       "end_time": "8:15 PM",
@@ -152,15 +170,6 @@
       "offer_title": "General Info Venues/Locations Images Offers 10/24/26 - Culture Pass - Rock the Bronx: Rock, Funk & Punk - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 24, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6339",
-      "offer_title": "10/24/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Center for Fiction",
