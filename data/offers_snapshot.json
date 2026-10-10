@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Bronx Music Heritage Center",
-      "date_text": "October 10, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6321",
-      "offer_title": "10/10/26 - Culture Pass - Bronx Rising: Bronx Blues Part 3, Casablanca Blues - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Bronx Music Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "October 10, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6342",
-      "offer_title": "10/10/26 - Culture Pass - Pi Recordings 25th Anniversary Celebration - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Film Forum",
       "date_text": "October 12, 2026",
       "end_time": "10:00 PM",
@@ -98,15 +80,6 @@
       "offer_title": "10/16/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "October 17, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6307",
-      "offer_title": "10/17/26 - Culture Pass (Dual) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "High School of Fashion Industries"
     },
     {
       "attraction_name": "Pregones/PRTT",
