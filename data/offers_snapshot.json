@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Film Forum",
-      "date_text": "October 12, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6343",
-      "offer_title": "10/12/26 - Culture Pass - MY UNDESIRABLE FRIENDS: PART II \u2013 EXILE",
-      "start_time": "1:00 PM",
-      "venue_name": "Film Forum"
-    },
-    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 13, 2026",
       "end_time": "8:15 PM",
@@ -80,6 +71,15 @@
       "offer_title": "10/15/26 - Culture Pass - The Angelica Sanchez Nonet - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 17, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6306",
+      "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "High School of Fashion Industries"
     },
     {
       "attraction_name": "Pregones/PRTT",
