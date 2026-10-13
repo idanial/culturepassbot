@@ -2,24 +2,6 @@
   "offers": [
     {
       "attraction_name": "Center for Fiction",
-      "date_text": "October 13, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "6269",
-      "offer_title": "10/13/26 - Culture Pass - Edinburgh at 25 with Alexander Chee - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Film Forum",
-      "date_text": "October 13, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6344",
-      "offer_title": "10/13/26 - Culture Pass - MY UNDESIRABLE FRIENDS: PART II \u2013 EXILE",
-      "start_time": "12:15 PM",
-      "venue_name": "Film Forum"
-    },
-    {
-      "attraction_name": "Center for Fiction",
       "date_text": "October 14, 2026",
       "end_time": "8:15 PM",
       "offer_id": "6270",
@@ -73,6 +55,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Kaufman Music Center",
+      "date_text": "October 16, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6214",
+      "offer_title": "10/16/26 - Culture Pass - The Anthology or Art Song by Black Composers - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Merkin Hall"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "October 16, 2026",
       "end_time": "8:30 PM",
@@ -89,6 +80,24 @@
       "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "October 19, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6345",
+      "offer_title": "10/19/26 - Culture Pass - ONCE UPON A TIME IN HARLEM",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "October 20, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6346",
+      "offer_title": "10/20/26 - Culture Pass - ONCE UPON A TIME IN HARLEM",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -118,15 +127,6 @@
       "venue_name": "Center for Fiction"
     },
     {
-      "attraction_name": "Ice Theatre of New York",
-      "date_text": "October 23, 2026",
-      "end_time": "8:00 PM",
-      "offer_id": "6305",
-      "offer_title": "10/23/26 - Culture Pass - 2026 Fall Frolic Performance - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Ice Theatre of New York"
-    },
-    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "October 24, 2026",
       "end_time": "9:00 PM",
@@ -134,6 +134,15 @@
       "offer_title": "General Info Venues/Locations Images Offers 10/24/26 - Culture Pass - Rock the Bronx: Rock, Funk & Punk - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Film Forum",
+      "date_text": "October 26, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6347",
+      "offer_title": "10/26/26 - Culture Pass - FATHERLAND",
+      "start_time": "12:15 PM",
+      "venue_name": "Film Forum"
     },
     {
       "attraction_name": "Center for Fiction",
