@@ -73,12 +73,30 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 16, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6350",
+      "offer_title": "10/16/26 - Culture Pass - Ole Mathisen Trio - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "October 17, 2026",
       "end_time": "8:30 PM",
       "offer_id": "6333",
       "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
       "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 18, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6335",
+      "offer_title": "10/18/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
