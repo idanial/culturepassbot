@@ -1,33 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Center for Fiction",
-      "date_text": "October 14, 2026",
-      "end_time": "8:15 PM",
-      "offer_id": "6270",
-      "offer_title": "10/14/26 - Culture Pass - Mathias \u00c9nard on Perfecting the Shot with Nicole Krauss - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Center for Fiction"
-    },
-    {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "October 14, 2026",
-      "end_time": "10:00 PM",
-      "offer_id": "6293",
-      "offer_title": "10/14/26 - Culture Pass - Monthly Jazz Jam: Celebrating Thelonious Monk and the Bebop Pioneers - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "October 14, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6315",
-      "offer_title": "10/14/26 - Culture Pass - Joey Curreri Quintet - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "October 15, 2026",
       "end_time": "9:00 PM",
@@ -80,6 +53,15 @@
       "offer_title": "10/16/26 - Culture Pass - Ole Mathisen Trio - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 17, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6306",
+      "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "High School of Fashion Industries"
     },
     {
       "attraction_name": "Pregones/PRTT",
