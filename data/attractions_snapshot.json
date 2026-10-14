@@ -126,6 +126,11 @@
       "url": "https://www.filmforum.org/"
     },
     {
+      "id": "75",
+      "name": "Flushing Town Hall",
+      "url": "http://www.flushingtownhall.org/"
+    },
+    {
       "id": "44",
       "name": "Fraunces Tavern Museum",
       "url": "http://www.frauncestavernmuseum.org/"
@@ -289,6 +294,11 @@
       "id": "36",
       "name": "Queens Museum",
       "url": "http://queensmuseum.org/"
+    },
+    {
+      "id": "125",
+      "name": "Queens Theatre",
+      "url": "https://www.queenstheatre.org/"
     },
     {
       "id": "14",

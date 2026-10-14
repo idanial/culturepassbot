@@ -28,15 +28,6 @@
       "venue_name": "The Jazz Gallery"
     },
     {
-      "attraction_name": "Kaufman Music Center",
-      "date_text": "October 16, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6214",
-      "offer_title": "10/16/26 - Culture Pass - The Anthology or Art Song by Black Composers - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Merkin Hall"
-    },
-    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "October 16, 2026",
       "end_time": "8:30 PM",
@@ -62,15 +53,6 @@
       "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "High School of Fashion Industries"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 17, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6333",
-      "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Pregones/PRTT",
@@ -127,6 +109,15 @@
       "venue_name": "Center for Fiction"
     },
     {
+      "attraction_name": "Queens Theatre",
+      "date_text": "October 23, 2026",
+      "end_time": "9:00 PM",
+      "offer_id": "6355",
+      "offer_title": "10/23/26 - Culture Pass - Xiomara Laugart & Rumbanza Celebrate Celia Cruz - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Queens Theatre"
+    },
+    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "October 24, 2026",
       "end_time": "9:00 PM",
@@ -181,6 +172,15 @@
       "venue_name": "Washington Irving High School"
     },
     {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "November 1, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6358",
+      "offer_title": "11/01/26 - Culture Pass - Diwali Festival: The Indian Wedding - 12:00 PM",
+      "start_time": "12:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "November 3, 2026",
       "end_time": "3:30 PM",
@@ -188,6 +188,24 @@
       "offer_title": "11/03/26 - Culture Pass - Jonathan Leibovitz, clarinet - 2:00 PM",
       "start_time": "2:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "November 7, 2026",
+      "end_time": "11:00 PM",
+      "offer_id": "6357",
+      "offer_title": "11/07/26 - Culture Pass - Queens Jazz Orchestra: The Jimmy Heath Centennial Concert - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Flushing Town Hall",
+      "date_text": "November 11, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6356",
+      "offer_title": "11/11/26 - Culture Pass - Monthly Jazz Jam: Honoring Military Veteran Musicians - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Flushing Town Hall"
     }
   ]
 }
