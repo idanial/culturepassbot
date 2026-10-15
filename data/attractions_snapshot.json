@@ -141,11 +141,6 @@
       "url": "https://www.historicrichmondtown.org/"
     },
     {
-      "id": "136",
-      "name": "Hostos Center for the Arts & Culture",
-      "url": "https://www.hostos.cuny.edu/culturearts/"
-    },
-    {
       "id": "132",
       "name": "Ice Theatre of New York",
       "url": "https://icetheatre.org/"
@@ -404,6 +399,11 @@
       "id": "16",
       "name": "Whitney Museum of American Art",
       "url": "https://whitney.org/"
+    },
+    {
+      "id": "104",
+      "name": "Wollman Rink",
+      "url": "https://wollmanrinknyc.com/"
     },
     {
       "id": "69",
