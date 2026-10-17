@@ -1,24 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "October 17, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6306",
-      "offer_title": "10/17/26 - Culture Pass (Single) - Quatuor Danel Opens PSC's 127th Annual Season - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "High School of Fashion Industries"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 17, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6333",
-      "offer_title": "10/17/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
       "attraction_name": "Film Forum",
       "date_text": "October 19, 2026",
       "end_time": "10:00 PM",
@@ -37,6 +19,15 @@
       "venue_name": "Film Forum"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 21, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6365",
+      "offer_title": "10/21/26 - Culture Pass - TJG Signature Series: Jason Lindner Broadband - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 22, 2026",
       "end_time": "8:15 PM",
@@ -53,6 +44,15 @@
       "offer_title": "10/22/26 - Culture Pass - Evren Ozel, piano & Joshua Brown, violin - 7:30 PM",
       "start_time": "7:30 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "October 22, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6367",
+      "offer_title": "10/22/26 - Culture Pass - TJG Signature Series: Jason Lindner Broadband - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     },
     {
       "attraction_name": "Center for Fiction",
@@ -119,6 +119,15 @@
     },
     {
       "attraction_name": "The Jazz Gallery",
+      "date_text": "October 28, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6369",
+      "offer_title": "10/28/26 - Culture Pass - Esteban Castro & Logan Richardson - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
       "date_text": "October 29, 2026",
       "end_time": "10:15 PM",
       "offer_id": "6319",
@@ -152,6 +161,15 @@
       "offer_title": "11/03/26 - Culture Pass - Jonathan Leibovitz, clarinet - 2:00 PM",
       "start_time": "2:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Kupferberg Center for the Arts",
+      "date_text": "November 6, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6363",
+      "offer_title": "11/06/26 - Culture Pass - Malika Zarra - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Kupferberg Center for the Arts - LeFrak Concert Hall"
     },
     {
       "attraction_name": "Flushing Town Hall",
