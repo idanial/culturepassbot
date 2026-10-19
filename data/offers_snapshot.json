@@ -55,15 +55,6 @@
       "venue_name": "Center for Fiction"
     },
     {
-      "attraction_name": "Queens Theatre",
-      "date_text": "October 23, 2026",
-      "end_time": "9:00 PM",
-      "offer_id": "6355",
-      "offer_title": "10/23/26 - Culture Pass - Xiomara Laugart & Rumbanza Celebrate Celia Cruz - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Queens Theatre"
-    },
-    {
       "attraction_name": "Bronx Music Heritage Center",
       "date_text": "October 24, 2026",
       "end_time": "9:00 PM",
@@ -71,6 +62,24 @@
       "offer_title": "General Info Venues/Locations Images Offers 10/24/26 - Culture Pass - Rock the Bronx: Rock, Funk & Punk - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Bronx Music Hall"
+    },
+    {
+      "attraction_name": "Hostos Center for the Arts & Culture",
+      "date_text": "October 24, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6386",
+      "offer_title": "10/24/26 - Culture Pass - Joe Bataan: 60 Years of Latin Soul & Salsa - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Hostos Center for the Arts & Culture"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "October 25, 2026",
+      "end_time": "6:00 PM",
+      "offer_id": "6370",
+      "offer_title": "10/25/26 - Culture Pass - Oona Doherty: Specky Clark - 5:00 PM",
+      "start_time": "5:00 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "Kupferberg Center for the Arts",
@@ -109,6 +118,15 @@
       "venue_name": "Merkin Hall"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "October 28, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6371",
+      "offer_title": "10/28/26 - Culture Pass - Oona Doherty: Specky Clark - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 28, 2026",
       "end_time": "10:15 PM",
@@ -125,6 +143,24 @@
       "offer_title": "10/29/26 - Culture Pass - Myra Melford\u2019s Splash - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "CreArtBox",
+      "date_text": "October 30, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6303",
+      "offer_title": "10/30/26 - Culture Pass - Currents: Schumann, Brahms & Clara Schumann - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "The DiMenna Center"
+    },
+    {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "October 31, 2026",
+      "end_time": "3:00 PM",
+      "offer_id": "6373",
+      "offer_title": "10/31/26 - Culture Pass - Oona Doherty: Specky Clark - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Irish Arts Center"
     },
     {
       "attraction_name": "Peoples' Symphony Concerts",
@@ -154,6 +190,15 @@
       "venue_name": "Merkin Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "November 4, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6375",
+      "offer_title": "11/04/26 - Culture Pass - The Trap Music Orchestra - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Kupferberg Center for the Arts",
       "date_text": "November 6, 2026",
       "end_time": "9:30 PM",
@@ -181,6 +226,24 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "November 11, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6377",
+      "offer_title": "11/11/26 - Culture Pass - Yvonne Rogers Quartet - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "November 12, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6379",
+      "offer_title": "11/12/26 - Culture Pass - Jonathan Suazo Album Release - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 14, 2026",
       "end_time": "11:00 PM",
@@ -188,6 +251,15 @@
       "offer_title": "11/14/26 - Culture Pass - GLOBAL MASHUP: Hollywood Meets Bollywood - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "The Jazz Gallery",
+      "date_text": "November 18, 2026",
+      "end_time": "10:15 PM",
+      "offer_id": "6381",
+      "offer_title": "11/18/26 - Culture Pass - Adam O\u2019Farrill\u2019s ELEPHANT - 9:00 PM",
+      "start_time": "9:00 PM",
+      "venue_name": "The Jazz Gallery"
     }
   ]
 }
