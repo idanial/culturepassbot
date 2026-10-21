@@ -1,15 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "The Jazz Gallery",
-      "date_text": "October 21, 2026",
-      "end_time": "10:15 PM",
-      "offer_id": "6365",
-      "offer_title": "10/21/26 - Culture Pass - TJG Signature Series: Jason Lindner Broadband - 9:00 PM",
-      "start_time": "9:00 PM",
-      "venue_name": "The Jazz Gallery"
-    },
-    {
       "attraction_name": "Center for Fiction",
       "date_text": "October 22, 2026",
       "end_time": "8:15 PM",
