@@ -46,6 +46,15 @@
       "venue_name": "The DiMenna Center"
     },
     {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 31, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6308",
+      "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Washington Irving High School"
+    },
+    {
       "attraction_name": "Queens Theatre",
       "date_text": "October 31, 2026",
       "end_time": "10:00 PM",
@@ -53,6 +62,15 @@
       "offer_title": "10/31/26 - Culture Pass - CHARO - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Queens Theatre"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "October 31, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6393",
+      "offer_title": "10/31/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -91,6 +109,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Teatro SEA",
+      "date_text": "November 7, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6394",
+      "offer_title": "11/07/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 11, 2026",
       "end_time": "10:00 PM",
@@ -127,6 +154,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Teatro SEA",
+      "date_text": "November 14, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6395",
+      "offer_title": "11/14/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "November 18, 2026",
       "end_time": "10:15 PM",
@@ -134,6 +170,15 @@
       "offer_title": "11/18/26 - Culture Pass - Adam O\u2019Farrill\u2019s ELEPHANT - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "November 21, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6396",
+      "offer_title": "11/21/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "The Jazz Gallery",
