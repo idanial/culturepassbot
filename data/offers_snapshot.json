@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "October 28, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6371",
+      "offer_title": "10/28/26 - Culture Pass - Oona Doherty: Specky Clark - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 28, 2026",
       "end_time": "10:15 PM",
