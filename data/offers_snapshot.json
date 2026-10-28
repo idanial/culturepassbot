@@ -19,6 +19,33 @@
       "venue_name": "The DiMenna Center"
     },
     {
+      "attraction_name": "Irish Arts Center",
+      "date_text": "October 31, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6372",
+      "offer_title": "10/31/26 - Culture Pass - Oona Doherty: Specky Clark - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Irish Arts Center"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 31, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6309",
+      "offer_title": "10/31/26 - Culture Pass (Dual) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Washington Irving High School"
+    },
+    {
+      "attraction_name": "Peoples' Symphony Concerts",
+      "date_text": "October 31, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6308",
+      "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Washington Irving High School"
+    },
+    {
       "attraction_name": "Teatro SEA",
       "date_text": "October 31, 2026",
       "end_time": "4:00 PM",
@@ -62,15 +89,6 @@
       "offer_title": "11/07/26 - Culture Pass - Queens Jazz Orchestra: The Jimmy Heath Centennial Concert - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "November 7, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "6394",
-      "offer_title": "11/07/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "Flushing Town Hall",
