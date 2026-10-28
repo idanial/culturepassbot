@@ -1,6 +1,15 @@
 {
   "offers": [
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 29, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6406",
+      "offer_title": "10/29/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "October 29, 2026",
       "end_time": "10:15 PM",
@@ -19,12 +28,21 @@
       "venue_name": "The DiMenna Center"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 30, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6407",
+      "offer_title": "10/30/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Irish Arts Center",
       "date_text": "October 31, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6372",
-      "offer_title": "10/31/26 - Culture Pass - Oona Doherty: Specky Clark - 7:30 PM",
-      "start_time": "7:30 PM",
+      "end_time": "3:00 PM",
+      "offer_id": "6373",
+      "offer_title": "10/31/26 - Culture Pass - Oona Doherty: Specky Clark - 2:00 PM",
+      "start_time": "2:00 PM",
       "venue_name": "Irish Arts Center"
     },
     {
@@ -46,13 +64,22 @@
       "venue_name": "Washington Irving High School"
     },
     {
-      "attraction_name": "Teatro SEA",
+      "attraction_name": "Pregones/PRTT",
       "date_text": "October 31, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "6393",
-      "offer_title": "10/31/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "end_time": "4:30 PM",
+      "offer_id": "6409",
+      "offer_title": "10/31/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
       "start_time": "3:00 PM",
-      "venue_name": "Teatro SEA"
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "October 31, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6408",
+      "offer_title": "10/31/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -64,6 +91,15 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 1, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6410",
+      "offer_title": "11/01/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "November 3, 2026",
       "end_time": "3:30 PM",
@@ -71,6 +107,24 @@
       "offer_title": "11/03/26 - Culture Pass - Jonathan Leibovitz, clarinet - 2:00 PM",
       "start_time": "2:00 PM",
       "venue_name": "Merkin Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 4, 2026",
+      "end_time": "12:30 PM",
+      "offer_id": "6411",
+      "offer_title": "11/04/26 - Culture Pass - Leave a Message After...THE BEEP - 11:00 AM",
+      "start_time": "11:00 AM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 5, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6412",
+      "offer_title": "11/05/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Kupferberg Center for the Arts",
@@ -82,6 +136,15 @@
       "venue_name": "Kupferberg Center for the Arts - LeFrak Concert Hall"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 6, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6413",
+      "offer_title": "11/06/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 7, 2026",
       "end_time": "11:00 PM",
@@ -89,6 +152,33 @@
       "offer_title": "11/07/26 - Culture Pass - Queens Jazz Orchestra: The Jimmy Heath Centennial Concert - 8:00 PM",
       "start_time": "8:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 7, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6414",
+      "offer_title": "11/07/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "November 7, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6394",
+      "offer_title": "11/07/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 8, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6415",
+      "offer_title": "11/08/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -109,6 +199,15 @@
       "venue_name": "The Jazz Gallery"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 12, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6416",
+      "offer_title": "11/12/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "The Jazz Gallery",
       "date_text": "November 12, 2026",
       "end_time": "10:15 PM",
@@ -116,6 +215,15 @@
       "offer_title": "11/12/26 - Culture Pass - Jonathan Suazo Album Release - 9:00 PM",
       "start_time": "9:00 PM",
       "venue_name": "The Jazz Gallery"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 13, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6417",
+      "offer_title": "11/13/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -127,6 +235,24 @@
       "venue_name": "Flushing Town Hall"
     },
     {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 14, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6419",
+      "offer_title": "11/14/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 14, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6418",
+      "offer_title": "11/14/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
       "attraction_name": "Teatro SEA",
       "date_text": "November 14, 2026",
       "end_time": "4:00 PM",
@@ -134,6 +260,15 @@
       "offer_title": "11/14/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Teatro SEA"
+    },
+    {
+      "attraction_name": "Pregones/PRTT",
+      "date_text": "November 15, 2026",
+      "end_time": "4:30 PM",
+      "offer_id": "6420",
+      "offer_title": "11/15/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Puerto Rican Traveling Theater"
     },
     {
       "attraction_name": "The Jazz Gallery",
