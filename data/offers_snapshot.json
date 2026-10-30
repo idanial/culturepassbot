@@ -4,15 +4,6 @@
       "attraction_name": "Peoples' Symphony Concerts",
       "date_text": "October 31, 2026",
       "end_time": "9:30 PM",
-      "offer_id": "6309",
-      "offer_title": "10/31/26 - Culture Pass (Dual) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Washington Irving High School"
-    },
-    {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "October 31, 2026",
-      "end_time": "9:30 PM",
       "offer_id": "6308",
       "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
       "start_time": "7:30 PM",
@@ -37,6 +28,15 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Dessoff Choirs",
+      "date_text": "November 1, 2026",
+      "end_time": "5:30 PM",
+      "offer_id": "6324",
+      "offer_title": "11/01/26 - Culture Pass - Symphony in Motion - 4:00 PM",
+      "start_time": "4:00 PM",
+      "venue_name": "St. Paul & St. Andrew Church"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 1, 2026",
       "end_time": "4:00 PM",
@@ -44,6 +44,15 @@
       "offer_title": "11/01/26 - Culture Pass - Diwali Festival: The Indian Wedding - 12:00 PM",
       "start_time": "12:00 PM",
       "venue_name": "Flushing Town Hall"
+    },
+    {
+      "attraction_name": "Playwrights Horizons",
+      "date_text": "November 1, 2026",
+      "end_time": "4:15 PM",
+      "offer_id": "6432",
+      "offer_title": "11/01/26 - Culture Pass - the ripple, the wave that carried me home - 2:30 PM",
+      "start_time": "2:30 PM",
+      "venue_name": "Playwrights Horizons"
     },
     {
       "attraction_name": "Pregones/PRTT",
@@ -73,6 +82,15 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 4, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6425",
+      "offer_title": "11/04/26 - Culture Pass - The Ground Beneath Our Feet - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "November 5, 2026",
       "end_time": "8:30 PM",
@@ -80,6 +98,15 @@
       "offer_title": "11/05/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 5, 2026",
+      "end_time": "8:30 PM",
+      "offer_id": "6426",
+      "offer_title": "11/05/26 - Culture Pass - A Goodnight Kiss - 6:30 PM",
+      "start_time": "6:30 PM",
+      "venue_name": "Scandinavia House"
     },
     {
       "attraction_name": "Kupferberg Center for the Arts",
@@ -100,6 +127,24 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 6, 2026",
+      "end_time": "7:30 PM",
+      "offer_id": "6427",
+      "offer_title": "11/06/26 - Culture Pass - Baltic Animated Shorts - 6:30 PM",
+      "start_time": "6:30 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 6, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6428",
+      "offer_title": "11/06/26 - Culture Pass - Scarecrows - 7:30 PM",
+      "start_time": "7:30 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 7, 2026",
       "end_time": "11:00 PM",
@@ -118,6 +163,51 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Queens Theatre",
+      "date_text": "November 7, 2026",
+      "end_time": "10:00 PM",
+      "offer_id": "6422",
+      "offer_title": "11/07/26 - Culture Pass - Tammy McCann, \"The Legendary Ladies of Jazz\" - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Queens Theatre"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 7, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "6429",
+      "offer_title": "11/07/26 - Culture Pass - Baltic Shorts - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 7, 2026",
+      "end_time": "7:30 PM",
+      "offer_id": "6431",
+      "offer_title": "11/07/26 - Culture Pass - Holy Destructors - 5:45 PM",
+      "start_time": "5:45 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 7, 2026",
+      "end_time": "5:30 PM",
+      "offer_id": "6430",
+      "offer_title": "11/07/26 - Culture Pass - Morten - 3:30 PM",
+      "start_time": "3:30 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Teatro SEA",
+      "date_text": "November 7, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6394",
+      "offer_title": "11/07/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
+      "start_time": "3:00 PM",
+      "venue_name": "Teatro SEA"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "November 8, 2026",
       "end_time": "4:30 PM",
@@ -125,6 +215,42 @@
       "offer_title": "11/08/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 8, 2026",
+      "end_time": "4:00 PM",
+      "offer_id": "6435",
+      "offer_title": "11/08/26 - Culture Pass - Borderline - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 8, 2026",
+      "end_time": "1:30 PM",
+      "offer_id": "6434",
+      "offer_title": "11/08/26 - Culture Pass - My Family and Other Clowns - 12:00 PM",
+      "start_time": "12:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 8, 2026",
+      "end_time": "9:15 PM",
+      "offer_id": "6437",
+      "offer_title": "11/08/26 - Culture Pass - Our Erika - 7:00 PM",
+      "start_time": "7:00 PM",
+      "venue_name": "Scandinavia House"
+    },
+    {
+      "attraction_name": "Scandinavia House",
+      "date_text": "November 8, 2026",
+      "end_time": "6:30 PM",
+      "offer_id": "6436",
+      "offer_title": "11/08/26 - Culture Pass - The Child - 4:30 PM",
+      "start_time": "4:30 PM",
+      "venue_name": "Scandinavia House"
     },
     {
       "attraction_name": "Flushing Town Hall",
@@ -199,6 +325,15 @@
       "venue_name": "Puerto Rican Traveling Theater"
     },
     {
+      "attraction_name": "Queens Theatre",
+      "date_text": "November 14, 2026",
+      "end_time": "9:30 PM",
+      "offer_id": "6423",
+      "offer_title": "11/14/26 - Culture Pass - Vitaly: An Evening of Wonders - 8:00 PM",
+      "start_time": "8:00 PM",
+      "venue_name": "Queens Theatre"
+    },
+    {
       "attraction_name": "Pregones/PRTT",
       "date_text": "November 15, 2026",
       "end_time": "4:30 PM",
@@ -206,6 +341,15 @@
       "offer_title": "11/15/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
       "start_time": "3:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
+    },
+    {
+      "attraction_name": "Queens Theatre",
+      "date_text": "November 15, 2026",
+      "end_time": "3:30 PM",
+      "offer_id": "6424",
+      "offer_title": "11/15/26 - Culture Pass - Vitaly: An Evening of Wonders - 2:00 PM",
+      "start_time": "2:00 PM",
+      "venue_name": "Queens Theatre"
     },
     {
       "attraction_name": "The Jazz Gallery",
