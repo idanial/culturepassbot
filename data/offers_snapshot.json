@@ -1,42 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Peoples' Symphony Concerts",
-      "date_text": "October 31, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6308",
-      "offer_title": "10/31/26 - Culture Pass (Single) - Dover Quartet on Halloween at Washington Irving - 7:30 PM",
-      "start_time": "7:30 PM",
-      "venue_name": "Washington Irving High School"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 31, 2026",
-      "end_time": "4:30 PM",
-      "offer_id": "6409",
-      "offer_title": "10/31/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "October 31, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6408",
-      "offer_title": "10/31/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Dessoff Choirs",
-      "date_text": "November 1, 2026",
-      "end_time": "5:30 PM",
-      "offer_id": "6324",
-      "offer_title": "11/01/26 - Culture Pass - Symphony in Motion - 4:00 PM",
-      "start_time": "4:00 PM",
-      "venue_name": "St. Paul & St. Andrew Church"
-    },
-    {
       "attraction_name": "Flushing Town Hall",
       "date_text": "November 1, 2026",
       "end_time": "4:00 PM",
@@ -197,15 +161,6 @@
       "offer_title": "11/07/26 - Culture Pass - Morten - 3:30 PM",
       "start_time": "3:30 PM",
       "venue_name": "Scandinavia House"
-    },
-    {
-      "attraction_name": "Teatro SEA",
-      "date_text": "November 7, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "6394",
-      "offer_title": "11/07/26 \u2013 Culture Pass \u2013 Viva Pinocho \u2013 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Teatro SEA"
     },
     {
       "attraction_name": "Pregones/PRTT",
