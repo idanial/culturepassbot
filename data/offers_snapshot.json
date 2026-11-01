@@ -82,15 +82,6 @@
       "venue_name": "Flushing Town Hall"
     },
     {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "November 7, 2026",
-      "end_time": "8:30 PM",
-      "offer_id": "6414",
-      "offer_title": "11/07/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
-      "start_time": "7:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
       "attraction_name": "Queens Theatre",
       "date_text": "November 7, 2026",
       "end_time": "10:00 PM",
@@ -233,33 +224,6 @@
       "offer_title": "11/14/26 - Culture Pass - Leave a Message After...THE BEEP - 7:00 PM",
       "start_time": "7:00 PM",
       "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Queens Theatre",
-      "date_text": "November 14, 2026",
-      "end_time": "9:30 PM",
-      "offer_id": "6423",
-      "offer_title": "11/14/26 - Culture Pass - Vitaly: An Evening of Wonders - 8:00 PM",
-      "start_time": "8:00 PM",
-      "venue_name": "Queens Theatre"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "November 15, 2026",
-      "end_time": "4:30 PM",
-      "offer_id": "6420",
-      "offer_title": "11/15/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
-      "attraction_name": "Queens Theatre",
-      "date_text": "November 15, 2026",
-      "end_time": "3:30 PM",
-      "offer_id": "6424",
-      "offer_title": "11/15/26 - Culture Pass - Vitaly: An Evening of Wonders - 2:00 PM",
-      "start_time": "2:00 PM",
-      "venue_name": "Queens Theatre"
     },
     {
       "attraction_name": "The Jazz Gallery",
