@@ -91,11 +91,6 @@
       "url": "https://www.derfner.org/"
     },
     {
-      "id": "93",
-      "name": "Dessoff Choirs",
-      "url": "http://www.dessoff.org/"
-    },
-    {
       "id": "79",
       "name": "Dyckman Farmhouse Museum",
       "url": "http://www.dyckmanfarmhouse.org/"
@@ -164,6 +159,11 @@
       "id": "96",
       "name": "Kaufman Music Center",
       "url": "https://www.kaufmanmusiccenter.org/"
+    },
+    {
+      "id": "70",
+      "name": "King Manor Museum",
+      "url": "http://www.kingmanor.org/"
     },
     {
       "id": "101",
@@ -251,9 +251,9 @@
       "url": "https://nyys.org/"
     },
     {
-      "id": "130",
-      "name": "Playwrights Horizons",
-      "url": "https://www.playwrightshorizons.org/"
+      "id": "139",
+      "name": "Play Street Museum UWS",
+      "url": "https://uws.playstreetmuseum.com/"
     },
     {
       "id": "59",

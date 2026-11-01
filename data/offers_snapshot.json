@@ -1,33 +1,6 @@
 {
   "offers": [
     {
-      "attraction_name": "Flushing Town Hall",
-      "date_text": "November 1, 2026",
-      "end_time": "4:00 PM",
-      "offer_id": "6358",
-      "offer_title": "11/01/26 - Culture Pass - Diwali Festival: The Indian Wedding - 12:00 PM",
-      "start_time": "12:00 PM",
-      "venue_name": "Flushing Town Hall"
-    },
-    {
-      "attraction_name": "Playwrights Horizons",
-      "date_text": "November 1, 2026",
-      "end_time": "4:15 PM",
-      "offer_id": "6432",
-      "offer_title": "11/01/26 - Culture Pass - the ripple, the wave that carried me home - 2:30 PM",
-      "start_time": "2:30 PM",
-      "venue_name": "Playwrights Horizons"
-    },
-    {
-      "attraction_name": "Pregones/PRTT",
-      "date_text": "November 1, 2026",
-      "end_time": "4:30 PM",
-      "offer_id": "6410",
-      "offer_title": "11/01/26 - Culture Pass - Leave a Message After...THE BEEP - 3:00 PM",
-      "start_time": "3:00 PM",
-      "venue_name": "Puerto Rican Traveling Theater"
-    },
-    {
       "attraction_name": "Kaufman Music Center",
       "date_text": "November 3, 2026",
       "end_time": "3:30 PM",
