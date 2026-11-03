@@ -41,6 +41,11 @@
       "url": "http://bronxmuseum.org/"
     },
     {
+      "id": "73",
+      "name": "Bronx Music Heritage Center",
+      "url": "https://thisisbronxmusic.org/"
+    },
+    {
       "id": "1",
       "name": "Brooklyn Botanic Garden",
       "url": "https://www.bbg.org/"
@@ -141,6 +146,11 @@
       "url": "https://www.intrepidmuseum.org/"
     },
     {
+      "id": "103",
+      "name": "Irish Arts Center",
+      "url": "https://www.irishartscenter.org/"
+    },
+    {
       "id": "106",
       "name": "Jackie Robinson Museum",
       "url": "https://www.jackierobinsonmuseum.org/"
@@ -164,6 +174,11 @@
       "id": "70",
       "name": "King Manor Museum",
       "url": "http://www.kingmanor.org/"
+    },
+    {
+      "id": "68",
+      "name": "Kings Theatre",
+      "url": "http://www.kingstheatre.com/"
     },
     {
       "id": "101",
